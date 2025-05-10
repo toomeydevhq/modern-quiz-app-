@@ -1,0 +1,548 @@
+{
+    "general": [
+        {
+            "question": "What is the capital of France?",
+            "options": ["Berlin", "Madrid", "Paris", "Rome"],
+            "answer": 2,
+            "hint": "This city is known as the 'City of Light'."
+        },
+        {
+            "question": "Which planet is known as the Red Planet?",
+            "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+            "answer": 1,
+            "hint": "It’s named after the Roman god of war."
+        },
+        {
+            "question": "Who painted the Mona Lisa?",
+            "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
+            "answer": 2,
+            "hint": "He was also an inventor and scientist."
+        },
+        {
+            "question": "What is the largest ocean on Earth?",
+            "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+            "answer": 3,
+            "hint": "It covers about one-third of the Earth's surface."
+        },
+        {
+            "question": "Which country is home to the kangaroo?",
+            "options": ["New Zealand", "South Africa", "Australia", "Brazil"],
+            "answer": 2,
+            "hint": "It’s also home to the Great Barrier Reef."
+        },
+        {
+            "question": "What is the chemical symbol for gold?",
+            "options": ["Go", "Gd", "Au", "Ag"],
+            "answer": 2,
+            "hint": "It comes from the Latin word 'aurum'."
+        },
+        {
+            "question": "Which language has the most native speakers?",
+            "options": ["English", "Hindi", "Spanish", "Mandarin Chinese"],
+            "answer": 3,
+            "hint": "It’s the official language of China."
+        },
+        {
+            "question": "What is the tallest mountain in the world?",
+            "options": ["K2", "Mount Kilimanjaro", "Mount Everest", "Denali"],
+            "answer": 2,
+            "hint": "It’s located in the Himalayas."
+        },
+        {
+            "question": "Which country invented tea?",
+            "options": ["India", "China", "England", "Japan"],
+            "answer": 1,
+            "hint": "It has the oldest continuous civilization."
+        },
+        {
+            "question": "What is the largest desert in the world?",
+            "options": ["Sahara", "Arabian", "Gobi", "Antarctic"],
+            "answer": 3,
+            "hint": "It’s located at the South Pole."
+        },
+        {
+            "question": "Which currency is used in Japan?",
+            "options": ["Yuan", "Won", "Yen", "Ringgit"],
+            "answer": 2,
+            "hint": "It’s associated with a country famous for sushi."
+        },
+        {
+            "question": "What is the smallest country in the world?",
+            "options": ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
+            "answer": 1,
+            "hint": "It’s located within Rome."
+        },
+        {
+            "question": "Which animal is the fastest land mammal?",
+            "options": ["Lion", "Cheetah", "Horse", "Antelope"],
+            "answer": 1,
+            "hint": "It’s known for its spotted coat."
+        },
+        {
+            "question": "What is the main ingredient in guacamole?",
+            "options": ["Tomato", "Avocado", "Onion", "Pepper"],
+            "answer": 1,
+            "hint": "It’s a green fruit often used in Mexican cuisine."
+        },
+        {
+            "question": "Which city hosted the 2016 Summer Olympics?",
+            "options": ["London", "Rio de Janeiro", "Tokyo", "Beijing"],
+            "answer": 1,
+            "hint": "It’s in South America."
+        },
+        {
+            "question": "What is the longest river in the world?",
+            "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+            "answer": 1,
+            "hint": "It flows through multiple African countries."
+        },
+        {
+            "question": "Which instrument has 88 keys?",
+            "options": ["Guitar", "Violin", "Piano", "Flute"],
+            "answer": 2,
+            "hint": "It’s a keyboard instrument."
+        },
+        {
+            "question": "What is the capital of Canada?",
+            "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+            "answer": 2,
+            "hint": "It’s named after a river."
+        },
+        {
+            "question": "Which bird is known for its colorful feathers?",
+            "options": ["Eagle", "Peacock", "Owl", "Penguin"],
+            "answer": 1,
+            "hint": "It’s often associated with pride."
+        },
+        {
+            "question": "What is the primary source of energy for Earth?",
+            "options": ["Moon", "Sun", "Wind", "Ocean"],
+            "answer": 1,
+            "hint": "It rises every morning."
+        },
+        {
+            "question": "Which country has the most deserts?",
+            "options": ["Australia", "Egypt", "Chile", "China"],
+            "answer": 0,
+            "hint": "It’s a continent with a vast outback."
+        },
+        {
+            "question": "What is the national flower of Japan?",
+            "options": ["Rose", "Cherry Blossom", "Lotus", "Sunflower"],
+            "answer": 1,
+            "hint": "It blooms in spring and is celebrated with festivals."
+        },
+        {
+            "question": "Which element is represented by ‘Fe’?",
+            "options": ["Iron", "Fluorine", "Francium", "Fermium"],
+            "answer": 0,
+            "hint": "It’s a common metal used in construction."
+        },
+        {
+            "question": "What is the capital of Brazil?",
+            "options": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+            "answer": 2,
+            "hint": "It was designed by Oscar Niemeyer."
+        },
+        {
+            "question": "Which sport is associated with Wimbledon?",
+            "options": ["Cricket", "Tennis", "Golf", "Rugby"],
+            "answer": 1,
+            "hint": "It’s played on grass courts."
+        },
+        {
+            "question": "What is the largest mammal in the world?",
+            "options": ["Elephant", "Blue Whale", "Giraffe", "Rhinoceros"],
+            "answer": 1,
+            "hint": "It lives in the ocean."
+        },
+        {
+            "question": "Which country is famous for the Eiffel Tower?",
+            "options": ["Italy", "France", "Spain", "Germany"],
+            "answer": 1,
+            "hint": "It’s a major European nation."
+        },
+        {
+            "question": "What is the currency of the United Kingdom?",
+            "options": ["Euro", "Dollar", "Pound", "Franc"],
+            "answer": 2,
+            "hint": "It’s abbreviated with a £ symbol."
+        },
+        {
+            "question": "Which fruit is known as the ‘king of fruits’?",
+            "options": ["Mango", "Durian", "Pineapple", "Banana"],
+            "answer": 1,
+            "hint": "It’s infamous for its strong smell."
+        },
+        {
+            "question": "What is the capital of Australia?",
+            "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+            "answer": 2,
+            "hint": "It’s a planned city, not the largest in its country."
+        }
+    ],
+    "science": [
+        {
+            "question": "What is the chemical symbol for water?",
+            "options": ["H2O", "CO2", "NaCl", "O2"],
+            "answer": 0,
+            "hint": "It contains two hydrogen atoms and one oxygen atom."
+        },
+        {
+            "question": "What is the hardest natural substance on Earth?",
+            "options": ["Gold", "Iron", "Diamond", "Quartz"],
+            "answer": 2,
+            "hint": "It’s a form of carbon."
+        },
+        {
+            "question": "Which gas is most abundant in the Earth's atmosphere?",
+            "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+            "answer": 2,
+            "hint": "It makes up about 78% of the air we breathe."
+        },
+        {
+            "question": "What is the atomic number of oxygen?",
+            "options": ["6", "8", "16", "32"],
+            "answer": 1,
+            "hint": "It’s an even number between 6 and 10."
+        },
+        {
+            "question": "Which planet is closest to the Sun?",
+            "options": ["Venus", "Earth", "Mars", "Mercury"],
+            "answer": 3,
+            "hint": "It’s the smallest planet in our solar system."
+        },
+        {
+            "question": "What is the study of living organisms called?",
+            "options": ["Geology", "Biology", "Chemistry", "Physics"],
+            "answer": 1,
+            "hint": "It explores life at all levels."
+        },
+        {
+            "question": "Which element is liquid at room temperature?",
+            "options": ["Mercury", "Bromine", "Both", "Neither"],
+            "answer": 2,
+            "hint": "There are two elements that fit this description."
+        },
+        {
+            "question": "What is the speed of light?",
+            "options": ["300,000 km/s", "150,000 km/s", "450,000 km/s", "600,000 km/s"],
+            "answer": 0,
+            "hint": "It’s approximately 186,000 miles per second."
+        },
+        {
+            "question": "What is the main component of the Sun?",
+            "options": ["Liquid lava", "Hydrogen gas", "Oxygen gas", "Rock"],
+            "answer": 1,
+            "hint": "It’s the lightest element."
+        },
+        {
+            "question": "How many bones are in the human body?",
+            "options": ["106", "206", "306", "406"],
+            "answer": 1,
+            "hint": "Babies have more bones that fuse together."
+        },
+        {
+            "question": "What is the powerhouse of the cell?",
+            "options": ["Nucleus", "Mitochondria", "Ribosome", "Golgi Apparatus"],
+            "answer": 1,
+            "hint": "It produces energy for the cell."
+        },
+        {
+            "question": "Which force keeps planets in orbit?",
+            "options": ["Magnetism", "Friction", "Gravity", "Electromagnetism"],
+            "answer": 2,
+            "hint": "It’s what makes things fall to the ground."
+        },
+        {
+            "question": "What is the primary gas in a star?",
+            "options": ["Helium", "Hydrogen", "Oxygen", "Carbon"],
+            "answer": 1,
+            "hint": "It’s the most abundant element in the universe."
+        },
+        {
+            "question": "What is the freezing point of water in Celsius?",
+            "options": ["0", "100", "-40", "32"],
+            "answer": 0,
+            "hint": "It’s the same as the melting point of ice."
+        },
+        {
+            "question": "Which organ pumps blood in the human body?",
+            "options": ["Liver", "Heart", "Lung", "Kidney"],
+            "answer": 1,
+            "hint": "It beats rhythmically."
+        },
+        {
+            "question": "What is the chemical symbol for sodium?",
+            "options": ["Na", "So", "Sd", "Sn"],
+            "answer": 0,
+            "hint": "It’s derived from the Latin word 'natrium'."
+        },
+        {
+            "question": "Which planet has the most moons?",
+            "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+            "answer": 1,
+            "hint": "It’s famous for its rings."
+        },
+        {
+            "question": "What is the process by which plants make food?",
+            "options": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
+            "answer": 1,
+            "hint": "It requires sunlight and chlorophyll."
+        },
+        {
+            "question": "What is the unit of electrical resistance?",
+            "options": ["Volt", "Ampere", "Ohm", "Watt"],
+            "answer": 2,
+            "hint": "It’s named after a German physicist."
+        },
+        {
+            "question": "Which scientist proposed the theory of relativity?",
+            "options": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Niels Bohr"],
+            "answer": 1,
+            "hint": "He’s associated with E=mc²."
+        },
+        {
+            "question": "What is the boiling point of water in Celsius?",
+            "options": ["0", "50", "100", "200"],
+            "answer": 2,
+            "hint": "It’s at standard atmospheric pressure."
+        },
+        {
+            "question": "Which gas is used in balloons to make them float?",
+            "options": ["Oxygen", "Nitrogen", "Helium", "Carbon dioxide"],
+            "answer": 2,
+            "hint": "It’s lighter than air."
+        },
+        {
+            "question": "What is the smallest unit of life?",
+            "options": ["Atom", "Cell", "Molecule", "Organ"],
+            "answer": 1,
+            "hint": "It’s the basic building block of all organisms."
+        },
+        {
+            "question": "Which type of energy is stored in a battery?",
+            "options": ["Kinetic", "Thermal", "Chemical", "Nuclear"],
+            "answer": 2,
+            "hint": "It’s released through chemical reactions."
+        },
+        {
+            "question": "What is the Earth’s primary source of light?",
+            "options": ["Moon", "Sun", "Stars", "Lightning"],
+            "answer": 1,
+            "hint": "It’s at the center of our solar system."
+        },
+        {
+            "question": "Which scientist discovered penicillin?",
+            "options": ["Louis Pasteur", "Alexander Fleming", "Marie Curie", "Robert Koch"],
+            "answer": 1,
+            "hint": "It was a major medical breakthrough in the 1920s."
+        },
+        {
+            "question": "What is the chemical formula for table salt?",
+            "options": ["HCl", "NaCl", "KCl", "CaCl2"],
+            "answer": 1,
+            "hint": "It’s made of sodium and chlorine."
+        },
+        {
+            "question": "Which part of the eye detects light?",
+            "options": ["Cornea", "Iris", "Retina", "Lens"],
+            "answer": 2,
+            "hint": "It’s at the back of the eye."
+        },
+        {
+            "question": "What is the name of our galaxy?",
+            "options": ["Andromeda", "Milky Way", "Triangulum", "Sombrero"],
+            "answer": 1,
+            "hint": "It’s named after a type of candy bar."
+        },
+        {
+            "question": "Which type of rock is formed from cooled lava?",
+            "options": ["Sedimentary", "Metamorphic", "Igneous", "Fossiliferous"],
+            "answer": 2,
+            "hint": "It’s associated with volcanic activity."
+        }
+    ],
+    "history": [
+        {
+            "question": "In which year did World War II end?",
+            "options": ["1943", "1945", "1947", "1950"],
+            "answer": 1,
+            "hint": "It ended after the surrender of Japan."
+        },
+        {
+            "question": "Who was the first president of the United States?",
+            "options": ["Thomas Jefferson", "John Adams", "George Washington", "Abraham Lincoln"],
+            "answer": 2,
+            "hint": "His face is on the one-dollar bill."
+        },
+        {
+            "question": "Which ancient civilization built the pyramids?",
+            "options": ["Greeks", "Romans", "Egyptians", "Mayans"],
+            "answer": 2,
+            "hint": "They were located along the Nile River."
+        },
+        {
+            "question": "When was the Declaration of Independence signed?",
+            "options": ["1774", "1776", "1781", "1787"],
+            "answer": 1,
+            "hint": "It happened during the American Revolution."
+        },
+        {
+            "question": "Which empire was ruled by Julius Caesar?",
+            "options": ["Greek", "Roman", "Persian", "Ottoman"],
+            "answer": 1,
+            "hint": "It was centered around the Mediterranean."
+        },
+        {
+            "question": "Who invented the telephone?",
+            "options": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Guglielmo Marconi"],
+            "answer": 1,
+            "hint": "He was a Scottish-born scientist."
+        },
+        {
+            "question": "Which year did the Titanic sink?",
+            "options": ["1905", "1912", "1918", "1923"],
+            "answer": 1,
+            "hint": "It happened in April of that year."
+        },
+        {
+            "question": "Who was the first woman to fly solo across the Atlantic?",
+            "options": ["Amelia Earhart", "Bessie Coleman", "Harriet Quimby", "Jacqueline Cochran"],
+            "answer": 0,
+            "hint": "She disappeared during a later flight."
+        },
+        {
+            "question": "Which ancient wonder was located in Babylon?",
+            "options": ["Great Pyramid", "Hanging Gardens", "Colossus of Rhodes", "Lighthouse of Alexandria"],
+            "answer": 1,
+            "hint": "They were supposedly built for a homesick queen."
+        },
+        {
+            "question": "When did the Berlin Wall fall?",
+            "options": ["1985", "1989", "1991", "1993"],
+            "answer": 1,
+            "hint": "It marked the end of the Cold War era."
+        },
+        {
+            "question": "Who led the Indian independence movement?",
+            "options": ["Jawaharlal Nehru", "Mahatma Gandhi", "Subhas Chandra Bose", "Sardar Patel"],
+            "answer": 1,
+            "hint": "He was known for nonviolent resistance."
+        },
+        {
+            "question": "Which war was fought between 1861 and 1865?",
+            "options": ["World War I", "American Civil War", "Spanish-American War", "Mexican-American War"],
+            "answer": 1,
+            "hint": "It was fought over issues including slavery."
+        },
+        {
+            "question": "Who was the queen of ancient Egypt known for her beauty?",
+            "options": ["Nefertiti", "Cleopatra", "Hatshepsut", "Ankhesenamun"],
+            "answer": 1,
+            "hint": "She was associated with Mark Antony."
+        },
+        {
+            "question": "Which explorer circumnavigated the globe first?",
+            "options": ["Christopher Columbus", "Vasco da Gama", "Ferdinand Magellan", "Marco Polo"],
+            "answer": 2,
+            "hint": "His journey was completed in the 16th century."
+        },
+        {
+            "question": "Which event started World War I?",
+            "options": ["Sinking of the Lusitania", "Assassination of Archduke Franz Ferdinand", "Invasion of Poland", "Bombing of Pearl Harbor"],
+            "answer": 1,
+            "hint": "It happened in Sarajevo."
+        },
+        {
+            "question": "Who was the leader of Nazi Germany during World War II?",
+            "options": ["Benito Mussolini", "Adolf Hitler", "Joseph Stalin", "Winston Churchill"],
+            "answer": 1,
+            "hint": "He wrote 'Mein Kampf'."
+        },
+        {
+            "question": "Which ancient city was destroyed by a volcanic eruption in 79 AD?",
+            "options": ["Athens", "Pompeii", "Troy", "Carthage"],
+            "answer": 1,
+            "hint": "It was near Mount Vesuvius."
+        },
+        {
+            "question": "Who was the first man to walk on the moon?",
+            "options": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "John Glenn"],
+            "answer": 1,
+            "hint": "He said, 'One small step for man.'"
+        },
+        {
+            "question": "Which document ended World War I?",
+            "options": ["Treaty of Versailles", "Treaty of Paris", "Treaty of Tordesillas", "Treaty of Ghent"],
+            "answer": 0,
+            "hint": "It was signed in a French palace."
+        },
+        {
+            "question": "Which Chinese dynasty built the Great Wall?",
+            "options": ["Han", "Tang", "Ming", "Qing"],
+            "answer": 2,
+            "hint": "It ruled during the 14th to 17th centuries."
+        },
+        {
+            "question": "Who was the British Prime Minister during most of World War II?",
+            "options": ["Neville Chamberlain", "Winston Churchill", "Clement Attlee", "Anthony Eden"],
+            "answer": 1,
+            "hint": "He was known for his inspiring speeches."
+        },
+        {
+            "question": "Which battle was a turning point in the American Civil War?",
+            "options": ["Battle of Antietam", "Battle of Gettysburg", "Battle of Shiloh", "Battle of Vicksburg"],
+            "answer": 1,
+            "hint": "It was fought in Pennsylvania."
+        },
+        {
+            "question": "Which civilization developed cuneiform writing?",
+            "options": ["Egyptians", "Sumerians", "Greeks", "Romans"],
+            "answer": 1,
+            "hint": "They lived in Mesopotamia."
+        },
+        {
+            "question": "When did Christopher Columbus first reach the Americas?",
+            "options": ["1492", "1519", "1453", "1607"],
+            "answer": 0,
+            "hint": "It was before the 16th century."
+        },
+        {
+            "question": "Which war involved the 'Charge of the Light Brigade'?",
+            "options": ["Napoleonic Wars", "Crimean War", "Boer War", "World War I"],
+            "answer": 1,
+            "hint": "It was fought in the 1850s."
+        },
+        {
+            "question": "Who was the first emperor of the Roman Empire?",
+            "options": ["Julius Caesar", "Augustus", "Nero", "Constantine"],
+            "answer": 1,
+            "hint": "He was originally named Octavian."
+        },
+        {
+            "question": "Which event marked the start of the French Revolution?",
+            "options": ["Storming of the Bastille", "Execution of Louis XVI", "Reign of Terror", "Napoleon’s coup"],
+            "answer": 0,
+            "hint": "It happened in 1789."
+        },
+        {
+            "question": "Which country was unified in 1871?",
+            "options": ["Italy", "Germany", "Spain", "Russia"],
+            "answer": 1,
+            "hint": "It was led by Otto von Bismarck."
+        },
+        {
+            "question": "Who discovered the New World in 1492?",
+            "options": ["Vasco da Gama", "Christopher Columbus", "John Cabot", "Amerigo Vespucci"],
+            "answer": 1,
+            "hint": "He sailed for Spain."
+        },
+        {
+            "question": "Which ancient structure was built to honor the Greek goddess Athena?",
+            "options": ["Colosseum", "Parthenon", "Pantheon", "Acropolis"],
+            "answer": 1,
+            "hint": "It’s located in Athens."
+        }
+    ]
+}
