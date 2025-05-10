@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainyQuiz | Test Your Knowledge</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <h1>BrainyQuiz</h1>
+                </div>
+                <div class="header-actions">
+                    <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="sound-toggle" class="icon-btn" aria-label="Toggle sound">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="app-main">
+            <!-- Loading Screen -->
+            <div id="loading-screen" class="screen active">
+                <div class="loading-content">
+                    <div class="loading-spinner">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <p>Preparing your quiz...</p>
+                </div>
+            </div>
+
+            <!-- Category Selection -->
+            <div id="category-screen" class="screen">
+                <div class="screen-content">
+                    <h2>Choose Your Challenge</h2>
+                    <div class="categories-grid">
+                        <div class="category-card" data-category="general">
+                            <div class="category-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3>General Knowledge</h3>
+                            <p>10 questions</p>
+                        </div>
+                        <div class="category-card" data-category="science">
+                            <div class="category-icon">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <h3>Science</h3>
+                            <p>10 questions</p>
+                        </div>
+                        <div class="category-card" data-category="history">
+                            <div class="category-icon">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                            <h3>History</h3>
+                            <p>10 questions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Screen -->
+            <div id="quiz-screen" class="screen">
+                <div class="screen-content">
+                    <div class="quiz-header">
+                        <div class="quiz-meta">
+                            <span id="question-number">Q1/10</span>
+                            <span id="category-name">General Knowledge</span>
+                        </div>
+                        <div class="quiz-timer">
+                            <i class="fas fa-clock"></i>
+                            <span id="time">30</span>
+                        </div>
+                    </div>
+
+                    <div class="progress-container">
+                        <div id="progress-bar" class="progress-bar"></div>
+                    </div>
+
+                    <div class="question-container">
+                        <div id="question" class="question-text"></div>
+                        <div id="options" class="options-grid"></div>
+                    </div>
+
+                    <div class="quiz-controls">
+                        <button id="hint-btn" class="btn hint-btn">
+                            <i class="fas fa-lightbulb"></i> Hint
+                        </button>
+                        <button id="next-btn" class="btn primary-btn disabled">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Screen -->
+            <div id="results-screen" class="screen">
+                <div class="screen-content">
+                    <div class="results-header">
+                        <i class="fas fa-trophy"></i>
+                        <h2>Quiz Completed!</h2>
+                    </div>
+
+                    <div class="score-display">
+                        <div class="score-circle">
+                            <svg width="120" height="120" viewBox="0 0 120 120">
+                                <circle class="score-circle-bg" cx="60" cy="60" r="54"></circle>
+                                <circle class="score-circle-fill" cx="60" cy="60" r="54"></circle>
+                            </svg>
+                            <div class="score-text" id="score-percent">0%</div>
+                        </div>
+                        <h3 id="score-message">Good Job!</h3>
+                    </div>
+
+                    <div class="results-stats">
+                        <div class="stat-card correct">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <p>Correct</p>
+                                <h4 id="correct-answers">0</h4>
+                            </div>
+                        </div>
+                        <div class="stat-card wrong">
+                            <i class="fas fa-times-circle"></i>
+                            <div>
+                                <p>Wrong</p>
+                                <h4 id="wrong-answers">0</h4>
+                            </div>
+                        </div>
+                        <div class="stat-card time">
+                            <i class="fas fa-stopwatch"></i>
+                            <div>
+                                <p>Time</p>
+                                <h4 id="time-taken">0s</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="results-actions">
+                        <button id="review-btn" class="btn outline-btn">
+                            <i class="fas fa-list"></i> Review
+                        </button>
+                        <button id="restart-btn" class="btn primary-btn">
+                            <i class="fas fa-redo"></i> Restart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Screen -->
+            <div id="review-screen" class="screen">
+                <div class="screen-content">
+                    <div class="review-header">
+                        <h2><i class="fas fa-list-check"></i> Review Answers</h2>
+                        <button id="back-to-results" class="btn back-btn">
+                            <i class="fas fa-arrow-left"></i> Back
+                        </button>
+                    </div>
+                    <div class="review-questions" id="review-questions"></div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>© 2023 BrainyQuiz. All rights reserved.</p>
+        </footer>
+
+        <!-- Hint Modal -->
+        <div id="hint-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><i class="fas fa-lightbulb"></i> Hint</h3>
+                    <span class="close-modal">&times;</span>
+                </div>
+                <div class="modal-body" id="hint-text"></div>
+            </div>
+        </div>
+
+        <!-- Confetti Canvas -->
+        <canvas id="confetti-canvas"></canvas>
+
+        <!-- Audio Elements -->
+        <audio id="correct-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-correct-answer-tone-2870.mp3"></audio>
+        <audio id="wrong-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-wrong-answer-fail-notification-946.mp3"></audio>
+        <audio id="timer-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-clock-countdown-bleeps-916.mp3"></audio>
+    </div>
+
+    <script src="scripts/confetti.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
