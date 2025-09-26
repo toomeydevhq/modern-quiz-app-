@@ -4,8 +4,10 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const confettiPieces = [];
+let confettiPieces = [];
 const colors = ['#4361ee', '#3a0ca3', '#4cc9f0', '#f72585', '#7209b7'];
+let animationId = null;
+let confettiDuration = 3000; // 3 seconds
 
 function resizeCanvas() {
     canvas.width = window.innerWidth;
@@ -21,55 +23,86 @@ function createConfetti() {
         velocity: Math.random() * 3 + 2,
         rotation: Math.random() * 360,
         rotationSpeed: Math.random() * 10 - 5,
-        opacity: Math.random() * 0.7 + 0.3
+        opacity: Math.random() * 0.7 + 0.3,
+        shape: Math.random() > 0.5 ? 'circle' : 'rect'
     };
 }
 
-function startConfetti() {
-    // Create 100 confetti pieces
-    for (let i = 0; i < 100; i++) {
+function startConfetti(duration = 3000) {
+    // Clear any existing confetti
+    stopConfetti();
+    
+    // Create confetti pieces
+    confettiPieces = [];
+    for (let i = 0; i < 150; i++) {
         confettiPieces.push(createConfetti());
     }
     
-    // Start animation
-    if (!window.confettiAnimation) {
-        window.confettiAnimation = true;
-        animateConfetti();
+    confettiDuration = duration;
+    const startTime = Date.now();
+    
+    function animate() {
+        const currentTime = Date.now();
+        const elapsed = currentTime - startTime;
+        
+        if (elapsed > confettiDuration) {
+            stopConfetti();
+            return;
+        }
+        
+        // Fade out towards the end
+        const fadeProgress = Math.min(elapsed / confettiDuration, 1);
+        
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        confettiPieces.forEach((confetti, index) => {
+            // Update position
+            confetti.y += confetti.velocity;
+            confetti.rotation += confetti.rotationSpeed;
+            
+            // Apply fade out effect
+            const currentOpacity = confetti.opacity * (1 - fadeProgress);
+            
+            // Draw confetti
+            ctx.save();
+            ctx.translate(confetti.x, confetti.y);
+            ctx.rotate(confetti.rotation * Math.PI / 180);
+            ctx.globalAlpha = currentOpacity;
+            ctx.fillStyle = confetti.color;
+            
+            if (confetti.shape === 'circle') {
+                ctx.beginPath();
+                ctx.arc(0, 0, confetti.size / 2, 0, Math.PI * 2);
+                ctx.fill();
+            } else {
+                ctx.fillRect(-confetti.size/2, -confetti.size/2, confetti.size, confetti.size);
+            }
+            
+            ctx.restore();
+            
+            // Recycle pieces that fall off screen
+            if (confetti.y > canvas.height) {
+                confettiPieces[index] = createConfetti();
+            }
+        });
+        
+        animationId = requestAnimationFrame(animate);
     }
+    
+    animate();
 }
 
 function stopConfetti() {
-    window.confettiAnimation = false;
-    confettiPieces.length = 0;
+    if (animationId) {
+        cancelAnimationFrame(animationId);
+        animationId = null;
+    }
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    confettiPieces = [];
 }
 
-function animateConfetti() {
-    if (!window.confettiAnimation) return;
-    
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
-    confettiPieces.forEach((confetti, index) => {
-        // Update position
-        confetti.y += confetti.velocity;
-        confetti.rotation += confetti.rotationSpeed;
-        
-        // Remove if off screen
-        if (confetti.y > canvas.height) {
-            confettiPieces.splice(index, 1);
-            confettiPieces.push(createConfetti());
-        }
-        
-        // Draw confetti
-        ctx.save();
-        ctx.translate(confetti.x, confetti.y);
-        ctx.rotate(confetti.rotation * Math.PI / 180);
-        ctx.globalAlpha = confetti.opacity;
-        ctx.fillStyle = confetti.color;
-        ctx.fillRect(-confetti.size/2, -confetti.size/2, confetti.size, confetti.size);
-        ctx.restore();
-    });
-    
-    requestAnimationFrame(animateConfetti);
-}
+// Make functions globally available
+window.startConfetti = startConfetti;
+window.stopConfetti = stopConfetti;
 
 window.addEventListener('resize', resizeCanvas);
