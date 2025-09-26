@@ -1,548 +1,1582 @@
 {
-    "general": [
+    "CS 1101": [
         {
-            "question": "What is the capital of France?",
-            "options": ["Berlin", "Madrid", "Paris", "Rome"],
-            "answer": 2,
-            "hint": "This city is known as the 'City of Light'."
-        },
-        {
-            "question": "Which planet is known as the Red Planet?",
-            "options": ["Venus", "Mars", "Jupiter", "Saturn"],
-            "answer": 1,
-            "hint": "It’s named after the Roman god of war."
-        },
-        {
-            "question": "Who painted the Mona Lisa?",
-            "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
-            "answer": 2,
-            "hint": "He was also an inventor and scientist."
-        },
-        {
-            "question": "What is the largest ocean on Earth?",
-            "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-            "answer": 3,
-            "hint": "It covers about one-third of the Earth's surface."
-        },
-        {
-            "question": "Which country is home to the kangaroo?",
-            "options": ["New Zealand", "South Africa", "Australia", "Brazil"],
-            "answer": 2,
-            "hint": "It’s also home to the Great Barrier Reef."
-        },
-        {
-            "question": "What is the chemical symbol for gold?",
-            "options": ["Go", "Gd", "Au", "Ag"],
-            "answer": 2,
-            "hint": "It comes from the Latin word 'aurum'."
-        },
-        {
-            "question": "Which language has the most native speakers?",
-            "options": ["English", "Hindi", "Spanish", "Mandarin Chinese"],
-            "answer": 3,
-            "hint": "It’s the official language of China."
-        },
-        {
-            "question": "What is the tallest mountain in the world?",
-            "options": ["K2", "Mount Kilimanjaro", "Mount Everest", "Denali"],
-            "answer": 2,
-            "hint": "It’s located in the Himalayas."
-        },
-        {
-            "question": "Which country invented tea?",
-            "options": ["India", "China", "England", "Japan"],
-            "answer": 1,
-            "hint": "It has the oldest continuous civilization."
-        },
-        {
-            "question": "What is the largest desert in the world?",
-            "options": ["Sahara", "Arabian", "Gobi", "Antarctic"],
-            "answer": 3,
-            "hint": "It’s located at the South Pole."
-        },
-        {
-            "question": "Which currency is used in Japan?",
-            "options": ["Yuan", "Won", "Yen", "Ringgit"],
-            "answer": 2,
-            "hint": "It’s associated with a country famous for sushi."
-        },
-        {
-            "question": "What is the smallest country in the world?",
-            "options": ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
-            "answer": 1,
-            "hint": "It’s located within Rome."
-        },
-        {
-            "question": "Which animal is the fastest land mammal?",
-            "options": ["Lion", "Cheetah", "Horse", "Antelope"],
-            "answer": 1,
-            "hint": "It’s known for its spotted coat."
-        },
-        {
-            "question": "What is the main ingredient in guacamole?",
-            "options": ["Tomato", "Avocado", "Onion", "Pepper"],
-            "answer": 1,
-            "hint": "It’s a green fruit often used in Mexican cuisine."
-        },
-        {
-            "question": "Which city hosted the 2016 Summer Olympics?",
-            "options": ["London", "Rio de Janeiro", "Tokyo", "Beijing"],
-            "answer": 1,
-            "hint": "It’s in South America."
-        },
-        {
-            "question": "What is the longest river in the world?",
-            "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
-            "answer": 1,
-            "hint": "It flows through multiple African countries."
-        },
-        {
-            "question": "Which instrument has 88 keys?",
-            "options": ["Guitar", "Violin", "Piano", "Flute"],
-            "answer": 2,
-            "hint": "It’s a keyboard instrument."
-        },
-        {
-            "question": "What is the capital of Canada?",
-            "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
-            "answer": 2,
-            "hint": "It’s named after a river."
-        },
-        {
-            "question": "Which bird is known for its colorful feathers?",
-            "options": ["Eagle", "Peacock", "Owl", "Penguin"],
-            "answer": 1,
-            "hint": "It’s often associated with pride."
-        },
-        {
-            "question": "What is the primary source of energy for Earth?",
-            "options": ["Moon", "Sun", "Wind", "Ocean"],
-            "answer": 1,
-            "hint": "It rises every morning."
-        },
-        {
-            "question": "Which country has the most deserts?",
-            "options": ["Australia", "Egypt", "Chile", "China"],
+            "question": "What is the purpose of a variable in programming?",
+            "options": ["To store data", "To perform calculations", "To display output", "To create functions"],
             "answer": 0,
-            "hint": "It’s a continent with a vast outback."
+            "hint": "Variables hold values that can change during program execution."
         },
         {
-            "question": "What is the national flower of Japan?",
-            "options": ["Rose", "Cherry Blossom", "Lotus", "Sunflower"],
-            "answer": 1,
-            "hint": "It blooms in spring and is celebrated with festivals."
+            "question": "Which of the following is a programming language?",
+            "options": ["HTML", "CSS", "PYTHON", "JSON"],
+            "answer": 2,
+            "hint": "It's named after a comedy group and is known for its readability."
         },
         {
-            "question": "Which element is represented by ‘Fe’?",
-            "options": ["Iron", "Fluorine", "Francium", "Fermium"],
+            "question": "What does 'IDE' stand for in programming?",
+            "options": ["Integrated Development Environment", "Intelligent Design Engine", "Interactive Data Entry", "Internal Development Element"],
             "answer": 0,
-            "hint": "It’s a common metal used in construction."
+            "hint": "It's a software application that provides comprehensive facilities for programming."
         },
         {
-            "question": "What is the capital of Brazil?",
-            "options": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+            "question": "Which data type would be most appropriate for storing a person's age?",
+            "options": ["String", "Float", "Integer", "Boolean"],
             "answer": 2,
-            "hint": "It was designed by Oscar Niemeyer."
+            "hint": "Ages are typically whole numbers."
         },
         {
-            "question": "Which sport is associated with Wimbledon?",
-            "options": ["Cricket", "Tennis", "Golf", "Rugby"],
+            "question": "What is the purpose of comments in code?",
+            "options": ["To make the code run faster", "To provide explanations for humans", "To create executable commands", "To hide code from the compiler"],
             "answer": 1,
-            "hint": "It’s played on grass courts."
+            "hint": "They help developers understand the code but are ignored by the compiler."
         },
         {
-            "question": "What is the largest mammal in the world?",
-            "options": ["Elephant", "Blue Whale", "Giraffe", "Rhinoceros"],
+            "question": "What is a loop in programming?",
+            "options": ["A way to store data", "A structure to repeat code", "A function to print output", "A method to define classes"],
             "answer": 1,
-            "hint": "It lives in the ocean."
+            "hint": "It allows code to be executed multiple times."
         },
         {
-            "question": "Which country is famous for the Eiffel Tower?",
-            "options": ["Italy", "France", "Spain", "Germany"],
+            "question": "Which symbol is used for assignment in most programming languages?",
+            "options": ["==", "=", ":", "->"],
             "answer": 1,
-            "hint": "It’s a major European nation."
+            "hint": "It assigns a value to a variable."
         },
         {
-            "question": "What is the currency of the United Kingdom?",
-            "options": ["Euro", "Dollar", "Pound", "Franc"],
+            "question": "What does a Boolean data type represent?",
+            "options": ["Whole numbers", "Decimal numbers", "True or False values", "Text data"],
             "answer": 2,
-            "hint": "It’s abbreviated with a £ symbol."
+            "hint": "It deals with binary logic."
         },
         {
-            "question": "Which fruit is known as the ‘king of fruits’?",
-            "options": ["Mango", "Durian", "Pineapple", "Banana"],
+            "question": "What is the purpose of a conditional statement?",
+            "options": ["To repeat code", "To make decisions in code", "To store multiple values", "To define a function"],
             "answer": 1,
-            "hint": "It’s infamous for its strong smell."
+            "hint": "It executes code based on whether a condition is true."
         },
         {
-            "question": "What is the capital of Australia?",
-            "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
+            "question": "Which of these is a valid variable name in most programming languages?",
+            "options": ["2variable", "variable_name", "variable-name", "variable name"],
+            "answer": 1,
+            "hint": "It must start with a letter and can include underscores."
+        },
+        {
+            "question": "What is the purpose of a function in programming?",
+            "options": ["To store data", "To perform a specific task", "To compile code", "To manage memory"],
+            "answer": 1,
+            "hint": "It encapsulates reusable code."
+        },
+        {
+            "question": "What does 'debugging' mean in programming?",
+            "options": ["Writing code", "Testing code", "Fixing errors in code", "Running code"],
             "answer": 2,
-            "hint": "It’s a planned city, not the largest in its country."
+            "hint": "It involves finding and resolving issues in the program."
+        },
+        {
+            "question": "Which of these is a common programming paradigm?",
+            "options": ["Procedural", "Graphical", "Textual", "Visual"],
+            "answer": 0,
+            "hint": "It focuses on step-by-step instructions."
+        },
+        {
+            "question": "What is a string in programming?",
+            "options": ["A sequence of characters", "A type of number", "A logical condition", "A loop structure"],
+            "answer": 0,
+            "hint": "It’s used to represent text."
+        },
+        {
+            "question": "What is the purpose of an array?",
+            "options": ["To store a single value", "To store multiple values", "To execute code", "To define a function"],
+            "answer": 1,
+            "hint": "It holds a collection of items of the same type."
+        },
+        {
+            "question": "Which operator is used for equality comparison?",
+            "options": ["=", "==", "+", "/"],
+            "answer": 1,
+            "hint": "It checks if two values are the same."
+        },
+        {
+            "question": "What is a syntax error?",
+            "options": ["A logical mistake", "A violation of language rules", "A runtime crash", "A missing variable"],
+            "answer": 1,
+            "hint": "It occurs when code is written incorrectly."
+        },
+        {
+            "question": "Which of these is a compiled programming language?",
+            "options": ["Python", "JavaScript", "C++", "Ruby"],
+            "answer": 2,
+            "hint": "It’s translated into machine code before execution."
+        },
+        {
+            "question": "What does ‘scope’ refer to in programming?",
+            "options": ["A variable’s visibility", "A function’s output", "A program’s speed", "A data type"],
+            "answer": 0,
+            "hint": "It determines where a variable can be accessed."
+        },
+        {
+            "question": "What is the purpose of a print statement?",
+            "options": ["To store data", "To display output", "To define a loop", "To create a class"],
+            "answer": 1,
+            "hint": "It shows information to the user."
         }
     ],
-    "science": [
+    "UNIV 1001": [
         {
-            "question": "What is the chemical symbol for water?",
-            "options": ["H2O", "CO2", "NaCl", "O2"],
+            "question": "What is the primary goal of time management in online education?",
+            "options": ["To complete assignments faster", "To balance study with other responsibilities", "To spend more time on social media", "To avoid studying altogether"],
+            "answer": 1,
+            "hint": "Effective time management helps maintain a healthy work-life balance."
+        },
+        {
+            "question": "Which of these is an effective online learning strategy?",
+            "options": ["Multitasking during lectures", "Regular participation in discussions", "Cramming before exams", "Avoiding interaction with peers"],
+            "answer": 1,
+            "hint": "Active engagement improves learning outcomes."
+        },
+        {
+            "question": "What is netiquette?",
+            "options": ["Internet speed measurement", "Online shopping etiquette", "Proper behavior online", "Network security protocol"],
+            "answer": 2,
+            "hint": "It combines 'network' and 'etiquette'."
+        },
+        {
+            "question": "Which tool is most important for online collaboration?",
+            "options": ["Video games", "Social media", "Communication platforms", "Offline documents"],
+            "answer": 2,
+            "hint": "Tools like forums and video conferencing facilitate collaboration."
+        },
+        {
+            "question": "What is the benefit of setting specific goals in online learning?",
+            "options": ["It makes courses easier", "It provides direction and motivation", "It reduces tuition costs", "It guarantees high grades"],
+            "answer": 1,
+            "hint": "Clear goals help maintain focus and measure progress."
+        },
+        {
+            "question": "What is a learning management system (LMS)?",
+            "options": ["A tool for gaming", "A platform for course materials", "A social media app", "A type of browser"],
+            "answer": 1,
+            "hint": "It organizes course content and assignments."
+        },
+        {
+            "question": "Why is it important to back up work in online learning?",
+            "options": ["To share files", "To prevent data loss", "To increase storage", "To improve grades"],
+            "answer": 1,
+            "hint": "It protects against technical issues."
+        },
+        {
+            "question": "What is a benefit of asynchronous learning?",
+            "options": ["Live interaction", "Flexible scheduling", "Faster completion", "Less coursework"],
+            "answer": 1,
+            "hint": "It allows students to learn at their own pace."
+        },
+        {
+            "question": "What does procrastination mean in the context of studying?",
+            "options": ["Planning ahead", "Delaying tasks", "Completing tasks early", "Collaborating with peers"],
+            "answer": 1,
+            "hint": "It involves putting off important work."
+        },
+        {
+            "question": "What is a key feature of a study schedule?",
+            "options": ["Random task assignment", "Fixed time slots for tasks", "Ignoring deadlines", "Frequent breaks only"],
+            "answer": 1,
+            "hint": "It organizes tasks by time."
+        },
+        {
+            "question": "Why is active listening important in online classes?",
+            "options": ["To improve internet speed", "To understand content better", "To multitask effectively", "To reduce study time"],
+            "answer": 1,
+            "hint": "It enhances comprehension of lectures."
+        },
+        {
+            "question": "What is a digital portfolio used for in online learning?",
+            "options": ["Social networking", "Showcasing work", "File compression", "Gaming achievements"],
+            "answer": 1,
+            "hint": "It displays a student’s projects and progress."
+        },
+        {
+            "question": "What is the purpose of a syllabus in online courses?",
+            "options": ["To grade assignments", "To outline course expectations", "To provide internet access", "To list social events"],
+            "answer": 1,
+            "hint": "It serves as a course roadmap."
+        },
+        {
+            "question": "Why is regular communication with instructors important?",
+            "options": ["To avoid assignments", "To clarify doubts", "To increase course difficulty", "To change deadlines"],
+            "answer": 1,
+            "hint": "It helps resolve questions about material."
+        },
+        {
+            "question": "What is a benefit of forming study groups online?",
+            "options": ["Fewer assignments", "Shared knowledge", "Higher tuition", "Less studying"],
+            "answer": 1,
+            "hint": "It fosters collaboration and learning."
+        },
+        {
+            "question": "What does academic integrity mean?",
+            "options": ["Cheating on exams", "Honest academic work", "Skipping classes", "Using uncredited sources"],
+            "answer": 1,
+            "hint": "It involves ethical behavior in studies."
+        },
+        {
+            "question": "What is the purpose of discussion forums in online learning?",
+            "options": ["To play games", "To share ideas", "To store files", "To schedule classes"],
+            "answer": 1,
+            "hint": "They promote interaction among students."
+        },
+        {
+            "question": "Why is it important to cite sources in assignments?",
+            "options": ["To avoid plagiarism", "To increase word count", "To simplify writing", "To reduce research"],
             "answer": 0,
-            "hint": "It contains two hydrogen atoms and one oxygen atom."
+            "hint": "It gives credit to original authors."
         },
         {
-            "question": "What is the hardest natural substance on Earth?",
-            "options": ["Gold", "Iron", "Diamond", "Quartz"],
-            "answer": 2,
-            "hint": "It’s a form of carbon."
-        },
-        {
-            "question": "Which gas is most abundant in the Earth's atmosphere?",
-            "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
-            "answer": 2,
-            "hint": "It makes up about 78% of the air we breathe."
-        },
-        {
-            "question": "What is the atomic number of oxygen?",
-            "options": ["6", "8", "16", "32"],
+            "question": "What is a webinar in online education?",
+            "options": ["A video game", "A live online seminar", "A type of software", "A social media platform"],
             "answer": 1,
-            "hint": "It’s an even number between 6 and 10."
+            "hint": "It’s an interactive online presentation."
         },
         {
-            "question": "Which planet is closest to the Sun?",
-            "options": ["Venus", "Earth", "Mars", "Mercury"],
-            "answer": 3,
-            "hint": "It’s the smallest planet in our solar system."
-        },
-        {
-            "question": "What is the study of living organisms called?",
-            "options": ["Geology", "Biology", "Chemistry", "Physics"],
+            "question": "What is a key strategy for managing stress in online learning?",
+            "options": ["Ignoring deadlines", "Taking regular breaks", "Skipping classes", "Multitasking constantly"],
             "answer": 1,
-            "hint": "It explores life at all levels."
+            "hint": "It helps maintain mental health."
         },
         {
-            "question": "Which element is liquid at room temperature?",
-            "options": ["Mercury", "Bromine", "Both", "Neither"],
-            "answer": 2,
-            "hint": "There are two elements that fit this description."
-        },
-        {
-            "question": "What is the speed of light?",
-            "options": ["300,000 km/s", "150,000 km/s", "450,000 km/s", "600,000 km/s"],
-            "answer": 0,
-            "hint": "It’s approximately 186,000 miles per second."
-        },
-        {
-            "question": "What is the main component of the Sun?",
-            "options": ["Liquid lava", "Hydrogen gas", "Oxygen gas", "Rock"],
+            "question": "What is the benefit of using a calendar for online learning?",
+            "options": ["To play games", "To track deadlines", "To store files", "To increase grades"],
             "answer": 1,
-            "hint": "It’s the lightest element."
+            "hint": "It helps organize tasks and due dates."
         },
         {
-            "question": "How many bones are in the human body?",
-            "options": ["106", "206", "306", "406"],
+            "question": "What is the purpose of setting up a dedicated study space?",
+            "options": ["To increase distractions", "To improve focus", "To store textbooks", "To reduce assignments"],
             "answer": 1,
-            "hint": "Babies have more bones that fuse together."
-        },
-        {
-            "question": "What is the powerhouse of the cell?",
-            "options": ["Nucleus", "Mitochondria", "Ribosome", "Golgi Apparatus"],
-            "answer": 1,
-            "hint": "It produces energy for the cell."
-        },
-        {
-            "question": "Which force keeps planets in orbit?",
-            "options": ["Magnetism", "Friction", "Gravity", "Electromagnetism"],
-            "answer": 2,
-            "hint": "It’s what makes things fall to the ground."
-        },
-        {
-            "question": "What is the primary gas in a star?",
-            "options": ["Helium", "Hydrogen", "Oxygen", "Carbon"],
-            "answer": 1,
-            "hint": "It’s the most abundant element in the universe."
-        },
-        {
-            "question": "What is the freezing point of water in Celsius?",
-            "options": ["0", "100", "-40", "32"],
-            "answer": 0,
-            "hint": "It’s the same as the melting point of ice."
-        },
-        {
-            "question": "Which organ pumps blood in the human body?",
-            "options": ["Liver", "Heart", "Lung", "Kidney"],
-            "answer": 1,
-            "hint": "It beats rhythmically."
-        },
-        {
-            "question": "What is the chemical symbol for sodium?",
-            "options": ["Na", "So", "Sd", "Sn"],
-            "answer": 0,
-            "hint": "It’s derived from the Latin word 'natrium'."
-        },
-        {
-            "question": "Which planet has the most moons?",
-            "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
-            "answer": 1,
-            "hint": "It’s famous for its rings."
-        },
-        {
-            "question": "What is the process by which plants make food?",
-            "options": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
-            "answer": 1,
-            "hint": "It requires sunlight and chlorophyll."
-        },
-        {
-            "question": "What is the unit of electrical resistance?",
-            "options": ["Volt", "Ampere", "Ohm", "Watt"],
-            "answer": 2,
-            "hint": "It’s named after a German physicist."
-        },
-        {
-            "question": "Which scientist proposed the theory of relativity?",
-            "options": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Niels Bohr"],
-            "answer": 1,
-            "hint": "He’s associated with E=mc²."
-        },
-        {
-            "question": "What is the boiling point of water in Celsius?",
-            "options": ["0", "50", "100", "200"],
-            "answer": 2,
-            "hint": "It’s at standard atmospheric pressure."
-        },
-        {
-            "question": "Which gas is used in balloons to make them float?",
-            "options": ["Oxygen", "Nitrogen", "Helium", "Carbon dioxide"],
-            "answer": 2,
-            "hint": "It’s lighter than air."
-        },
-        {
-            "question": "What is the smallest unit of life?",
-            "options": ["Atom", "Cell", "Molecule", "Organ"],
-            "answer": 1,
-            "hint": "It’s the basic building block of all organisms."
-        },
-        {
-            "question": "Which type of energy is stored in a battery?",
-            "options": ["Kinetic", "Thermal", "Chemical", "Nuclear"],
-            "answer": 2,
-            "hint": "It’s released through chemical reactions."
-        },
-        {
-            "question": "What is the Earth’s primary source of light?",
-            "options": ["Moon", "Sun", "Stars", "Lightning"],
-            "answer": 1,
-            "hint": "It’s at the center of our solar system."
-        },
-        {
-            "question": "Which scientist discovered penicillin?",
-            "options": ["Louis Pasteur", "Alexander Fleming", "Marie Curie", "Robert Koch"],
-            "answer": 1,
-            "hint": "It was a major medical breakthrough in the 1920s."
-        },
-        {
-            "question": "What is the chemical formula for table salt?",
-            "options": ["HCl", "NaCl", "KCl", "CaCl2"],
-            "answer": 1,
-            "hint": "It’s made of sodium and chlorine."
-        },
-        {
-            "question": "Which part of the eye detects light?",
-            "options": ["Cornea", "Iris", "Retina", "Lens"],
-            "answer": 2,
-            "hint": "It’s at the back of the eye."
-        },
-        {
-            "question": "What is the name of our galaxy?",
-            "options": ["Andromeda", "Milky Way", "Triangulum", "Sombrero"],
-            "answer": 1,
-            "hint": "It’s named after a type of candy bar."
-        },
-        {
-            "question": "Which type of rock is formed from cooled lava?",
-            "options": ["Sedimentary", "Metamorphic", "Igneous", "Fossiliferous"],
-            "answer": 2,
-            "hint": "It’s associated with volcanic activity."
+            "hint": "It minimizes interruptions during study."
         }
     ],
-    "history": [
+    "SOC 1502": [
         {
-            "question": "In which year did World War II end?",
-            "options": ["1943", "1945", "1947", "1950"],
+            "question": "What is sociology primarily concerned with?",
+            "options": ["Individual psychology", "Social structures and institutions", "Biological evolution", "Economic systems only"],
             "answer": 1,
-            "hint": "It ended after the surrender of Japan."
+            "hint": "It studies how societies are organized and how they function."
         },
         {
-            "question": "Who was the first president of the United States?",
-            "options": ["Thomas Jefferson", "John Adams", "George Washington", "Abraham Lincoln"],
+            "question": "Who is considered the father of sociology?",
+            "options": ["Karl Marx", "Max Weber", "Auguste Comte", "Emile Durkheim"],
             "answer": 2,
-            "hint": "His face is on the one-dollar bill."
+            "hint": "He coined the term 'sociology' in the 19th century."
         },
         {
-            "question": "Which ancient civilization built the pyramids?",
-            "options": ["Greeks", "Romans", "Egyptians", "Mayans"],
+            "question": "What is socialization?",
+            "options": ["The process of making friends", "Learning societal norms and values", "Using social media", "Political campaigning"],
+            "answer": 1,
+            "hint": "It's how individuals learn to participate in society."
+        },
+        {
+            "question": "Which term describes a group's shared practices, values, and beliefs?",
+            "options": ["Economy", "Culture", "Government", "Religion"],
+            "answer": 1,
+            "hint": "It includes language, customs, and traditions."
+        },
+        {
+            "question": "What is a social institution?",
+            "options": ["A building where people meet", "A stable structure that meets societal needs", "A social media platform", "A government agency"],
+            "answer": 1,
+            "hint": "Examples include family, education, and religion."
+        },
+        {
+            "question": "What is the focus of functionalism in sociology?",
+            "options": ["Conflict between groups", "How society maintains stability", "Individual behavior", "Economic inequality"],
+            "answer": 1,
+            "hint": "It views society as a system of interconnected parts."
+        },
+        {
+            "question": "What does conflict theory emphasize?",
+            "options": ["Social harmony", "Power struggles", "Cultural norms", "Individual psychology"],
+            "answer": 1,
+            "hint": "It focuses on competition for resources."
+        },
+        {
+            "question": "What is a norm in sociology?",
+            "options": ["A statistical average", "A rule for behavior", "A type of institution", "A personal belief"],
+            "answer": 1,
+            "hint": "It guides acceptable behavior in society."
+        },
+        {
+            "question": "What is a role in sociology?",
+            "options": ["A job title", "Expected behavior for a position", "A cultural artifact", "A legal rule"],
+            "answer": 1,
+            "hint": "It’s tied to a person’s status in society."
+        },
+        {
+            "question": "What does the term 'deviance' refer to?",
+            "options": ["Following norms", "Violating societal norms", "Creating laws", "Studying society"],
+            "answer": 1,
+            "hint": "It involves behavior outside accepted standards."
+        },
+        {
+            "question": "What is the purpose of a case study in sociology?",
+            "options": ["To generalize all behavior", "To study a specific group or case", "To create laws", "To predict economic trends"],
+            "answer": 1,
+            "hint": "It provides in-depth analysis of a single subject."
+        },
+        {
+            "question": "What is a subculture?",
+            "options": ["A dominant culture", "A smaller group with distinct values", "A political movement", "A type of institution"],
+            "answer": 1,
+            "hint": "It exists within a larger culture."
+        },
+        {
+            "question": "Who developed the concept of the 'iron cage'?",
+            "options": ["Karl Marx", "Max Weber", "Emile Durkheim", "Auguste Comte"],
+            "answer": 1,
+            "hint": "It describes the effects of bureaucracy."
+        },
+        {
+            "question": "What by social stratification?",
+            "options": ["Equal distribution of resources", "Division of society into layers", "Cultural integration", "Political unity"],
+            "answer": 1,
+            "hint": "It involves ranking groups by wealth or power."
+        },
+        {
+            "question": "What is ethnocentrism?",
+            "options": ["Cultural appreciation", "Judging other cultures by one’s own", "Social equality", "Economic analysis"],
+            "answer": 1,
+            "hint": "It involves viewing one’s culture as superior."
+        },
+        {
+            "question": "What is the role of family as a social institution?",
+            "options": ["Economic production", "Socializing individuals", "Political governance", "Technological innovation"],
+            "answer": 1,
+            "hint": "It teaches norms and values to members."
+        },
+        {
+            "question": "What does the term 'globalization' refer to in sociology?",
+            "options": ["Local traditions", "Worldwide interconnectedness", "Individual isolation", "Economic decline"],
+            "answer": 1,
+            "hint": "It involves cultural and economic exchange."
+        },
+        {
+            "question": "What is a survey in sociological research?",
+            "options": ["A type of experiment", "A method to collect data from many people", "A case study", "A government policy"],
+            "answer": 1,
+            "hint": "It gathers opinions or behaviors."
+        },
+        {
+            "question": "What is meant by social change?",
+            "options": ["Static traditions", "Alterations in societal structures", "Personal growth", "Economic stability"],
+            "answer": 1,
+            "hint": "It involves shifts in norms or institutions."
+        },
+        {
+            "question": "What is a reference group?",
+            "options": ["A group for comparison", "A family unit", "A political party", "A workplace team"],
+            "answer": 0,
+            "hint": "It influences an individual’s behavior or attitudes."
+        },
+        {
+            "question": "What is meant by social mobility?",
+            "options": ["Physical movement", "Movement between social classes", "Cultural diffusion", "Political change"],
+            "answer": 1,
+            "hint": "It involves changing social status."
+        }
+    ],
+    "CS 1102": [
+        {
+            "question": "What is object-oriented programming?",
+            "options": ["A programming paradigm based on objects", "A method for writing faster code", "A type of hardware architecture", "A database management system"],
+            "answer": 0,
+            "hint": "It organizes software design around data, or objects, rather than functions and logic."
+        },
+        {
+            "question": "Which concept allows a class to inherit properties from another class?",
+            "options": ["Polymorphism", "Encapsulation", "Inheritance", "Abstraction"],
             "answer": 2,
-            "hint": "They were located along the Nile River."
+            "hint": "This is a fundamental principle of OOP that promotes code reuse."
         },
         {
-            "question": "When was the Declaration of Independence signed?",
-            "options": ["1774", "1776", "1781", "1787"],
-            "answer": 1,
-            "hint": "It happened during the American Revolution."
-        },
-        {
-            "question": "Which empire was ruled by Julius Caesar?",
-            "options": ["Greek", "Roman", "Persian", "Ottoman"],
-            "answer": 1,
-            "hint": "It was centered around the Mediterranean."
-        },
-        {
-            "question": "Who invented the telephone?",
-            "options": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Guglielmo Marconi"],
-            "answer": 1,
-            "hint": "He was a Scottish-born scientist."
-        },
-        {
-            "question": "Which year did the Titanic sink?",
-            "options": ["1905", "1912", "1918", "1923"],
-            "answer": 1,
-            "hint": "It happened in April of that year."
-        },
-        {
-            "question": "Who was the first woman to fly solo across the Atlantic?",
-            "options": ["Amelia Earhart", "Bessie Coleman", "Harriet Quimby", "Jacqueline Cochran"],
+            "question": "What is encapsulation in OOP?",
+            "options": ["Hiding implementation details", "Creating multiple instances", "Inheriting properties", "Overloading methods"],
             "answer": 0,
-            "hint": "She disappeared during a later flight."
+            "hint": "It bundles data and methods that operate on that data."
         },
         {
-            "question": "Which ancient wonder was located in Babylon?",
-            "options": ["Great Pyramid", "Hanging Gardens", "Colossus of Rhodes", "Lighthouse of Alexandria"],
+            "question": "Which keyword is typically used to create an object instance?",
+            "options": ["class", "new", "object", "create"],
             "answer": 1,
-            "hint": "They were supposedly built for a homesick queen."
+            "hint": "It allocates memory for a new object."
         },
         {
-            "question": "When did the Berlin Wall fall?",
-            "options": ["1985", "1989", "1991", "1993"],
+            "question": "What is polymorphism?",
+            "options": ["Multiple forms of the same function", "Data hiding", "Class inheritance", "Memory management"],
+            "answer": 0,
+            "hint": "It allows methods to do different things based on the object."
+        },
+        {
+            "question": "What is a class in OOP?",
+            "options": ["A loop structure", "A blueprint for objects", "A data type", "A function"],
             "answer": 1,
-            "hint": "It marked the end of the Cold War era."
+            "hint": "It defines properties and behaviors."
         },
         {
-            "question": "Who led the Indian independence movement?",
-            "options": ["Jawaharlal Nehru", "Mahatma Gandhi", "Subhas Chandra Bose", "Sardar Patel"],
+            "question": "What is an object in OOP?",
+            "options": ["A variable", "An instance of a class", "A loop", "A method"],
             "answer": 1,
-            "hint": "He was known for nonviolent resistance."
+            "hint": "It’s created from a class template."
         },
         {
-            "question": "Which war was fought between 1861 and 1865?",
-            "options": ["World War I", "American Civil War", "Spanish-American War", "Mexican-American War"],
+            "question": "What does the term 'abstraction' mean in OOP?",
+            "options": ["Showing all details", "Hiding complexity", "Inheriting methods", "Creating objects"],
             "answer": 1,
-            "hint": "It was fought over issues including slavery."
+            "hint": "It simplifies complex systems."
         },
         {
-            "question": "Who was the queen of ancient Egypt known for her beauty?",
-            "options": ["Nefertiti", "Cleopatra", "Hatshepsut", "Ankhesenamun"],
+            "question": "What is a constructor in OOP?",
+            "options": ["A method to destroy objects", "A method to initialize objects", "A type of variable", "A loop structure"],
             "answer": 1,
-            "hint": "She was associated with Mark Antony."
+            "hint": "It’s called when an object is created."
         },
         {
-            "question": "Which explorer circumnavigated the globe first?",
-            "options": ["Christopher Columbus", "Vasco da Gama", "Ferdinand Magellan", "Marco Polo"],
+            "question": "What is method overloading?",
+            "options": ["Defining multiple methods with the same name", "Hiding methods", "Inheriting methods", "Increasing method visibility"],
+            "answer": 0,
+            "hint": "It involves different parameter lists."
+        },
+        {
+            "question": "What is a superclass in OOP?",
+            "options": ["A class with no methods", "A parent class", "A final class", "A child class"],
+            "answer": 1,
+            "hint": "It’s inherited by another class."
+        },
+        {
+            "question": "What is a subclass in OOP?",
+            "options": ["A class that inherits from another", "A class with no parent", "A private class", "A static class"],
+            "answer": 0,
+            "hint": "It extends a superclass."
+        },
+        {
+            "question": "What does the 'this' keyword refer to?",
+            "options": ["The current class", "The current object", "A parent class", "A static method"],
+            "answer": 1,
+            "hint": "It points to the current instance."
+        },
+        {
+            "question": "What is method overriding in OOP?",
+            "options": ["Redefining a method in a subclass", "Creating a new method", "Hiding a method", "Calling a method"],
+            "answer": 0,
+            "hint": "It customizes inherited behavior."
+        },
+        {
+            "question": "What is a static method?",
+            "options": ["A method tied to an instance", "A method tied to a class", "A method that loops", "A method that returns void"],
+            "answer": 1,
+            "hint": "It doesn’t require an object."
+        },
+        {
+            "question": "What is an interface in OOP?",
+            "options": ["A concrete class", "A contract for classes", "A type of loop", "A database structure"],
+            "answer": 1,
+            "hint": "It defines methods without implementation."
+        },
+        {
+            "question": "What is the purpose of access modifiers?",
+            "options": ["To control visibility", "To increase speed", "To define loops", "To store data"],
+            "answer": 0,
+            "hint": "Examples include public and private."
+        },
+        {
+            "question": "What is a package in programming?",
+            "options": ["A type of variable", "A collection of classes", "A loop structure", "A data type"],
+            "answer": 1,
+            "hint": "It organizes related code."
+        },
+        {
+            "question": "What does the 'final' keyword do in OOP?",
+            "options": ["Allows changes", "Prevents modification", "Creates objects", "Defines loops"],
+            "answer": 1,
+            "hint": "It makes a variable or method unchangeable."
+        },
+        {
+            "question": "What is a getter method?",
+            "options": ["A method to set values", "A method to retrieve values", "A method to delete values", "A method to loop"],
+            "answer": 1,
+            "hint": "It accesses private fields."
+        }
+    ],
+    "MATH 1280": [
+        {
+            "question": "What is the mean of the numbers 5, 7, 9, 11?",
+            "options": ["7", "8", "9", "10"],
+            "answer": 1,
+            "hint": "Add all numbers and divide by the count."
+        },
+        {
+            "question": "In statistics, what does 'standard deviation' measure?",
+            "options": ["Central tendency", "Data dispersion", "Correlation", "Probability"],
+            "answer": 1,
+            "hint": "It indicates how spread out the data points are from the mean."
+        },
+        {
+            "question": "What is the median of 3, 5, 7, 9, 11?",
+            "options": ["5", "7", "9", "6"],
+            "answer": 1,
+            "hint": "It's the middle value when numbers are arranged in order."
+        },
+        {
+            "question": "Which probability distribution is bell-shaped?",
+            "options": ["Uniform", "Normal", "Binomial", "Exponential"],
+            "answer": 1,
+            "hint": "It's symmetric around the mean."
+        },
+        {
+            "question": "What does a correlation coefficient of -1 indicate?",
+            "options": ["No relationship", "Perfect positive relationship", "Perfect negative relationship", "Weak relationship"],
             "answer": 2,
-            "hint": "His journey was completed in the 16th century."
+            "hint": "When one variable increases, the other decreases consistently."
         },
         {
-            "question": "Which event started World War I?",
-            "options": ["Sinking of the Lusitania", "Assassination of Archduke Franz Ferdinand", "Invasion of Poland", "Bombing of Pearl Harbor"],
-            "answer": 1,
-            "hint": "It happened in Sarajevo."
-        },
-        {
-            "question": "Who was the leader of Nazi Germany during World War II?",
-            "options": ["Benito Mussolini", "Adolf Hitler", "Joseph Stalin", "Winston Churchill"],
-            "answer": 1,
-            "hint": "He wrote 'Mein Kampf'."
-        },
-        {
-            "question": "Which ancient city was destroyed by a volcanic eruption in 79 AD?",
-            "options": ["Athens", "Pompeii", "Troy", "Carthage"],
-            "answer": 1,
-            "hint": "It was near Mount Vesuvius."
-        },
-        {
-            "question": "Who was the first man to walk on the moon?",
-            "options": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "John Glenn"],
-            "answer": 1,
-            "hint": "He said, 'One small step for man.'"
-        },
-        {
-            "question": "Which document ended World War I?",
-            "options": ["Treaty of Versailles", "Treaty of Paris", "Treaty of Tordesillas", "Treaty of Ghent"],
-            "answer": 0,
-            "hint": "It was signed in a French palace."
-        },
-        {
-            "question": "Which Chinese dynasty built the Great Wall?",
-            "options": ["Han", "Tang", "Ming", "Qing"],
+            "question": "What is the mode of a dataset?",
+            "options": ["The average value", "The middle value", "The most frequent value", "The largest value"],
             "answer": 2,
-            "hint": "It ruled during the 14th to 17th centuries."
+            "hint": "It’s the value that appears most often."
         },
         {
-            "question": "Who was the British Prime Minister during most of World War II?",
-            "options": ["Neville Chamberlain", "Winston Churchill", "Clement Attlee", "Anthony Eden"],
+            "question": "What is a sample in statistics?",
+            "options": ["The entire population", "A subset of the population", "A type of graph", "A probability model"],
             "answer": 1,
-            "hint": "He was known for his inspiring speeches."
+            "hint": "It’s used to make inferences about a larger group."
         },
         {
-            "question": "Which battle was a turning point in the American Civil War?",
-            "options": ["Battle of Antietam", "Battle of Gettysburg", "Battle of Shiloh", "Battle of Vicksburg"],
+            "question": "What does a p-value represent?",
+            "options": ["Probability of a correct result", "Probability of observing data assuming the null hypothesis", "Sample size", "Correlation strength"],
             "answer": 1,
-            "hint": "It was fought in Pennsylvania."
+            "hint": "It’s used in hypothesis testing."
         },
         {
-            "question": "Which civilization developed cuneiform writing?",
-            "options": ["Egyptians", "Sumerians", "Greeks", "Romans"],
+            "question": "What is the range of a dataset?",
+            "options": ["The average", "The difference between max and min", "The middle value", "The most frequent value"],
             "answer": 1,
-            "hint": "They lived in Mesopotamia."
+            "hint": "It measures the spread of data."
         },
         {
-            "question": "When did Christopher Columbus first reach the Americas?",
-            "options": ["1492", "1519", "1453", "1607"],
+            "question": "What is a histogram used for?",
+            "options": ["To show relationships", "To display frequency distributions", "To calculate means", "To predict outcomes"],
+            "answer": 1,
+            "hint": "It uses bars to represent data frequency."
+        },
+        {
+            "question": "What does a confidence interval indicate?",
+            "options": ["Exact population parameter", "Range of plausible values", "Sample size", "Correlation coefficient"],
+            "answer": 1,
+            "hint": "It estimates where the true value lies."
+        },
+        {
+            "question": "What is a binomial distribution?",
+            "options": ["Continuous probability", "Discrete probability with two outcomes", "Bell-shaped curve", "Uniform probability"],
+            "answer": 1,
+            "hint": "It models success/failure experiments."
+        },
+        {
+            "question": "What is the variance of a dataset?",
+            "options": ["The average", "The spread of data squared", "The middle value", "The frequency"],
+            "answer": 1,
+            "hint": "It’s the square of the standard deviation."
+        },
+        {
+            "question": "What is a null hypothesis?",
+            "options": ["A proven fact", "A statement of no effect", "A positive correlation", "A sample statistic"],
+            "answer": 1,
+            "hint": "It assumes no significant difference."
+        },
+        {
+            "question": "What does a scatter plot show?",
+            "options": ["Frequency of data", "Relationship between two variables", "Average values", "Data ranges"],
+            "answer": 1,
+            "hint": "It plots points to show correlations."
+        },
+        {
+            "question": "What is a z-score?",
+            "options": ["A measure of central tendency", "A standardized score", "A probability value", "A sample size"],
+            "answer": 1,
+            "hint": "It shows how far a value is from the mean."
+        },
+        {
+            "question": "What is a continuous variable?",
+            "options": ["A variable with distinct values", "A variable with infinite values", "A categorical variable", "A fixed value"],
+            "answer": 1,
+            "hint": "It can take any value within a range."
+        },
+        {
+            "question": "What is the purpose of a t-test?",
+            "options": ["To compare means", "To calculate variance", "To plot data", "To find correlations"],
             "answer": 0,
-            "hint": "It was before the 16th century."
+            "hint": "It compares two groups’ averages."
         },
         {
-            "question": "Which war involved the 'Charge of the Light Brigade'?",
-            "options": ["Napoleonic Wars", "Crimean War", "Boer War", "World War I"],
+            "question": "What is a probability density function?",
+            "options": ["A measure of spread", "A function for continuous distributions", "A type of histogram", "A sample statistic"],
             "answer": 1,
-            "hint": "It was fought in the 1850s."
+            "hint": "It describes the likelihood of outcomes."
         },
         {
-            "question": "Who was the first emperor of the Roman Empire?",
-            "options": ["Julius Caesar", "Augustus", "Nero", "Constantine"],
+            "question": "What is a quartile in statistics?",
+            "options": ["A type of mean", "A division of data into four parts", "A correlation measure", "A probability model"],
             "answer": 1,
-            "hint": "He was originally named Octavian."
+            "hint": "It splits data into 25% segments."
+        }
+    ],
+    "CS 4407": [
+        {
+            "question": "What is the main goal of machine learning?",
+            "options": ["To program explicit instructions", "To enable computers to learn from data", "To create faster algorithms", "To design better user interfaces"],
+            "answer": 1,
+            "hint": "It focuses on developing algorithms that can learn and make predictions from data."
         },
         {
-            "question": "Which event marked the start of the French Revolution?",
-            "options": ["Storming of the Bastille", "Execution of Louis XVI", "Reign of Terror", "Napoleon’s coup"],
+            "question": "Which algorithm is commonly used for classification problems?",
+            "options": ["K-means", "Linear regression", "Decision trees", "Apriori"],
+            "answer": 2,
+            "hint": "This algorithm makes decisions based on feature values."
+        },
+        {
+            "question": "What is overfitting in machine learning?",
+            "options": ["Model too simple", "Model too complex", "Too much training data", "Too little training data"],
+            "answer": 1,
+            "hint": "The model learns the training data too well, including noise."
+        },
+        {
+            "question": "Which technique is used to reduce overfitting?",
+            "options": ["Adding more features", "Increasing model complexity", "Regularization", "Using more training data"],
+            "answer": 2,
+            "hint": "It adds a penalty for complexity."
+        },
+        {
+            "question": "What is the purpose of a training set?",
+            "options": ["To test the final model", "To validate the model", "To build the model", "To deploy the model"],
+            "answer": 2,
+            "hint": "It's used to teach the algorithm patterns."
+        },
+        {
+            "question": "What is supervised learning?",
+            "options": ["Learning without data", "Learning with labeled data", "Learning with no labels", "Learning from hardware"],
+            "answer": 1,
+            "hint": "It uses input-output pairs."
+        },
+        {
+            "question": "What is unsupervised learning?",
+            "options": ["Learning with labeled data", "Learning without labels", "Learning with hardware", "Learning with explicit rules"],
+            "answer": 1,
+            "hint": "It finds patterns in data."
+        },
+        {
+            "question": "What is a neural network?",
+            "options": ["A type of database", "A model inspired by the brain", "A sorting algorithm", "A hardware component"],
+            "answer": 1,
+            "hint": "It consists of layers of nodes."
+        },
+        {
+            "question": "What is the purpose of a validation set?",
+            "options": ["To train the model", "To test the final model", "To tune model parameters", "To deploy the model"],
+            "answer": 2,
+            "hint": "It helps optimize the model."
+        },
+        {
+            "question": "What is a feature in machine learning?",
+            "options": ["A model output", "An input variable", "A type of algorithm", "A dataset"],
+            "answer": 1,
+            "hint": "It’s a measurable property of data."
+        },
+        {
+            "question": "What does gradient descent do?",
+            "options": ["Classifies data", "Optimizes model parameters", "Clusters data", "Visualizes data"],
+            "answer": 1,
+            "hint": "It minimizes the loss function."
+        },
+        {
+            "question": "What is a confusion matrix?",
+            "options": ["A clustering tool", "A table for classification performance", "A feature selection method", "A loss function"],
+            "answer": 1,
+            "hint": "It shows true vs. predicted labels."
+        },
+        {
+            "question": "What is the purpose of cross-validation?",
+            "options": ["To increase model complexity", "To evaluate model performance", "To reduce training data", "To deploy models"],
+            "answer": 1,
+            "hint": "It splits data into training and testing sets."
+        },
+        {
+            "question": "What is a decision boundary?",
+            "options": ["A data structure", "A line separating classes", "A type of loss function", "A clustering method"],
+            "answer": 1,
+            "hint": "It divides data into categories."
+        },
+        {
+            "question": "What is a hyperparameter?",
+            "options": ["A model output", "A parameter tuned before training", "A dataset feature", "A loss value"],
+            "answer": 1,
+            "hint": "It’s set before training begins."
+        },
+        {
+            "question": "What is the purpose of feature scaling?",
+            "options": ["To increase data size", "To standardize data ranges", "To remove features", "To classify data"],
+            "answer": 1,
+            "hint": "It ensures features contribute equally."
+        },
+        {
+            "question": "What is a random forest?",
+            "options": ["A single decision tree", "An ensemble of decision trees", "A clustering algorithm", "A regression model"],
+            "answer": 1,
+            "hint": "It combines multiple trees for better accuracy."
+        },
+        {
+            "question": "What is the purpose of a test set?",
+            "options": ["To train the model", "To tune parameters", "To evaluate final performance", "To scale features"],
+            "answer": 2,
+            "hint": "It assesses the model’s generalization."
+        },
+        {
+            "question": "What is a loss function?",
+            "options": ["A measure of model error", "A type of dataset", "A clustering method", "A feature selection tool"],
             "answer": 0,
-            "hint": "It happened in 1789."
+            "hint": "It quantifies prediction errors."
         },
         {
-            "question": "Which country was unified in 1871?",
-            "options": ["Italy", "Germany", "Spain", "Russia"],
+            "question": "What is the purpose of data preprocessing?",
+            "options": ["To deploy models", "To clean and prepare data", "To visualize data", "To reduce model complexity"],
             "answer": 1,
-            "hint": "It was led by Otto von Bismarck."
+            "hint": "It improves data quality for training."
+        }
+    ],
+    "MATH 1201": [
+        {
+            "question": "What is the solution to 2x + 5 = 15?",
+            "options": ["x = 5", "x = 10", "x = 7.5", "x = 20"],
+            "answer": 0,
+            "hint": "Subtract 5 from both sides, then divide by 2."
         },
         {
-            "question": "Who discovered the New World in 1492?",
-            "options": ["Vasco da Gama", "Christopher Columbus", "John Cabot", "Amerigo Vespucci"],
-            "answer": 1,
-            "hint": "He sailed for Spain."
+            "question": "Which is the quadratic formula?",
+            "options": ["x = -b ± √(b²-4ac)/2a", "y = mx + b", "a² + b² = c²", "πr²"],
+            "answer": 0,
+            "hint": "It solves equations of the form ax² + bx + c = 0."
         },
         {
-            "question": "Which ancient structure was built to honor the Greek goddess Athena?",
-            "options": ["Colosseum", "Parthenon", "Pantheon", "Acropolis"],
+            "question": "What is the slope of the line y = 3x + 2?",
+            "options": ["2", "3", "1", "-3"],
             "answer": 1,
-            "hint": "It’s located in Athens."
+            "hint": "It’s the coefficient of x in the equation."
+        },
+        {
+            "question": "What is the solution to 4x - 8 = 12?",
+            "options": ["x = 5", "x = 3", "x = 4", "x = 2"],
+            "answer": 0,
+            "hint": "Add 8 to both sides, then divide by 4."
+        },
+        {
+            "question": "What is a linear equation?",
+            "options": ["An equation of degree 2", "An equation of degree 1", "An equation with no variables", "An equation with exponents"],
+            "answer": 1,
+            "hint": "It represents a straight line."
+        },
+        {
+            "question": "What is the y-intercept of y = 2x + 5?",
+            "options": ["2", "5", "0", "-2"],
+            "answer": 1,
+            "hint": "It’s the value of y when x is 0."
+        },
+        {
+            "question": "What is the solution to x² - 4 = 0?",
+            "options": ["x = ±2", "x = ±4", "x = 0", "x = 2"],
+            "answer": 0,
+            "hint": "Factorize as (x - 2)(x + 2) = 0."
+        },
+        {
+            "question": "What does the discriminant tell us in a quadratic equation?",
+            "options": ["The slope", "The number of solutions", "The y-intercept", "The vertex"],
+            "answer": 1,
+            "hint": "It’s b² - 4ac."
+        },
+        {
+            "question": "What is the solution to 3x = 12?",
+            "options": ["x = 3", "x = 4", "x = 6", "x = 2"],
+            "answer": 1,
+            "hint": "Divide both sides by 3."
+        },
+        {
+            "question": "What is the vertex form of a quadratic equation?",
+            "options": ["y = ax² + bx + c", "y = a(x - h)² + k", "y = mx + b", "y = ax + b"],
+            "answer": 1,
+            "hint": "It highlights the vertex (h, k)."
+        },
+        {
+            "question": "What is the solution to 5x + 10 = 0?",
+            "options": ["x = 2", "x = -2", "x = 0", "x = 5"],
+            "answer": 1,
+            "hint": "Subtract 10, then divide by 5."
+        },
+        {
+            "question": "What is a system of equations?",
+            "options": ["A single equation", "Multiple equations solved together", "A quadratic equation", "A graph"],
+            "answer": 1,
+            "hint": "It finds values satisfying all equations."
+        },
+        {
+            "question": "What is the slope-intercept form of a line?",
+            "options": ["y = mx + b", "ax + by = c", "y = ax² + bx + c", "x = a"],
+            "answer": 0,
+            "hint": "It includes slope and y-intercept."
+        },
+        {
+            "question": "What is the solution to x² - 9 = 0?",
+            "options": ["x = ±3", "x = ±9", "x = 0", "x = 3"],
+            "answer": 0,
+            "hint": "Factorize as (x - 3)(x + 3) = 0."
+        },
+        {
+            "question": "What is the purpose of factoring in algebra?",
+            "options": ["To graph equations", "To simplify expressions", "To add variables", "To find derivatives"],
+            "answer": 1,
+            "hint": "It breaks down equations into simpler parts."
+        },
+        {
+            "question": "What is the solution to 2x - 6 = 0?",
+            "options": ["x = 3", "x = 6", "x = 0", "x = -3"],
+            "answer": 0,
+            "hint": "Add 6, then divide by 2."
+        },
+        {
+            "question": "What is a parabola?",
+            "options": ["A straight line", "A U-shaped curve", "A circle", "A triangle"],
+            "answer": 1,
+            "hint": "It’s the graph of a quadratic equation."
+        },
+        {
+            "question": "What is the solution to x/2 + 3 = 5?",
+            "options": ["x = 4", "x = 2", "x = 6", "x = 1"],
+            "answer": 0,
+            "hint": "Subtract 3, then multiply by 2."
+        },
+        {
+            "question": "What is an inequality?",
+            "options": ["An equation with one solution", "A statement comparing expressions", "A quadratic formula", "A graph type"],
+            "answer": 1,
+            "hint": "It uses symbols like < or >."
+        },
+        {
+            "question": "What is the solution to x² = 16?",
+            "options": ["x = 4", "x = ±4", "x = 8", "x = ±8"],
+            "answer": 1,
+            "hint": "Take the square root of both sides."
+        }
+    ],
+    "ENGL 1102": [
+        {
+            "question": "What is a thesis statement?",
+            "options": ["A question about the topic", "The main argument of an essay", "A summary of sources", "The conclusion paragraph"],
+            "answer": 1,
+            "hint": "It presents the central claim that the essay will support."
+        },
+        {
+            "question": "Which is NOT a type of rhetorical appeal?",
+            "options": ["Logos", "Pathos", "Ethos", "Mythos"],
+            "answer": 3,
+            "hint": "Aristotle identified three main appeals: logic, emotion, and credibility."
+        },
+        {
+            "question": "What is the purpose of a topic sentence?",
+            "options": ["To summarize the essay", "To introduce a paragraph’s main idea", "To cite sources", "To end a paragraph"],
+            "answer": 1,
+            "hint": "It guides the paragraph’s content."
+        },
+        {
+            "question": "What is a rhetorical question?",
+            "options": ["A question requiring an answer", "A question for effect", "A question about sources", "A question in a conclusion"],
+            "answer": 1,
+            "hint": "It’s not meant to be answered."
+        },
+        {
+            "question": "What does logos appeal to?",
+            "options": ["Emotion", "Credibility", "Logic", "Authority"],
+            "answer": 2,
+            "hint": "It uses reasoning and evidence."
+        },
+        {
+            "question": "What is the purpose of a counterargument?",
+            "options": ["To weaken the thesis", "To address opposing views", "To summarize the essay", "To cite sources"],
+            "answer": 1,
+            "hint": "It strengthens the argument by responding to objections."
+        },
+        {
+            "question": "What is pathos in writing?",
+            "options": ["Logical reasoning", "Emotional appeal", "Credibility appeal", "Factual evidence"],
+            "answer": 1,
+            "hint": "It engages the audience’s feelings."
+        },
+        {
+            "question": "What is ethos in writing?",
+            "options": ["Emotional appeal", "Logical reasoning", "Credibility appeal", "Narrative style"],
+            "answer": 2,
+            "hint": "It establishes the writer’s trustworthiness."
+        },
+        {
+            "question": "What is a transition in writing?",
+            "options": ["A concluding sentence", "A link between ideas", "A thesis statement", "A citation"],
+            "answer": 1,
+            "hint": "It improves the flow of the text."
+        },
+        {
+            "question": "What is the purpose of an introduction?",
+            "options": ["To summarize findings", "To present the thesis", "To list sources", "To conclude the essay"],
+            "answer": 1,
+            "hint": "It sets up the essay’s purpose."
+        },
+        {
+            "question": "What is a narrative essay?",
+            "options": ["An essay that argues a point", "An essay that tells a story", "An essay that analyzes data", "An essay that lists facts"],
+            "answer": 1,
+            "hint": "It focuses on personal experiences."
+        },
+        {
+            "question": "What is a primary source?",
+            "options": ["A summarizing research", "An original document", "A secondary analysis", "A textbook"],
+            "answer": 1,
+            "hint": "It’s firsthand evidence."
+        },
+        {
+            "question": "What is a conclusion’s main purpose?",
+            "options": ["To introduce the topic", "To summarize and reinforce the thesis", "To list sources", "To present new arguments"],
+            "answer": 1,
+            "hint": "It wraps up the essay."
+        },
+        {
+            "question": "What is a peer review in writing?",
+            "options": ["A final draft", "Feedback from peers", "A teacher’s grade", "A published article"],
+            "answer": 1,
+            "hint": "It improves the quality of writing."
+        },
+        {
+            "question": "What is the purpose of citing sources?",
+            "options": ["To increase word count", "To give credit and avoid plagiarism", "To summarize the essay", "To replace evidence"],
+            "answer": 1,
+            "hint": "It acknowledges original authors."
+        },
+        {
+            "question": "What is a persuasive essay?",
+            "options": ["An essay that tells a story", "An essay that convinces the reader", "An essay that describes a scene", "An essay that lists facts"],
+            "answer": 1,
+            "hint": "It aims to change the reader’s view."
+        },
+        {
+            "question": "What is a claim in an essay?",
+            "options": ["A question", "A statement to be supported", "A summary", "A citation"],
+            "answer": 1,
+            "hint": "It’s the main point of an argument."
+        },
+        {
+            "question": "What is the purpose of an outline?",
+            "options": ["To finalize the essay", "To organize ideas", "To cite sources", "To summarize research"],
+            "answer": 1,
+            "hint": "It plans the essay’s structure."
+        },
+        {
+            "question": "What is a secondary source?",
+            "options": ["An original document", "An analysis of primary sources", "A personal narrative", "A thesis statement"],
+            "answer": 1,
+            "hint": "It interprets firsthand evidence."
+        },
+        {
+            "question": "What is the purpose of evidence in an essay?",
+            "options": ["To increase length", "To support claims", "To introduce the topic", "To conclude the essay"],
+            "answer": 1,
+            "hint": "It strengthens the argument."
+        }
+    ],
+    "PSYC 1205": [
+        {
+            "question": "What is emotional intelligence?",
+            "options": ["IQ measurement", "Ability to recognize and manage emotions", "Memory capacity", "Logical reasoning skills"],
+            "answer": 1,
+            "hint": "It involves self-awareness and social skills."
+        },
+        {
+            "question": "Which is a component of emotional intelligence?",
+            "options": ["Empathy", "Mathematical ability", "Physical strength", "Musical talent"],
+            "answer": 0,
+            "hint": "It involves understanding others' feelings."
+        },
+        {
+            "question": "What is self-regulation in emotional intelligence?",
+            "options": ["Controlling one’s emotions", "Solving math problems", "Memorizing facts", "Physical exercise"],
+            "answer": 0,
+            "hint": "It involves managing emotional reactions."
+        },
+        {
+            "question": "What is motivation in the context of emotional intelligence?",
+            "options": ["External rewards", "Internal drive to achieve goals", "Social popularity", "Physical fitness"],
+            "answer": 1,
+            "hint": "It’s about personal goal pursuit."
+        },
+        {
+            "question": "What is social awareness in emotional intelligence?",
+            "options": ["Academic knowledge", "Understanding others’ emotions", "Physical coordination", "Technical skills"],
+            "answer": 1,
+            "hint": "It involves reading social cues."
+        },
+        {
+            "question": "What is the benefit of high emotional intelligence?",
+            "options": ["Better physical health", "Improved relationships", "Higher IQ", "Faster learning"],
+            "answer": 1,
+            "hint": "It enhances interpersonal interactions."
+        },
+        {
+            "question": "What is self-awareness in emotional intelligence?",
+            "options": ["Knowing others’ emotions", "Understanding one’s own emotions", "Physical strength", "Academic success"],
+            "answer": 1,
+            "hint": "It’s about recognizing personal feelings."
+        },
+        {
+            "question": "How does empathy contribute to emotional intelligence?",
+            "options": ["By solving problems", "By understanding others’ perspectives", "By increasing IQ", "By physical training"],
+            "answer": 1,
+            "hint": "It fosters compassion."
+        },
+        {
+            "question": "What is a key trait of emotionally intelligent leaders?",
+            "options": ["Technical expertise", "Empathetic communication", "Physical strength", "Mathematical ability"],
+            "answer": 1,
+            "hint": "They connect with team members."
+        },
+        {
+            "question": "What does emotional regulation help with?",
+            "options": ["Academic performance", "Managing stress", "Physical fitness", "Memory retention"],
+            "answer": 1,
+            "hint": "It controls emotional responses."
+        },
+        {
+            "question": "What is a social skill in emotional intelligence?",
+            "options": ["Solving equations", "Building relationships", "Programming", "Athletic ability"],
+            "answer": 1,
+            "hint": "It involves effective interaction."
+        },
+        {
+            "question": "What is the role of feedback in emotional intelligence?",
+            "options": ["To criticize others", "To improve self-awareness", "To increase IQ", "To reduce stress"],
+            "answer": 1,
+            "hint": "It helps individuals grow emotionally."
+        },
+        {
+            "question": "What is a sign of low emotional intelligence?",
+            "options": ["Strong relationships", "Difficulty managing emotions", "High academic success", "Physical fitness"],
+            "answer": 1,
+            "hint": "It leads to emotional challenges."
+        },
+        {
+            "question": "What is the purpose of active listening in emotional intelligence?",
+            "options": ["To solve problems", "To understand others", "To increase speed", "To memorize facts"],
+            "answer": 1,
+            "hint": "It shows respect for others’ feelings."
+        },
+        {
+            "question": "What is emotional resilience?",
+            "options": ["Physical strength", "Ability to recover from setbacks", "High IQ", "Memorization skills"],
+            "answer": 1,
+            "hint": "It involves bouncing back emotionally."
+        },
+        {
+            "question": "What is a benefit of empathy in teamwork?",
+            "options": ["Faster task completion", "Better collaboration", "Higher profits", "Less work"],
+            "answer": 1,
+            "hint": "It improves group dynamics."
+        },
+        {
+            "question": "What is the role of self-motivation in emotional intelligence?",
+            "options": ["To follow orders", "To pursue goals independently", "To avoid work", "To compete with others"],
+            "answer": 1,
+            "hint": "It drives personal achievement."
+        },
+        {
+            "question": "What is a conflict resolution skill in emotional intelligence?",
+            "options": ["Ignoring conflict", "Empathetic negotiation", "Avoiding communication", "Increasing competition"],
+            "answer": 1,
+            "hint": "It resolves disputes peacefully."
+        },
+        {
+            "question": "What is the impact of emotional intelligence on decision-making?",
+            "options": ["Slower decisions", "Balanced decisions", "Random decisions", "No impact"],
+            "answer": 1,
+            "hint": "It considers emotions and logic."
+        },
+        {
+            "question": "What is a characteristic of emotionally intelligent communication?",
+            "options": ["Aggressive tone", "Clear and respectful tone", "Ignoring others", "Technical jargon"],
+            "answer": 1,
+            "hint": "It fosters understanding."
+        }
+    ],
+    "CS 1103": [
+        {
+            "question": "What is a recursive function?",
+            "options": ["A function that calls other functions", "A function that calls itself", "A function with no parameters", "A function that returns void"],
+            "answer": 1,
+            "hint": "It breaks problems into smaller instances of itself."
+        },
+        {
+            "question": "Which data structure follows LIFO principle?",
+            "options": ["Queue", "Stack", "Array", "Linked List"],
+            "answer": 1,
+            "hint": "Last In, First Out - like a stack of plates."
+        },
+        {
+            "question": "What is a linked list?",
+            "options": ["A fixed-size array", "A sequence of nodes", "A type of loop", "A sorting algorithm"],
+            "answer": 1,
+            "hint": "Each node contains data and a pointer."
+        },
+        {
+            "question": "What is a queue in data structures?",
+            "options": ["A LIFO structure", "A FIFO structure", "A sorted array", "A tree structure"],
+            "answer": 1,
+            "hint": "First In, First Out - like a line."
+        },
+        {
+            "question": "What is the time complexity of accessing an array element?",
+            "options": ["O(n)", "O(1)", "O(log n)", "O(n²)"],
+            "answer": 1,
+            "hint": "Arrays allow direct index access."
+        },
+        {
+            "question": "What is a binary tree?",
+            "options": ["A linear list", "A tree with at most two children per node", "A sorted array", "A stack"],
+            "answer": 1,
+            "hint": "Each node has left and right children."
+        },
+        {
+            "question": "What is a base case in recursion?",
+            "options": ["The recursive call", "The stopping condition", "The loop structure", "The return value"],
+            "answer": 1,
+            "hint": "It prevents infinite recursion."
+        },
+        {
+            "question": "What is a hash table?",
+            "options": ["A sorted list", "A key-value storage", "A tree structure", "A queue"],
+            "answer": 1,
+            "hint": "It uses a hash function for fast access."
+        },
+        {
+            "question": "What is the purpose of a pointer in programming?",
+            "options": ["To store data", "To reference memory locations", "To loop code", "To define functions"],
+            "answer": 1,
+            "hint": "It holds an address."
+        },
+        {
+            "question": "What is a graph in data structures?",
+            "options": ["A linear list", "A set of nodes and edges", "A sorted array", "A stack"],
+            "answer": 1,
+            "hint": "It represents relationships between nodes."
+        },
+        {
+            "question": "What is the time complexity of linear search?",
+            "options": ["O(1)", "O(n)", "O(log n)", "O(n²)"],
+            "answer": 1,
+            "hint": "It checks each element sequentially."
+        },
+        {
+            "question": "What is a stack overflow?",
+            "options": ["Too many elements in an array", "Excessive recursive calls", "A queue error", "A sorting issue"],
+            "answer": 1,
+            "hint": "It occurs when recursion is too deep."
+        },
+        {
+            "question": "What is a doubly linked list?",
+            "options": ["A list with one pointer", "A list with two pointers per node", "A sorted array", "A tree structure"],
+            "answer": 1,
+            "hint": "Nodes link to next and previous nodes."
+        },
+        {
+            "question": "What is a depth-first search?",
+            "options": ["A linear search", "Exploring as far as possible along each branch", "Checking all nodes at once", "Sorting data"],
+            "answer": 1,
+            "hint": "It uses a stack-like approach."
+        },
+        {
+            "question": "What is a breadth-first search?",
+            "options": ["Exploring deepest nodes first", "Exploring level by level", "Sorting data", "Linear searching"],
+            "answer": 1,
+            "hint": "It uses a queue-like approach."
+        },
+        {
+            "question": "What is the purpose of a binary search tree?",
+            "options": ["To store unsorted data", "To enable efficient searching", "To create loops", "To manage memory"],
+            "answer": 1,
+            "hint": "It keeps data sorted for fast lookup."
+        },
+        {
+            "question": "What is a deque?",
+            "options": ["A single-ended queue", "A double-ended queue", "A sorted list", "A tree structure"],
+            "answer": 1,
+            "hint": "It allows adding/removing from both ends."
+        },
+        {
+            "question": "What is the time complexity of inserting into a linked list?",
+            "options": ["O(1)", "O(n)", "O(log n)", "O(n²)"],
+            "answer": 0,
+            "hint": "It’s constant if inserting at the head."
+        },
+        {
+            "question": "What is a heap in data structures?",
+            "options": ["A linear list", "A tree-based priority queue", "A sorted array", "A graph"],
+            "answer": 1,
+            "hint": "It maintains a partial order."
+        },
+        {
+            "question": "What is tail recursion?",
+            "options": ["A loop structure", "Recursion with the call as the last operation", "A sorting method", "A data structure"],
+            "answer": 1,
+            "hint": "It optimizes recursive calls."
+        }
+    ],
+    "CS 2203": [
+        {
+            "question": "What is a primary key in databases?",
+            "options": ["A key that opens the database", "A unique identifier for each record", "The first column in a table", "A backup encryption key"],
+            "answer": 1,
+            "hint": "It must contain unique values and cannot be null."
+        },
+        {
+            "question": "Which SQL command retrieves data?",
+            "options": ["INSERT", "UPDATE", "SELECT", "DELETE"],
+            "answer": 2,
+            "hint": "It's used to query the database."
+        },
+        {
+            "question": "What is a foreign key?",
+            "options": ["A key for backups", "A field linking tables", "A primary key duplicate", "A table name"],
+            "answer": 1,
+            "hint": "It references another table’s primary key."
+        },
+        {
+            "question": "What does the SQL command 'INSERT' do?",
+            "options": ["Deletes data", "Adds new records", "Updates records", "Queries data"],
+            "answer": 1,
+            "hint": "It adds data to a table."
+        },
+        {
+            "question": "What is a relational database?",
+            "options": ["A single table", "Tables linked by keys", "A flat file", "A graph structure"],
+            "answer": 1,
+            "hint": "It organizes data into related tables."
+        },
+        {
+            "question": "What does the SQL command 'UPDATE' do?",
+            "options": ["Retrieves data", "Modifies existing records", "Deletes records", "Creates tables"],
+            "answer": 1,
+            "hint": "It changes data in a table."
+        },
+        {
+            "question": "What is a database schema?",
+            "options": ["A data record", "The structure of a database", "A type of query", "A backup file"],
+            "answer": 1,
+            "hint": "It defines tables and relationships."
+        },
+        {
+            "question": "What does the SQL command 'DELETE' do?",
+            "options": ["Adds records", "Removes records", "Modifies records", "Queries data"],
+            "answer": 1,
+            "hint": "It removes data from a table."
+        },
+        {
+            "question": "What is a join in SQL?",
+            "options": ["A table creation", "Combining rows from multiple tables", "A sorting method", "A data deletion"],
+            "answer": 1,
+            "hint": "It merges data based on conditions."
+        },
+        {
+            "question": "What is a database index?",
+            "options": ["A data record", "A structure to speed queries", "A table name", "A backup system"],
+            "answer": 1,
+            "hint": "It improves search performance."
+        },
+        {
+            "question": "What is normalization in databases?",
+            "options": ["Adding data", "Reducing redundancy", "Deleting tables", "Sorting data"],
+            "answer": 1,
+            "hint": "It organizes data efficiently."
+        },
+        {
+            "question": "What does the SQL 'WHERE' clause do?",
+            "options": ["Sorts data", "Filters records", "Joins tables", "Creates tables"],
+            "answer": 1,
+            "hint": "It specifies conditions for queries."
+        },
+        {
+            "question": "What is a table in a database?",
+            "options": ["A query type", "A collection of rows and columns", "A sorting algorithm", "A backup file"],
+            "answer": 1,
+            "hint": "It stores data in a structured format."
+        },
+        {
+            "question": "What is the purpose of the SQL 'GROUP BY' clause?",
+            "options": ["To filter data", "To group rows by a column", "To sort data", "To join tables"],
+            "answer": 1,
+            "hint": "It aggregates data by categories."
+        },
+        {
+            "question": "What is a view in a database?",
+            "options": ["A physical table", "A virtual table from a query", "A data backup", "A sorting method"],
+            "answer": 1,
+            "hint": "It’s a stored query result."
+        },
+        {
+            "question": "What does the SQL 'ORDER BY' clause do?",
+            "options": ["Filters data", "Sorts query results", "Joins tables", "Groups data"],
+            "answer": 1,
+            "hint": "It arranges data in order."
+        },
+        {
+            "question": "What is a database transaction?",
+            "options": ["A single query", "A set of operations as a unit", "A table creation", "A data backup"],
+            "answer": 1,
+            "hint": "It ensures data consistency."
+        },
+        {
+            "question": "What is the SQL 'COUNT' function used for?",
+            "options": ["To sort data", "To count rows", "To join tables", "To update records"],
+            "answer": 1,
+            "hint": "It returns the number of rows."
+        },
+        {
+            "question": "What is a one-to-many relationship in databases?",
+            "options": ["One record links to one record", "One record links to multiple records", "Multiple records link to one table", "No links between tables"],
+            "answer": 1,
+            "hint": "It’s common in relational databases."
+        },
+        {
+            "question": "What is the purpose of the SQL 'DISTINCT' keyword?",
+            "options": ["To sort data", "To remove duplicates", "To join tables", "To filter rows"],
+            "answer": 1,
+            "hint": "It ensures unique results."
+        }
+    ],
+    "CS 2301": [
+        {
+            "question": "What is an operating system?",
+            "options": ["A computer program", "Software that manages hardware", "A type of computer", "A programming language"],
+            "answer": 1,
+            "hint": "It acts as an intermediary between users and hardware."
+        },
+        {
+            "question": "Which scheduling algorithm is preemptive?",
+            "options": ["FCFS", "Round Robin", "SJF", "Priority (non-preemptive)"],
+            "answer": 1,
+            "hint": "It allocates CPU time in time slices."
+        },
+        {
+            "question": "What is a process in an operating system?",
+            "options": ["A hardware component", "A program in execution", "A file system", "A user interface"],
+            "answer": 1,
+            "hint": "It’s an active program."
+        },
+        {
+            "question": "What is virtual memory?",
+            "options": ["Physical RAM", "Simulated memory using disk space", "A type of CPU", "A file system"],
+            "answer": 1,
+            "hint": "It extends available memory."
+        },
+        {
+            "question": "What is a thread in computing?",
+            "options": ["A type of hardware", "A unit of execution", "A file type", "A memory chip"],
+            "answer": 1,
+            "hint": "It’s part of a process."
+        },
+        {
+            "question": "What does a file system do?",
+            "options": ["Manages hardware", "Organizes and stores files", "Runs programs", "Schedules tasks"],
+            "answer": 1,
+            "hint": "It handles data storage."
+        },
+        {
+            "question": "What is a deadlock in operating systems?",
+            "options": ["A fast process", "Processes waiting indefinitely", "A memory error", "A file deletion"],
+            "answer": 1,
+            "hint": "It involves resource conflicts."
+        },
+        {
+            "question": "What is the purpose of a kernel?",
+            "options": ["To design interfaces", "To manage system resources", "To compile code", "To store files"],
+            "answer": 1,
+            "hint": "It’s the core of the OS."
+        },
+        {
+            "question": "What is multitasking in an operating system?",
+            "options": ["Running one program", "Running multiple programs", "Deleting files", "Formatting disks"],
+            "answer": 1,
+            "hint": "It shares CPU time."
+        },
+        {
+            "question": "What is a page fault in virtual memory?",
+            "options": ["A hardware failure", "A missing memory page", "A file error", "A process crash"],
+            "answer": 1,
+            "hint": "It requires fetching data from disk."
+        },
+        {
+            "question": "What is a system call?",
+            "options": ["A hardware interrupt", "A request to the OS for service", "A user interface", "A file type"],
+            "answer": 1,
+            "hint": "It allows programs to access OS functions."
+        },
+        {
+            "question": "What is the purpose of CPU scheduling?",
+            "options": ["To store data", "To allocate CPU time", "To manage memory", "To format disks"],
+            "answer": 1,
+            "hint": "It determines process execution order."
+        },
+        {
+            "question": "What is a semaphore in operating systems?",
+            "options": ["A memory chip", "A synchronization tool", "A file system", "A user interface"],
+            "answer": 1,
+            "hint": "It controls access to resources."
+        },
+        {
+            "question": "What is the role of a device driver?",
+            "options": ["To run programs", "To manage hardware communication", "To store files", "To schedule tasks"],
+            "answer": 1,
+            "hint": "It interfaces with hardware."
+        },
+        {
+            "question": "What is a context switch?",
+            "options": ["Changing hardware", "Switching between processes", "Formatting disks", "Saving files"],
+            "answer": 1,
+            "hint": "It saves and restores process states."
+        },
+        {
+            "question": "What is the purpose of memory management in an OS?",
+            "options": ["To run programs", "To allocate and deallocate memory", "To format disks", "To manage files"],
+            "answer": 1,
+            "hint": "It handles memory resources."
+        },
+        {
+            "question": "What is a real-time operating system?",
+            "options": ["A general-purpose OS", "An OS with strict timing", "A file system", "A user interface"],
+            "answer": 1,
+            "hint": "It meets time constraints."
+        },
+        {
+            "question": "What is a file allocation table (FAT)?",
+            "options": ["A scheduling algorithm", "A file system structure", "A memory chip", "A process type"],
+            "answer": 1,
+            "hint": "It tracks file locations."
+        },
+        {
+            "question": "What is a priority queue in scheduling?",
+            "options": ["A queue for files", "A queue based on process priority", "A memory structure", "A user interface"],
+            "answer": 1,
+            "hint": "It prioritizes important tasks."
+        },
+        {
+            "question": "What is the purpose of a swap space?",
+            "options": ["To store files", "To extend virtual memory", "To run programs", "To schedule tasks"],
+            "answer": 1,
+            "hint": "It uses disk space for memory."
+        }
+    ],
+    "CS 3303": [
+        {
+            "question": "What is the time complexity of binary search?",
+            "options": ["O(1)", "O(n)", "O(log n)", "O(n²)"],
+            "answer": 2,
+            "hint": "It halves the search space with each comparison."
+        },
+        {
+            "question": "Which data structure allows O(1) access by index?",
+            "options": ["Linked List", "Array", "Tree", "Graph"],
+            "answer": 1,
+            "hint": "Elements are stored in contiguous memory locations."
+        },
+        {
+            "question": "What is the time complexity of bubble sort?",
+            "options": ["O(n)", "O(n²)", "O(log n)", "O(1)"],
+            "answer": 1,
+            "hint": "It compares adjacent elements repeatedly."
+        },
+        {
+            "question": "What is a binary search tree?",
+            "options": ["A linear list", "A tree with ordered nodes", "A sorted array", "A queue"],
+            "answer": 1,
+            "hint": "It enables efficient searching."
+        },
+        {
+            "question": "What is the time complexity of quicksort on average?",
+            "options": ["O(n²)", "O(n log n)", "O(n)", "O(1)"],
+            "answer": 1,
+            "hint": "It uses divide-and-conquer."
+        },
+        {
+            "question": "What is a hash function?",
+            "options": ["A sorting algorithm", "A function mapping keys to indices", "A search algorithm", "A tree structure"],
+            "answer": 1,
+            "hint": "It’s used in hash tables."
+        },
+        {
+            "question": "What is the time complexity of merge sort?",
+            "options": ["O(n²)", "O(n log n)", "O(n)", "O(1)"],
+            "answer": 1,
+            "hint": "It divides and merges lists."
+        },
+        {
+            "question": "What is a directed graph?",
+            "options": ["A graph with undirected edges", "A graph with directed edges", "A sorted list", "A tree"],
+            "answer": 1,
+            "hint": "Edges have direction."
+        },
+        {
+            "question": "What is the time complexity of inserting into a binary search tree?",
+            "options": ["O(1)", "O(n)", "O(log n)", "O(n²)"],
+            "answer": 2,
+            "hint": "It depends on the tree’s height."
+        },
+        {
+            "question": "What is a priority queue?",
+            "options": ["A queue with random order", "A queue based on priority", "A sorted array", "A tree structure"],
+            "answer": 1,
+            "hint": "It serves highest-priority items first."
+        },
+        {
+            "question": "What is the time complexity of depth-first search?",
+            "options": ["O(n²)", "O(V + E)", "O(log n)", "O(1)"],
+            "answer": 1,
+            "hint": "It explores vertices and edges."
+        },
+        {
+            "question": "What is a balanced binary tree?",
+            "options": ["A tree with equal height subtrees", "A tree with unequal heights", "A linear list", "A sorted array"],
+            "answer": 0,
+            "hint": "It maintains efficient operations."
+        },
+        {
+            "question": "What is the time complexity of Dijkstra’s algorithm?",
+            "options": ["O(n²)", "O(V log V)", "O(n)", "O(1)"],
+            "answer": 1,
+            "hint": "It finds shortest paths."
+        },
+        {
+            "question": "What is a trie data structure?",
+            "options": ["A sorted array", "A tree for storing strings", "A queue", "A graph"],
+            "answer": 1,
+            "hint": "It’s used for prefix-based searches."
+        },
+        {
+            "question": "What is the time complexity of selection sort?",
+            "options": ["O(n)", "O(n²)", "O(log n)", "O(1)"],
+            "answer": 1,
+            "hint": "It selects the smallest element repeatedly."
+        },
+        {
+            "question": "What is a minimum spanning tree?",
+            "options": ["A tree with minimum nodes", "A tree connecting all vertices with minimum total edge weight", "A tree with maximum height", "A tree with no cycles"],
+            "answer": 1,
+            "hint": "It connects all nodes with the least possible total edge cost."
         }
     ]
 }
