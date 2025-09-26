@@ -6,7 +6,6 @@
     <title>BrainyQuiz | Test Your Knowledge</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <div class="app-container">
@@ -44,42 +43,27 @@
             <div id="category-screen" class="screen">
                 <div class="screen-content">
                     <h2>Choose Your Challenge</h2>
-                    <div class="categories-grid">
-                        <div class="category-card" data-category="general">
-                            <div class="category-icon">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                            <h3>General Knowledge</h3>
-                            <p>10 questions</p>
+                    
+                    <!-- Search bar -->
+                    <div class="search-container">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="category-search" placeholder="Search categories...">
+                            <button id="clear-search" class="icon-btn" aria-label="Clear search">
+                                <i class="fas fa-times"></i>
+                            </button>
                         </div>
-                        <div class="category-card" data-category="general">
-                            <div class="category-icon">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                            <h3>General Knowledge</h3>
-                            <p>10 questions</p>
-                        </div>
-                        <div class="category-card" data-category="general">
-                            <div class="category-icon">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                            <h3>General Knowledge</h3>
-                            <p>10 questions</p>
-                        </div>
-                        <div class="category-card" data-category="science">
-                            <div class="category-icon">
-                                <i class="fas fa-atom"></i>
-                            </div>
-                            <h3>Science</h3>
-                            <p>10 questions</p>
-                        </div>
-                        <div class="category-card" data-category="history">
-                            <div class="category-icon">
-                                <i class="fas fa-landmark"></i>
-                            </div>
-                            <h3>History</h3>
-                            <p>10 questions</p>
-                        </div>
+                    </div>
+
+                    <div class="categories-grid" id="categories-grid">
+                        <!-- Categories will be populated dynamically -->
+                    </div>
+                    
+                    <!-- No results message -->
+                    <div id="no-results" class="no-results">
+                        <i class="fas fa-search"></i>
+                        <h3>No categories found</h3>
+                        <p>Try adjusting your search terms</p>
                     </div>
                 </div>
             </div>
