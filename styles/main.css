@@ -67,7 +67,7 @@ body {
 .app-container {
     display: flex;
     flex-direction: column;
-   min-height: 100vh;
+    min-height: 100vh;
 }
 
 /* Header */
@@ -208,6 +208,7 @@ body {
     transition: var(--transition);
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border-color);
+    position: relative;
 }
 
 .category-card:hover {
@@ -236,6 +237,110 @@ body {
 .category-card p {
     font-size: 0.875rem;
     color: var(--text-secondary);
+}
+
+/* Search Styles */
+.search-container {
+    margin: 1.5rem 0;
+}
+
+.search-box {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.search-box i.fa-search {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    background: var(--bg-card);
+    color: var(--text-primary);
+    font-size: 0.9375rem;
+    transition: var(--transition);
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+}
+
+#clear-search {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.search-box:has(input:not(:placeholder-shown)) #clear-search {
+    opacity: 1;
+}
+
+/* No Results Message */
+.no-results {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-secondary);
+    display: none;
+}
+
+.no-results i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.no-results h3 {
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+/* Category counter */
+.category-counter {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+/* Category Badge */
+.category-badge {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Enhanced category grid for many categories */
+@media (min-width: 768px) {
+    .categories-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .categories-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
 }
 
 /* Quiz Screen */
@@ -728,6 +833,64 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 999; /* Below modal (z-index: 1000) but above content */
-    pointer-events: none; /* Prevent canvas from intercepting clicks */
+    z-index: 999;
+    pointer-events: none;
+}
+
+
+/* Add these styles to your existing main.css */
+
+/* Admin specific styles */
+.admin-btn {
+    margin-right: 0.5rem;
+}
+
+.data-preview {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    margin-top: 1rem;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.data-preview pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Courier New', monospace;
+    font-size: 0.875rem;
+}
+
+.category-item, .question-item {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.item-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.option-input {
+    width: 100%;
+}
+
+.set-correct {
+    background: var(--success-color);
+    color: white;
+}
+
+.set-correct.active {
+    background: var(--primary-color);
 }
