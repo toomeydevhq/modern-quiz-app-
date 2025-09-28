@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BrainyQuiz | Test Your Knowledge</title>
+    <meta name="description" content="Test your knowledge with BrainyQuiz - fun and educational quizzes on various topics">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="app-container">
+        <!-- Toast Notification -->
+        <div id="toast" class="toast">
+            <div class="toast-content">
+                <i class="toast-icon"></i>
+                <span class="toast-message"></span>
+            </div>
+            <button class="toast-close">&times;</button>
+        </div>
+
         <!-- Header -->
         <header class="app-header">
             <div class="header-content">
                 <div class="logo">
-                    <i class="fas fa-brain"></i>
+                    <!-- ICON PLACEHOLDER: Replace with your custom logo icon -->
+                    <!-- <i class="fas fa-brain"></i> -->
+                    <img class="logo-icon" src="images/logo-icon.png" alt="BrainyQuiz Logo"> <!-- Example alternative icon -->
                     <h1>BrainyQuiz</h1>
                 </div>
                 <div class="header-actions">
@@ -33,7 +45,9 @@
             <div id="loading-screen" class="screen active">
                 <div class="loading-content">
                     <div class="loading-spinner">
-                        <i class="fas fa-brain"></i>
+                        <!-- ICON PLACEHOLDER: Replace with your custom loading icon -->
+                        <!-- <i class="fas fa-brain"></i> -->
+                        <i class="fas fa-spinner"></i> <!-- Example alternative icon -->
                     </div>
                     <p>Preparing your quiz...</p>
                 </div>
@@ -76,9 +90,14 @@
                             <span id="question-number">Q1/10</span>
                             <span id="category-name">General Knowledge</span>
                         </div>
-                        <div class="quiz-timer">
-                            <i class="fas fa-clock"></i>
-                            <span id="time">30</span>
+                        <div class="quiz-controls-top">
+                            <button id="exit-quiz" class="btn outline-btn small-btn">
+                                <i class="fas fa-home"></i> Exit
+                            </button>
+                            <div class="quiz-timer">
+                                <i class="fas fa-clock"></i>
+                                <span id="time">30</span>
+                            </div>
                         </div>
                     </div>
 
@@ -146,6 +165,9 @@
                     </div>
 
                     <div class="results-actions">
+                        <button id="home-btn" class="btn outline-btn">
+                            <i class="fas fa-home"></i> Home
+                        </button>
                         <button id="review-btn" class="btn outline-btn">
                             <i class="fas fa-list"></i> Review
                         </button>
@@ -186,6 +208,66 @@
             </div>
         </div>
 
+        <!-- Quiz Settings Modal -->
+        <div id="settings-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><i class="fas fa-cog"></i> Quiz Settings</h3>
+                    <span class="close-settings">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="quiz-settings">
+                        <div class="setting-group">
+                            <label for="questions-count">Number of Questions:</label>
+                            <select id="questions-count" class="setting-select">
+                                <option value="5">5 Questions</option>
+                                <option value="10" selected>10 Questions</option>
+                                <option value="15">15 Questions</option>
+                                <option value="20">20 Questions</option>
+                                <option value="custom">Custom</option>
+                            </select>
+                            <input type="number" id="custom-questions" class="setting-input" placeholder="Enter number" min="1" max="50" style="display: none;">
+                        </div>
+                        
+                        <div class="setting-group">
+                            <label for="timer-setting">Timer Setting:</label>
+                            <select id="timer-setting" class="setting-select">
+                                <option value="30">30 seconds per question</option>
+                                <option value="45">45 seconds per question</option>
+                                <option value="60">60 seconds per question</option>
+                                <option value="90">90 seconds (Math/Programming)</option>
+                                <option value="0">No timer</option>
+                            </select>
+                        </div>
+                        
+                        <div class="available-questions">
+                            <span id="available-count">Select a category to see available questions</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button id="start-quiz" class="btn primary-btn">Start Quiz</button>
+                    <button id="cancel-settings" class="btn outline-btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exit Confirmation Modal -->
+        <div id="exit-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Exit Quiz</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to exit? Your progress will be lost.</p>
+                </div>
+                <div class="modal-actions">
+                    <button id="confirm-exit" class="btn danger-btn">Exit Quiz</button>
+                    <button id="cancel-exit" class="btn outline-btn">Continue</button>
+                </div>
+            </div>
+        </div>
+
         <!-- Confetti Canvas -->
         <canvas id="confetti-canvas"></canvas>
 
@@ -196,6 +278,6 @@
     </div>
 
     <script src="scripts/confetti.js"></script>
-    <script src="scripts/app.js"></script>
+    <script src="scripts/app.min.js"></script>
 </body>
 </html>
