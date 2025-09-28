@@ -34,7 +34,23 @@ const elements = {
     categorySearch: document.getElementById('category-search'),
     clearSearch: document.getElementById('clear-search'),
     noResults: document.getElementById('no-results'),
-    adminBtn: document.getElementById('admin-btn')
+    adminBtn: document.getElementById('admin-btn'),
+    settingsModal: document.getElementById('settings-modal'),
+    questionsCount: document.getElementById('questions-count'),
+    customQuestions: document.getElementById('custom-questions'),
+    timerSetting: document.getElementById('timer-setting'),
+    availableCount: document.getElementById('available-count'),
+    startQuizBtn: document.getElementById('start-quiz'),
+    cancelSettings: document.getElementById('cancel-settings'),
+    closeSettings: document.querySelector('.close-settings'),
+    exitQuiz: document.getElementById('exit-quiz'),
+    homeBtn: document.getElementById('home-btn'),
+    exitModal: document.getElementById('exit-modal'),
+    confirmExit: document.getElementById('confirm-exit'),
+    cancelExit: document.getElementById('cancel-exit'),
+    toast: document.getElementById('toast'),
+    toastMessage: document.querySelector('.toast-message'),
+    toastClose: document.querySelector('.toast-close')
 };
 
 // Quiz State
@@ -52,8 +68,48 @@ const state = {
     soundEnabled: localStorage.getItem('soundEnabled') !== 'false',
     categories: {},
     questionsData: {},
-    questionsPerQuiz: 10
+    questionsPerQuiz: 10,
+    timerDuration: 30,
+    isTimerEnabled: true,
+    selectedCategory: null
 };
+
+// Toast notification system
+function showToast(message, type = 'info', duration = 5000) {
+    const toast = elements.toast;
+    const toastIcon = toast.querySelector('.toast-icon');
+    
+    // Set message and type
+    elements.toastMessage.textContent = message;
+    toast.className = `toast ${type}`;
+    
+    // Set icon based on type
+    switch(type) {
+        case 'success':
+            toastIcon.className = 'toast-icon fas fa-check-circle';
+            break;
+        case 'warning':
+            toastIcon.className = 'toast-icon fas fa-exclamation-triangle';
+            break;
+        case 'error':
+            toastIcon.className = 'toast-icon fas fa-times-circle';
+            break;
+        default:
+            toastIcon.className = 'toast-icon fas fa-info-circle';
+    }
+    
+    // Show toast
+    toast.classList.add('show');
+    
+    // Auto hide after duration
+    setTimeout(() => {
+        hideToast();
+    }, duration);
+}
+
+function hideToast() {
+    elements.toast.classList.remove('show');
+}
 
 // Data Management
 class QuizDataManager {
@@ -61,51 +117,76 @@ class QuizDataManager {
         this.storageKey = 'brainyquiz-data';
     }
 
-    async loadData() {
-        try {
-            console.log('Starting to load quiz data...');
+   async loadData() {
+    try {
+        console.log('Starting to load quiz data...');
 
-            // Load from localStorage (admin data)
-            let localCategories = {};
-            let localQuestions = {};
-            const savedData = localStorage.getItem(this.storageKey);
-            if (savedData) {
-                console.log('Found data in localStorage');
-                const data = JSON.parse(savedData);
-                localCategories = data.categories || {};
-                localQuestions = data.questions || {};
-            }
-
-            // Always load from JSON files
-            const categoriesResponse = await fetch('./data/categories.json');
-            const questionsResponse = await fetch('./data/questions.json');
-
-            if (!categoriesResponse.ok) {
-                throw new Error(`Categories file not found: ${categoriesResponse.status}`);
-            }
-            if (!questionsResponse.ok) {
-                throw new Error(`Questions file not found: ${questionsResponse.status}`);
-            }
-
-            const fileCategories = await categoriesResponse.json();
-            const fileQuestions = await questionsResponse.json();
-
-            // Merge categories: localStorage takes precedence
-            state.categories = { ...fileCategories, ...localCategories };
-            // Merge questions: localStorage takes precedence
-            state.questionsData = { ...fileQuestions, ...localQuestions };
-
-            console.log('Loaded and merged data:', {
-                categoriesCount: Object.keys(state.categories).length,
-                questionsCount: Object.keys(state.questionsData).length
-            });
-        } catch (error) {
-            console.error('Error loading quiz data:', error);
-            state.categories = {};
-            state.questionsData = {};
-            alert('Error loading quiz data: ' + error.message);
+        // Load from localStorage (admin data)
+        let localCategories = {};
+        let localQuestions = {};
+        const savedData = localStorage.getItem(this.storageKey);
+        if (savedData) {
+            console.log('Found data in localStorage');
+            const data = JSON.parse(savedData);
+            localCategories = data.categories || {};
+            localQuestions = data.questions || {};
         }
+
+        // Load categories from JSON file (unencoded)
+        const categoriesResponse = await fetch('./data/categories.json');
+        if (!categoriesResponse.ok) {
+            throw new Error(`Categories file not found: ${categoriesResponse.status}`);
+        }
+        let fileCategories = await categoriesResponse.json();
+        if (fileCategories.encoded) {
+            fileCategories = JSON.parse(atob(fileCategories.data));
+            delete fileCategories.watermark; // Remove watermark if encoded
+        }
+
+        // Load questions from individual category files
+        const fileQuestions = {};
+        const categoryKeys = Object.keys(fileCategories);
+        
+        for (const categoryKey of categoryKeys) {
+            try {
+                const filename = categoryKey.replace(/\s+/g, '');
+                const questionsResponse = await fetch(`./data/questions/${filename}.json`);
+                
+                if (questionsResponse.ok) {
+                    let questions = await questionsResponse.json();
+                    if (questions.encoded) {
+                        questions = JSON.parse(atob(questions.data));
+                        delete questions.watermark; // Remove watermark
+                    }
+                    fileQuestions[categoryKey] = questions;
+                    console.log(`Loaded ${questions.length} questions for ${categoryKey}`);
+                } else {
+                    console.warn(`No questions file found for ${categoryKey}`);
+                    fileQuestions[categoryKey] = [];
+                }
+            } catch (error) {
+                console.warn(`Error loading questions for ${categoryKey}:`, error);
+                fileQuestions[categoryKey] = [];
+            }
+        }
+
+        // Merge categories: localStorage takes precedence
+        state.categories = { ...fileCategories, ...localCategories };
+        
+        // Merge questions: localStorage takes precedence
+        state.questionsData = { ...fileQuestions, ...localQuestions };
+
+        console.log('Loaded and merged data:', {
+            categoriesCount: Object.keys(state.categories).length,
+            questionsCount: Object.keys(state.questionsData).length
+        });
+    } catch (error) {
+        console.error('Error loading quiz data:', error);
+        state.categories = {};
+        state.questionsData = {};
+        showToast('Error loading quiz data: ' + error.message, 'error');
     }
+}
 
     saveData() {
         const data = {
@@ -119,11 +200,35 @@ class QuizDataManager {
 
 const dataManager = new QuizDataManager();
 
+// Utility function to hide all screens
+function hideAllScreens() {
+    const screens = [
+        elements.loadingScreen,
+        elements.categoryScreen,
+        elements.quizScreen,
+        elements.resultsScreen,
+        elements.reviewScreen
+    ];
+    
+    screens.forEach(screen => {
+        if (screen) {
+            screen.classList.remove('active');
+        }
+    });
+}
+
 // Initialize the app
 async function init() {
     console.log('Initializing app...');
     setTheme(state.darkMode);
     setSound(state.soundEnabled);
+    
+    // Validate critical DOM elements
+    if (!elements.quizScreen) {
+        console.error('Quiz screen element not found in DOM');
+        showToast('Error: Quiz screen element missing in HTML. Please check the markup.', 'error');
+        return;
+    }
     
     try {
         await dataManager.loadData();
@@ -131,14 +236,15 @@ async function init() {
         setupEventListeners();
         renderCategories();
         
+        // Hide loading screen and show category screen
         setTimeout(() => {
-            elements.loadingScreen.classList.remove('active');
+            hideAllScreens();
             elements.categoryScreen.classList.add('active');
             console.log('App initialized successfully');
         }, 1000);
     } catch (error) {
         console.error('Error initializing app:', error);
-        alert('Failed to load quiz data. Please check your data files. Error: ' + error.message);
+        showToast('Failed to load quiz data. Please check your data files. Error: ' + error.message, 'error');
     }
 }
 
@@ -146,6 +252,9 @@ function setupEventListeners() {
     // Search functionality
     elements.categorySearch.addEventListener('input', debounce(handleSearch, 300));
     elements.clearSearch.addEventListener('click', clearSearch);
+    
+    // Toast close button
+    elements.toastClose.addEventListener('click', hideToast);
     
     // Keyboard shortcuts
     document.addEventListener('keydown', handleKeyboardShortcuts);
@@ -160,7 +269,7 @@ function setupEventListeners() {
     elements.reviewButton.addEventListener('click', showReview);
     elements.restartButton.addEventListener('click', restartQuiz);
     elements.backToResults.addEventListener('click', () => {
-        elements.reviewScreen.classList.remove('active');
+        hideAllScreens();
         elements.resultsScreen.classList.add('active');
     });
     elements.themeToggle.addEventListener('click', toggleTheme);
@@ -172,6 +281,21 @@ function setupEventListeners() {
             window.location.href = 'admin.html';
         });
     }
+    
+    // Settings modal and navigation
+    elements.questionsCount.addEventListener('change', handleQuestionsCountChange);
+    elements.customQuestions.addEventListener('input', handleCustomQuestionsInput);
+    elements.timerSetting.addEventListener('change', handleTimerSettingChange);
+    elements.startQuizBtn.addEventListener('click', startQuizFromModal);
+    elements.cancelSettings.addEventListener('click', closeSettingsModal);
+    elements.closeSettings.addEventListener('click', closeSettingsModal);
+    elements.settingsModal.addEventListener('click', (e) => {
+        if (e.target === elements.settingsModal) closeSettingsModal();
+    });
+    elements.exitQuiz.addEventListener('click', showExitConfirmation);
+    elements.homeBtn.addEventListener('click', goToHome);
+    elements.confirmExit.addEventListener('click', confirmExitQuiz);
+    elements.cancelExit.addEventListener('click', cancelExitQuiz);
 }
 
 function renderCategories(filteredCategories = null) {
@@ -228,9 +352,87 @@ function createCategoryCard(categoryKey, category) {
         <div class="category-badge">${categoryKey}</div>
     `;
     
-    card.addEventListener('click', () => selectCategory(categoryKey));
+    card.addEventListener('click', () => showSettingsModal(categoryKey));
     
     return card;
+}
+
+function showSettingsModal(categoryKey) {
+    console.log('Showing settings modal for category:', categoryKey);
+    
+    if (!state.categories[categoryKey]) {
+        console.error('Invalid category:', categoryKey);
+        showToast('Selected category is invalid. Please try another category.', 'error');
+        return;
+    }
+    
+    state.selectedCategory = categoryKey;
+    console.log('state.selectedCategory set to:', state.selectedCategory);
+    
+    // Update available questions count
+    const available = state.questionsData[categoryKey]?.length || 0;
+    const displayCount = Math.min(state.questionsPerQuiz, available);
+    elements.availableCount.textContent = `${displayCount} questions available (max ${available})`;
+    
+    // Show the settings modal
+    elements.settingsModal.classList.add('active');
+}
+
+function closeSettingsModal() {
+    elements.settingsModal.classList.remove('active');
+    // Do NOT reset state.selectedCategory here to preserve it for quiz start
+}
+
+function handleQuestionsCountChange() {
+    const value = elements.questionsCount.value;
+    
+    if (value === 'custom') {
+        elements.customQuestions.style.display = 'block';
+        elements.customQuestions.focus();
+    } else {
+        elements.customQuestions.style.display = 'none';
+        state.questionsPerQuiz = parseInt(value);
+        updateAvailableQuestions();
+    }
+}
+
+function handleCustomQuestionsInput() {
+    const value = parseInt(elements.customQuestions.value);
+    if (value && value > 0 && value <= 50) {
+        state.questionsPerQuiz = value;
+        updateAvailableQuestions();
+    }
+}
+
+function handleTimerSettingChange() {
+    const value = parseInt(elements.timerSetting.value);
+    state.timerDuration = value;
+    state.isTimerEnabled = value > 0;
+}
+
+function updateAvailableQuestions() {
+    if (state.selectedCategory) {
+        const available = state.questionsData[state.selectedCategory]?.length || 0;
+        const displayCount = Math.min(state.questionsPerQuiz, available);
+        elements.availableCount.textContent = `${displayCount} questions available (max ${available})`;
+    }
+}
+
+function startQuizFromModal() {
+    if (!state.selectedCategory) {
+        console.error('No category selected');
+        showToast('Please select a category to start the quiz.', 'warning');
+        return;
+    }
+    
+    console.log('Starting quiz for category:', state.selectedCategory);
+    const selectedCategory = state.selectedCategory; // Capture the category before closing
+    closeSettingsModal();
+    hideAllScreens();
+    elements.loadingScreen.classList.add('active');
+    
+    // Start the quiz with the captured category
+    selectCategory(selectedCategory);
 }
 
 async function selectCategory(category) {
@@ -238,45 +440,58 @@ async function selectCategory(category) {
     
     if (!state.categories[category]) {
         console.error('Invalid category:', category);
+        showToast('Invalid category selected. Please try again.', 'error');
+        hideAllScreens();
+        elements.categoryScreen.classList.add('active');
         return;
     }
     
     state.currentCategory = category;
-    
-    elements.categoryScreen.classList.remove('active');
-    elements.loadingScreen.classList.add('active');
     
     try {
         let questions = state.questionsData[category] || [];
         console.log(`Found ${questions.length} questions for category: ${category}`);
         
         if (questions.length === 0) {
-            alert('No questions available for this category yet. Please try another category.');
-            elements.loadingScreen.classList.remove('active');
+            showToast('No questions available for this category yet. Please try another category.', 'warning');
+            hideAllScreens();
             elements.categoryScreen.classList.add('active');
             return;
         }
         
         // Shuffle questions and select the first N questions
         questions = shuffleArray(questions);
+        const maxQuestions = Math.min(state.questionsPerQuiz, questions.length);
         
-        if (questions.length > state.questionsPerQuiz) {
-            questions = questions.slice(0, state.questionsPerQuiz);
+        if (questions.length > maxQuestions) {
+            questions = questions.slice(0, maxQuestions);
         }
         
+        // Update state with quiz data
         state.questions = questions;
         state.currentQuestionIndex = 0;
         state.score = 0;
         state.userAnswers = new Array(state.questions.length).fill(null);
-        state.timeLeft = 30;
+        state.timeLeft = state.timerDuration;
         
-        elements.loadingScreen.classList.remove('active');
+        console.log('Quiz data prepared, starting quiz...');
+        
+        // Ensure quiz screen is shown
+        hideAllScreens();
+        if (!elements.quizScreen) {
+            console.error('Quiz screen element not found');
+            showToast('Error: Quiz screen not found. Please check the HTML.', 'error');
+            elements.categoryScreen.classList.add('active');
+            return;
+        }
         elements.quizScreen.classList.add('active');
+        
+        // Start the quiz
         startQuiz();
     } catch (error) {
         console.error('Error loading questions:', error);
-        alert('Failed to load questions. Please try again later.');
-        elements.loadingScreen.classList.remove('active');
+        showToast('Failed to load questions. Please try again later.', 'error');
+        hideAllScreens();
         elements.categoryScreen.classList.add('active');
     }
 }
@@ -292,19 +507,28 @@ function shuffleArray(array) {
 }
 
 function startQuiz() {
+    console.log('Starting quiz with', state.questions.length, 'questions');
     state.startTime = Date.now();
     showQuestion();
-    startTimer();
+    if (state.isTimerEnabled) {
+        startTimer();
+    } else {
+        elements.timerDisplay.style.display = 'none';
+        document.querySelector('.quiz-timer i').style.display = 'none';
+    }
 }
 
 function showQuestion() {
     const question = state.questions[state.currentQuestionIndex];
+    console.log('Showing question', state.currentQuestionIndex + 1);
     
+    // Update progress bar and question number
     const progress = (state.currentQuestionIndex / state.questions.length) * 100;
     elements.progressBar.style.width = `${progress}%`;
     elements.questionNumber.textContent = `Q${state.currentQuestionIndex + 1}/${state.questions.length}`;
     elements.categoryName.textContent = state.categories[state.currentCategory].name;
     
+    // Set question text
     elements.questionText.textContent = question.question;
     elements.optionsContainer.innerHTML = '';
     
@@ -312,6 +536,7 @@ function showQuestion() {
     const shuffledOptions = shuffleArray([...question.options]);
     const correctAnswerIndex = shuffledOptions.indexOf(question.options[question.answer]);
     
+    // Create option elements
     shuffledOptions.forEach((option, index) => {
         const optionElement = document.createElement('div');
         optionElement.className = 'option';
@@ -327,7 +552,10 @@ function showQuestion() {
         elements.optionsContainer.appendChild(optionElement);
     });
     
-    resetTimer();
+    if (state.isTimerEnabled) {
+        resetTimer();
+    }
+    
     elements.nextButton.disabled = state.userAnswers[state.currentQuestionIndex] === null;
     elements.nextButton.classList.toggle('disabled', state.userAnswers[state.currentQuestionIndex] === null);
 }
@@ -335,14 +563,14 @@ function showQuestion() {
 function selectAnswer(e) {
     const selectedOption = e.target;
     const selectedAnswer = parseInt(selectedOption.dataset.answer);
-    const correctAnswerIndex = parseInt(selectedOption.dataset.correctIndex);
     
     document.querySelectorAll('.option').forEach(opt => {
         opt.classList.remove('selected');
     });
-    selectedOption.classList.add('selected');
     
+    selectedOption.classList.add('selected');
     state.userAnswers[state.currentQuestionIndex] = selectedAnswer;
+    
     elements.nextButton.disabled = false;
     elements.nextButton.classList.remove('disabled');
 }
@@ -351,7 +579,6 @@ function nextQuestion() {
     const currentQuestion = state.questions[state.currentQuestionIndex];
     const userAnswer = state.userAnswers[state.currentQuestionIndex];
     
-    // Get the correct answer index from the shuffled options
     const optionsElements = document.querySelectorAll('.option');
     const correctAnswerIndex = parseInt(optionsElements[0].dataset.correctIndex);
     
@@ -378,7 +605,7 @@ function nextQuestion() {
 
 function startTimer() {
     clearInterval(state.timer);
-    state.timeLeft = 30;
+    state.timeLeft = state.timerDuration;
     updateTimerDisplay();
     
     state.timer = setInterval(() => {
@@ -399,9 +626,11 @@ function startTimer() {
 
 function resetTimer() {
     clearInterval(state.timer);
-    state.timeLeft = 30;
+    state.timeLeft = state.timerDuration;
     updateTimerDisplay();
-    startTimer();
+    if (state.isTimerEnabled) {
+        startTimer();
+    }
 }
 
 function updateTimerDisplay() {
@@ -431,8 +660,12 @@ function finishQuiz() {
     state.endTime = Date.now();
     
     calculateResults();
-    elements.quizScreen.classList.remove('active');
+    
+    hideAllScreens();
     elements.resultsScreen.classList.add('active');
+    
+    elements.timerDisplay.style.display = 'block';
+    document.querySelector('.quiz-timer i').style.display = 'inline-block';
     
     if (state.score >= state.questions.length * 0.8) {
         startConfetti(3000);
@@ -491,7 +724,7 @@ function closeModal() {
 }
 
 function showReview() {
-    elements.resultsScreen.classList.remove('active');
+    hideAllScreens();
     elements.reviewScreen.classList.add('active');
     
     elements.reviewQuestions.innerHTML = '';
@@ -513,19 +746,14 @@ function showReview() {
         correctAnswer.innerHTML = `<i class="fas fa-check"></i> ${question.options[question.answer]}`;
         reviewItem.appendChild(correctAnswer);
         
-        if (userAnswer !== -1 && !isCorrect) {
+        if (!isCorrect && userAnswer !== -1) {
             const userAnswerElement = document.createElement('div');
             userAnswerElement.className = 'review-answer wrong';
             userAnswerElement.innerHTML = `<i class="fas fa-times"></i> ${question.options[userAnswer]}`;
             reviewItem.appendChild(userAnswerElement);
-        } else if (userAnswer === -1) {
-            const skippedAnswer = document.createElement('div');
-            skippedAnswer.className = 'review-answer user';
-            skippedAnswer.innerHTML = `<i class="fas fa-forward"></i> Skipped`;
-            reviewItem.appendChild(skippedAnswer);
         }
         
-        if (question.hint) {
+        if (question.hint && (!isCorrect || userAnswer === -1)) {
             const hintElement = document.createElement('div');
             hintElement.className = 'review-hint';
             hintElement.innerHTML = `<i class="fas fa-lightbulb"></i> ${question.hint}`;
@@ -536,9 +764,32 @@ function showReview() {
     });
 }
 
-function restartQuiz() {
-    elements.resultsScreen.classList.remove('active');
+function showExitConfirmation() {
+    elements.exitModal.classList.add('active');
+}
+
+function cancelExitQuiz() {
+    elements.exitModal.classList.remove('active');
+}
+
+function confirmExitQuiz() {
+    clearInterval(state.timer);
+    elements.exitModal.classList.remove('active');
+    hideAllScreens();
     elements.categoryScreen.classList.add('active');
+    
+    elements.timerDisplay.style.display = 'block';
+    document.querySelector('.quiz-timer i').style.display = 'inline-block';
+}
+
+function goToHome() {
+    hideAllScreens();
+    elements.categoryScreen.classList.add('active');
+}
+
+function restartQuiz() {
+    hideAllScreens();
+    showSettingsModal(state.currentCategory);
 }
 
 function handleSearch() {
@@ -596,7 +847,6 @@ function toggleSound() {
     setSound(state.soundEnabled);
 }
 
-// Utility function to debounce search input
 function debounce(func, wait) {
     let timeout;
     return function executedFunction(...args) {
@@ -609,5 +859,4 @@ function debounce(func, wait) {
     };
 }
 
-// Initialize the app when DOM is loaded
 document.addEventListener('DOMContentLoaded', init);

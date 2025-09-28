@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Admin Panel</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; padding: 20px; }
+    input, button { width: 100%; padding: 10px; margin: 5px 0; }
+    button { background: #007bff; color: white; border: none; cursor: pointer; }
+    button:hover { background: #0056b3; }
+    #admin-panel { border-top: 2px solid #007bff; padding-top: 20px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Quiz Admin Panel</h1>
+  <div id="login-form">
+    <h3>Admin Login</h3>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button id="loginBtn">Login</button>
+    <p id="login-status" style="color: red;"></p>
+  </div>
+
+  <div id="admin-panel" style="display:none;">
+    <h3>Welcome Admin</h3>
+    <button id="logoutBtn">Logout</button>
+    
+    <h4>Add Quiz Question</h4>
+    <input type="text" id="question" placeholder="Enter Question">
+    <input type="text" id="option1" placeholder="Option 1">
+    <input type="text" id="option2" placeholder="Option 2">
+    <input type="text" id="option3" placeholder="Option 3">
+    <input type="text" id="option4" placeholder="Option 4">
+    <input type="number" id="answer" placeholder="Correct Option (1-4)" min="1" max="4">
+    <input type="text" id="category" placeholder="Category (e.g., CS1101)">
+    <input type="text" id="hint" placeholder="Hint (optional)">
+    
+    <button id="addQuestionBtn">Add Question</button>
+    <p id="status" style="color: green;"></p>
+    
+    <div id="questions-list" style="margin-top: 30px;">
+      <h4>Existing Questions</h4>
+      <div id="questions-container"></div>
+    </div>
+  </div>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+
+  <script>
+    // ✅ Your Firebase Config
+    const firebaseConfig = {
+      apiKey: "AIzaSyDUxj1yzVoqSQT8D0yKtlzlVsB5kLX6stg",
+      authDomain: "quiz-admin-37dc5.firebaseapp.com",
+      projectId: "quiz-admin-37dc5",
+      storageBucket: "quiz-admin-37dc5.firebasestorage.app",
+      messagingSenderId: "690863073587",
+      appId: "1:690863073587:web:7762814854ba40bf173646",
+      measurementId: "G-6HKKCE68DV",
+      databaseURL: "https://quiz-admin-37dc5-default-rtdb.firebaseio.com/"
+    };
+
+    // ✅ Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.database();
+
+    // ✅ Check authentication state on page load
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        console.log("User is signed in:", user.uid);
+        // You'll need to set this after you create your admin user
+        const ADMIN_UID = "6ORmtgZc2JXFqRyFAydB9QbB33q2"; // Replace with your actual UID
+        
+        if (user.uid === ADMIN_UID) {
+          document.getElementById("login-form").style.display = "none";
+          document.getElementById("admin-panel").style.display = "block";
+          loadQuestions();
+        } else {
+          document.getElementById("login-status").innerText = "Access Denied: Not Admin!";
+          auth.signOut();
+        }
+      } else {
+        document.getElementById("login-form").style.display = "block";
+        document.getElementById("admin-panel").style.display = "none";
+      }
+    });
+
+    // Login
+    document.getElementById("loginBtn").addEventListener("click", () => {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      
+      if (!email || !password) {
+        document.getElementById("login-status").innerText = "Please enter email and password";
+        return;
+      }
+      
+      auth.signInWithEmailAndPassword(email, password)
+        .then((userCredential) => {
+          document.getElementById("login-status").innerText = "Login successful!";
+          console.log("Logged in user UID:", userCredential.user.uid);
+        })
+        .catch(error => {
+          console.error("Login error:", error);
+          document.getElementById("login-status").innerText = "Error: " + error.message;
+        });
+    });
+
+    // Logout
+    document.getElementById("logoutBtn").addEventListener("click", () => {
+      auth.signOut().then(() => {
+        document.getElementById("status").innerText = "Logged out successfully";
+      });
+    });
+
+    // Add Question
+    document.getElementById("addQuestionBtn").addEventListener("click", () => {
+      const question = document.getElementById("question").value;
+      const option1 = document.getElementById("option1").value;
+      const option2 = document.getElementById("option2").value;
+      const option3 = document.getElementById("option3").value;
+      const option4 = document.getElementById("option4").value;
+      const answer = document.getElementById("answer").value;
+      const category = document.getElementById("category").value;
+      const hint = document.getElementById("hint").value;
+
+      if (!question || !option1 || !option2 || !option3 || !option4 || !answer || !category) {
+        document.getElementById("status").innerText = "Please fill in all required fields.";
+        return;
+      }
+
+      const answerNum = parseInt(answer);
+      if (answerNum < 1 || answerNum > 4) {
+        document.getElementById("status").innerText = "Answer must be between 1 and 4";
+        return;
+      }
+
+      // Adjust answer to be 0-indexed for the quiz app
+      const adjustedAnswer = answerNum - 1;
+
+      const questionData = {
+        question: question,
+        options: [option1, option2, option3, option4],
+        answer: adjustedAnswer,
+        category: category,
+        hint: hint || "",
+        timestamp: Date.now()
+      };
+
+      // Save under categories for easier retrieval
+      const newQuestionRef = db.ref("quiz/categories/" + category + "/questions").push();
+      newQuestionRef.set(questionData)
+        .then(() => {
+          document.getElementById("status").innerText = "✅ Question added successfully!";
+          clearForm();
+          loadQuestions();
+        })
+        .catch((error) => {
+          console.error("Error adding question:", error);
+          document.getElementById("status").innerText = "Error: " + error.message;
+        });
+    });
+
+    function clearForm() {
+      document.getElementById("question").value = "";
+      document.getElementById("option1").value = "";
+      document.getElementById("option2").value = "";
+      document.getElementById("option3").value = "";
+      document.getElementById("option4").value = "";
+      document.getElementById("answer").value = "";
+      document.getElementById("hint").value = "";
+      // Keep category filled for adding multiple questions in same category
+    }
+
+    function loadQuestions() {
+      const questionsContainer = document.getElementById("questions-container");
+      questionsContainer.innerHTML = "Loading questions...";
+      
+      db.ref("quiz/categories").once("value")
+        .then((snapshot) => {
+          const categories = snapshot.val();
+          let html = "";
+          
+          if (categories) {
+            Object.keys(categories).forEach(category => {
+              const questions = categories[category].questions;
+              if (questions) {
+                html += `<h5>Category: ${category}</h5>`;
+                Object.keys(questions).forEach(questionId => {
+                  const q = questions[questionId];
+                  html += `
+                    <div style="border: 1px solid #ccc; padding: 10px; margin: 5px 0;">
+                      <strong>Q:</strong> ${q.question}<br>
+                      <strong>A:</strong> ${q.options[q.answer]} (Option ${q.answer + 1})<br>
+                      <button onclick="deleteQuestion('${category}', '${questionId}')">Delete</button>
+                    </div>
+                  `;
+                });
+              }
+            });
+          }
+          
+          questionsContainer.innerHTML = html || "No questions yet.";
+        })
+        .catch(error => {
+          console.error("Error loading questions:", error);
+          questionsContainer.innerHTML = "Error loading questions.";
+        });
+    }
+
+    // Make delete function globally available
+    window.deleteQuestion = function(category, questionId) {
+      if (confirm("Are you sure you want to delete this question?")) {
+        db.ref(`quiz/categories/${category}/questions/${questionId}`).remove()
+          .then(() => {
+            document.getElementById("status").innerText = "Question deleted successfully!";
+            loadQuestions();
+          })
+          .catch(error => {
+            document.getElementById("status").innerText = "Error deleting question: " + error.message;
+          });
+      }
+    };
+
+    // Add some test data button for debugging
+    document.body.innerHTML += `
+      <div style="margin-top: 20px;">
+        <button onclick="addTestData()" style="background: #28a745;">Add Test Data</button>
+        <button onclick="checkFirebaseConnection()" style="background: #ffc107; color: black;">Test Connection</button>
+      </div>
+    `;
+
+    window.addTestData = function() {
+      const testQuestions = [
+        {
+          question: "What is 2+2?",
+          options: ["3", "4", "5", "6"],
+          answer: 1,
+          category: "MATH101",
+          hint: "Basic arithmetic"
+        },
+        {
+          question: "What is the capital of France?",
+          options: ["London", "Berlin", "Paris", "Madrid"],
+          answer: 2,
+          category: "GEOG101",
+          hint: "Think of the Eiffel Tower"
+        }
+      ];
+
+      testQuestions.forEach((q, index) => {
+        db.ref("quiz/categories/" + q.category + "/questions").push().set(q)
+          .then(() => {
+            if (index === testQuestions.length - 1) {
+              document.getElementById("status").innerText = "Test data added!";
+              loadQuestions();
+            }
+          });
+      });
+    };
+
+    window.checkFirebaseConnection = function() {
+      const testRef = db.ref("test");
+      testRef.set({ timestamp: Date.now() })
+        .then(() => {
+          document.getElementById("status").innerText = "✅ Firebase connection working!";
+          testRef.remove(); // Clean up
+        })
+        .catch(error => {
+          document.getElementById("status").innerText = "❌ Firebase error: " + error.message;
+        });
+    };
+  </script>
+</body>
+</html>

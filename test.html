@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        fetch('./data/categories.json')
+            .then(r => r.json())
+            .then(data => console.log('Categories loaded:', data))
+            .catch(err => console.error('Error:', err));
+            
+        fetch('./data/questions.json')
+            .then(r => r.json())
+            .then(data => console.log('Questions loaded:', data))
+            .catch(err => console.error('Error:', err));
+    </script>
+</body>
+</html>

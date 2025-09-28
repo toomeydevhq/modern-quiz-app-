@@ -1,9 +1,9 @@
 :root {
-    /* Light Theme */
-    --primary-color: #4361ee;
-    --primary-light: #4895ef;
-    --secondary-color: #3f37c9;
-    --accent-color: #4cc9f0;
+    /* Light Theme - Updated with Sea Buckthorn (#fa9827) */
+    --primary-color: #fa9827;
+    --primary-light: #fbb450;
+    --secondary-color: #e0861a;
+    --accent-color: #f8c471;
     --success-color: #4ade80;
     --warning-color: #fbbf24;
     --danger-color: #f87171;
@@ -29,10 +29,11 @@
 }
 
 [data-theme="dark"] {
-    --primary-color: #6366f1;
-    --primary-light: #818cf8;
-    --secondary-color: #4f46e5;
-    --accent-color: #60a5fa;
+    /* Dark Theme - Updated with Sea Buckthorn (#fa9827) */
+    --primary-color: #fa9827;
+    --primary-light: #fbb450;
+    --secondary-color: #e0861a;
+    --accent-color: #f8c471;
     --success-color: #34d399;
     --warning-color: #f59e0b;
     --danger-color: #ef4444;
@@ -68,6 +69,95 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+
+/* Logo PNG Styles */
+.logo-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+/* Update logo container to work with img tag */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Toast Notification */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    box-shadow: var(--shadow-lg);
+    border-left: 4px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    z-index: 1001;
+    max-width: 400px;
+    transform: translateX(150%);
+    transition: transform 0.3s ease;
+}
+
+.toast.show {
+    transform: translateX(0);
+}
+
+.toast-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.toast-icon {
+    font-size: 1.25rem;
+}
+
+.toast.success .toast-icon {
+    color: var(--success-color);
+}
+
+.toast.warning .toast-icon {
+    color: var(--warning-color);
+}
+
+.toast.error .toast-icon {
+    color: var(--danger-color);
+}
+
+.toast.info .toast-icon {
+    color: var(--primary-color);
+}
+
+.toast-message {
+    font-size: 0.9375rem;
+    color: var(--text-primary);
+}
+
+.toast-close {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 1.125rem;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+}
+
+.toast-close:hover {
+    background: rgba(0, 0, 0, 0.1);
 }
 
 /* Header */
@@ -221,7 +311,7 @@ body {
     width: 60px;
     height: 60px;
     border-radius: var(--radius-full);
-    background: rgba(67, 97, 238, 0.1);
+    background: rgba(250, 152, 39, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -272,7 +362,7 @@ body {
 .search-box input:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+    box-shadow: 0 0 0 3px rgba(250, 152, 39, 0.1);
 }
 
 #clear-search {
@@ -437,7 +527,7 @@ body {
 
 .option.selected {
     border-color: var(--primary-color);
-    background: rgba(67, 97, 238, 0.05);
+    background: rgba(250, 152, 39, 0.05);
 }
 
 .option.correct {
@@ -495,7 +585,7 @@ body {
 }
 
 .outline-btn:hover {
-    background: rgba(67, 97, 238, 0.1);
+    background: rgba(250, 152, 39, 0.1);
 }
 
 .hint-btn {
@@ -687,7 +777,7 @@ body {
 }
 
 .review-answer.user {
-    background: rgba(67, 97, 238, 0.1);
+    background: rgba(250, 152, 39, 0.1);
     border-left: 3px solid var(--primary-color);
 }
 
@@ -793,6 +883,12 @@ body {
     .option {
         padding: 0.875rem 1rem;
     }
+    
+    .toast {
+        left: 1rem;
+        right: 1rem;
+        max-width: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -837,60 +933,161 @@ body {
     pointer-events: none;
 }
 
-
-/* Add these styles to your existing main.css */
-
-/* Admin specific styles */
-.admin-btn {
-    margin-right: 0.5rem;
-}
-
-.data-preview {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border-color);
+/* Quiz Settings Styles */
+.quiz-settings {
+    background: var(--bg-card);
     border-radius: var(--radius-md);
-    padding: 1rem;
-    margin-top: 1rem;
-    max-height: 300px;
-    overflow-y: auto;
-}
-
-.data-preview pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    font-family: 'Courier New', monospace;
-    font-size: 0.875rem;
-}
-
-.category-item, .question-item {
-    background: var(--bg-primary);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
     border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
-    padding: 1rem;
+}
+
+.setting-group {
+    margin-bottom: 1rem;
+}
+
+.setting-group:last-child {
+    margin-bottom: 0;
+}
+
+.setting-group label {
+    display: block;
     margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
 }
 
-.item-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-}
-
-.item-actions {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.option-input {
+.setting-select, .setting-input {
     width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 0.9375rem;
 }
 
-.set-correct {
-    background: var(--success-color);
+.setting-select:focus, .setting-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(250, 152, 39, 0.1);
+}
+
+.available-questions {
+    text-align: center;
+    padding: 0.75rem;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+/* Quiz Header Controls */
+.quiz-controls-top {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.small-btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8125rem;
+}
+
+/* Modal Actions */
+.modal-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.danger-btn {
+    background: var(--danger-color);
     color: white;
 }
 
-.set-correct.active {
-    background: var(--primary-color);
+.danger-btn:hover {
+    background: #dc2626;
+}
+
+/* No timer state */
+.timer-disabled {
+    opacity: 0.5;
+}
+
+.timer-disabled .quiz-timer {
+    text-decoration: line-through;
+}
+
+/* Quiz Settings Modal Styles */
+#settings-modal .modal-content {
+    max-width: 500px;
+}
+
+#settings-modal .quiz-settings {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#settings-modal .setting-group {
+    margin-bottom: 1.5rem;
+}
+
+#settings-modal .setting-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+#settings-modal .setting-select, 
+#settings-modal .setting-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 0.9375rem;
+}
+
+#settings-modal .setting-select:focus, 
+#settings-modal .setting-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(250, 152, 39, 0.1);
+}
+
+#settings-modal .available-questions {
+    text-align: center;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-top: 1rem;
+}
+
+#settings-modal .modal-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Responsive design for modal */
+@media (max-width: 768px) {
+    #settings-modal .modal-content {
+        margin: 1rem;
+        width: calc(100% - 2rem);
+    }
+    
+    #settings-modal .modal-actions {
+        flex-direction: column;
+    }
 }
