@@ -1,0 +1,568 @@
+[
+    {
+        "question": "What is the purpose of an exclusion constraint in a conceptual data model?",
+        "options": [
+            "Enforcing referential integrity",
+            "Preventing certain combinations of values in a table",
+            "Defining unique identifiers",
+            "Establishing foreign key relationships"
+        ],
+        "answer": 1,
+        "hint": "Exclusion constraints restrict specific value combinations rather than enforcing relationships."
+    },
+    {
+        "question": "Consider a 'Courses' table and a 'Students' table. If a student can enroll in multiple courses and a course can have multiple students, what kind of relationship exists?",
+        "options": [
+            "One-to-one",
+            "One-to-many",
+            "Many-to-one",
+            "Many-to-many"
+        ],
+        "answer": 3,
+        "hint": "This requires an intermediate table to represent the relationship between entities."
+    },
+    {
+        "question": "How does the concept of candidate keys contribute to minimizing redundancy?",
+        "options": [
+            "By introducing more redundancy",
+            "By enforcing referential integrity constraints",
+            "By serving as unique identifiers for records",
+            "By complicating the normalization process"
+        ],
+        "answer": 2,
+        "hint": "Candidate keys help uniquely identify records, reducing duplicate data."
+    },
+    {
+        "question": "Which normal form guarantees that non-prime attributes are fully functionally dependent on the primary key?",
+        "options": [
+            "First Normal Form (1NF)",
+            "Second Normal Form (2NF)",
+            "Third Normal Form (3NF)",
+            "Boyce-Codd Normal Form (BCNF)"
+        ],
+        "answer": 1,
+        "hint": "This normal form addresses partial dependencies."
+    },
+    {
+        "question": "The SQL UPDATE statement is used to insert new records into a table. Is the statement TRUE or FALSE?",
+        "options": [
+            "TRUE",
+            "FALSE"
+        ],
+        "answer": 1,
+        "hint": "UPDATE modifies existing records; INSERT adds new records."
+    },
+    {
+        "question": "Which type of database transactions involves multiple independent operations that are treated as a single unit?",
+        "options": [
+            "Nested Transactions",
+            "Distributed Transactions",
+            "Parallel Transactions",
+            "Composite Transactions"
+        ],
+        "answer": 3,
+        "hint": "These transactions group multiple operations into one atomic unit."
+    },
+    {
+        "question": "What is the primary goal of the Waterfall model during the implementation phase?",
+        "options": [
+            "Iterative prototyping",
+            "Incremental enhancements",
+            "Detailed implementation",
+            "Continuous integration"
+        ],
+        "answer": 2,
+        "hint": "Waterfall focuses on sequential, detailed execution of phases."
+    },
+    {
+        "question": "What is a stored procedure in the context of database programming?",
+        "options": [
+            "A query that retrieves data from multiple tables",
+            "A precompiled collection of one or more SQL statements",
+            "An index on a specific column",
+            "A constraint that ensures data integrity"
+        ],
+        "answer": 1,
+        "hint": "Stored procedures are saved database routines that can be executed repeatedly."
+    },
+    {
+        "question": "What is the primary goal of normalization in database programming?",
+        "options": [
+            "Increase data redundancy",
+            "Optimize query performance",
+            "Organize data to reduce redundancy and dependency",
+            "Implement complex relationships"
+        ],
+        "answer": 2,
+        "hint": "Normalization structures data to minimize duplication and anomalies."
+    },
+    {
+        "question": "What is the role of a Transaction Manager in the context of Database APIs?",
+        "options": [
+            "Manages database backups and isolation",
+            "Coordinates and ensures the integrity of database transactions",
+            "Defines the structure of the database schema",
+            "Facilitates communication between different databases"
+        ],
+        "answer": 1,
+        "hint": "Transaction managers handle ACID properties of database operations."
+    },
+    {
+        "question": "Which normal form guarantees that no non-prime attributes are transitively dependent on the primary key?",
+        "options": [
+            "Second Normal Form (2NF)",
+            "Third Normal Form (3NF)",
+            "Boyce-Codd Normal Form (BCNF)",
+            "Fourth Normal Form (4NF)"
+        ],
+        "answer": 1,
+        "hint": "This normal form eliminates transitive dependencies."
+    },
+    {
+        "question": "Which of the following SQL statement deletes all records from a table named 'orders' where the status is 'Cancelled'?",
+        "options": [
+            "DELETE FROM orders WHERE status = 'cancelled'",
+            "REMOVE FROM orders WHERE status = 'cancelled'",
+            "REMOVE * FROM orders WHERE status = 'cancelled'",
+            "DELETE * FROM orders WHERE status = 'cancelled'"
+        ],
+        "answer": 0,
+        "hint": "DELETE statement uses FROM and WHERE clauses without asterisk."
+    },
+    {
+        "question": "In Embedded SQL, what is the purpose of the EXEC SQL statement?",
+        "options": [
+            "Execute a stored procedure",
+            "Execute an SQL statement",
+            "Execute a shell command",
+            "Execute a loop in the program"
+        ],
+        "answer": 1,
+        "hint": "EXEC SQL is used to embed and execute SQL statements within host languages."
+    },
+    {
+        "question": "What is the primary role of a Database Trainer within an organization?",
+        "options": [
+            "Managing and maintaining the database system",
+            "Designing network architectures",
+            "Providing training and education on database technologies and best practices",
+            "Writing code for applications"
+        ],
+        "answer": 2,
+        "hint": "This role focuses on knowledge transfer and skill development."
+    },
+    {
+        "question": "Which technique is crucial for maintaining data consistency across distributed databases?",
+        "options": [
+            "Database partitioning",
+            "Data migration",
+            "Database synchronization",
+            "Data deduplication"
+        ],
+        "answer": 2,
+        "hint": "This ensures all database copies have the same data."
+    },
+    {
+        "question": "What happens when the MODIFY COLUMN clause in the ALTER TABLE statement is used?",
+        "options": [
+            "Adds a new column to the table",
+            "Removes a column from the table",
+            "Changes the table's name",
+            "Modifies the data type of an existing column"
+        ],
+        "answer": 3,
+        "hint": "ALTER TABLE with MODIFY COLUMN changes column properties."
+    },
+    {
+        "question": "What distinguishes a conceptual data model from a physical data model?",
+        "options": [
+            "Conceptual models focus on implementation details, while physical models abstract real-world concepts",
+            "Conceptual models describe how data is stored in databases, while physical models capture real-world relationships",
+            "Conceptual models represent real-world concepts, while physical models detail the database implementation",
+            "Conceptual models and physical models are interchangeable terms in data modeling"
+        ],
+        "answer": 2,
+        "hint": "Conceptual is 'what', physical is 'how'."
+    },
+    {
+        "question": "Which technique is crucial for maintaining database performance during alterations?",
+        "options": [
+            "Query optimization",
+            "Data migration",
+            "Database replication",
+            "Data deduplication"
+        ],
+        "answer": 0,
+        "hint": "This technique improves how database queries are processed."
+    },
+    {
+        "question": "In a normalized relational schema, redundancy is minimized by organizing data to reduce dependency among attributes.",
+        "options": [
+            "TRUE",
+            "FALSE"
+        ],
+        "answer": 0,
+        "hint": "This is the fundamental purpose of normalization."
+    },
+    {
+        "question": "How does the Waterfall model manage dependencies between project phases?",
+        "options": [
+            "By allowing parallel execution",
+            "By minimizing phase overlap",
+            "By encouraging phase skipping",
+            "By promoting iterative development"
+        ],
+        "answer": 1,
+        "hint": "Waterfall uses sequential phases with minimal overlap."
+    },
+    {
+        "question": "Which role focuses on designing and implementing the structure and organization of databases?",
+        "options": [
+            "Database Administrator (DBA)",
+            "Database Developer",
+            "Database Architect",
+            "Data Analyst"
+        ],
+        "answer": 2,
+        "hint": "This role designs the overall database structure."
+    },
+    {
+        "question": "How does the use of a unique constraint contribute to the development of relations in a relational data model?",
+        "options": [
+            "A unique constraint prevents relationships between tables",
+            "A unique constraint enforces the uniqueness of values in a column, supporting relationships",
+            "A unique constraint allows null values in a column",
+            "A unique constraint is only applicable to primary keys"
+        ],
+        "answer": 1,
+        "hint": "Unique constraints help maintain data integrity for relationship keys."
+    },
+    {
+        "question": "What is the correct SQL statement to add a new column named 'is_available' to the 'inventory' table?",
+        "options": [
+            "ADD is_available TO inventory",
+            "CREATE COLUMN is_available IN inventory BOOLEAN",
+            "UPDATE inventory SET is_available = TRUE",
+            "ALTER TABLE inventory ADD COLUMN is_available BOOLEAN"
+        ],
+        "answer": 3,
+        "hint": "ALTER TABLE is used to modify table structure."
+    },
+    {
+        "question": "A relation in Third Normal Form (3NF) is always in Second Normal Form (2NF).",
+        "options": [
+            "TRUE",
+            "FALSE"
+        ],
+        "answer": 0,
+        "hint": "Normal forms are cumulative - each higher form includes the requirements of lower forms."
+    },
+    {
+        "question": "What is the role of the DROP COLUMN clause when modifying a table?",
+        "options": [
+            "Remove all columns from a table",
+            "Add a new column to a table",
+            "Delete a specific column from a table",
+            "Change the data type of a column"
+        ],
+        "answer": 2,
+        "hint": "DROP COLUMN removes specified columns from a table."
+    },
+    {
+        "question": "What is the purpose of the SQL ORDER BY clause?",
+        "options": [
+            "To add new records to a table",
+            "To retrieve data in a specified order",
+            "To update records in a table",
+            "To delete specific records from a table"
+        ],
+        "answer": 1,
+        "hint": "ORDER BY sorts query results."
+    },
+    {
+        "question": "Which query is used to add a new column named 'status' to an existing table called 'orders'?",
+        "options": [
+            "ALTER TABLE orders ADD COLUMN status VARCHAR(50)",
+            "ADD COLUMN status TO orders",
+            "UPDATE TABLE orders ADD status VARCHAR(50)",
+            "ALTER COLUMN status IN orders ADD VARCHAR(50)"
+        ],
+        "answer": 0,
+        "hint": "ALTER TABLE with ADD COLUMN is the correct syntax."
+    },
+    {
+        "question": "In a physical data model, what is the role of a database lock?",
+        "options": [
+            "Enforcing data integrity constraints",
+            "Providing a consistent and isolated view of the data",
+            "Normalizing database tables",
+            "Managing concurrent access to data"
+        ],
+        "answer": 3,
+        "hint": "Locks prevent conflicts when multiple users access the same data."
+    },
+    {
+        "question": "What does the SQL SELECT * FROM tablename statement do?",
+        "options": [
+            "Retrieves the table definition",
+            "Retrieves a specific column from the table",
+            "Retrieves only the first column from the table",
+            "Retrieves all columns and records from the table"
+        ],
+        "answer": 3,
+        "hint": "The asterisk (*) means 'all columns'."
+    },
+    {
+        "question": "How does the Waterfall model facilitate project monitoring and control?",
+        "options": [
+            "Through continuous integration",
+            "Through regular feedback loops",
+            "Through phase-based milestones",
+            "Through dynamic resource allocation"
+        ],
+        "answer": 2,
+        "hint": "Waterfall uses predefined milestones at phase completions."
+    },
+    {
+        "question": "What is the purpose of the SAVEPOINT statement in a database transaction?",
+        "options": [
+            "Commit the transaction and start new transaction",
+            "Create a point to which a transaction can be rolled back",
+            "Lock the database for exclusive access and roll back",
+            "Retrieve data from the database"
+        ],
+        "answer": 1,
+        "hint": "SAVEPOINT allows partial rollbacks within transactions."
+    },
+    {
+        "question": "Which aspect of database development does the Waterfall model prioritize?",
+        "options": [
+            "Adaptability to changing environments",
+            "Rapid deployment of features",
+            "Sequential progression through stages",
+            "Continuous user involvement"
+        ],
+        "answer": 2,
+        "hint": "Waterfall emphasizes linear, sequential development."
+    },
+    {
+        "question": "Which function is used to retrieve the number of rows returned by a SELECT query?",
+        "options": [
+            "NUMROWS()",
+            "COUNT()",
+            "SIZE()",
+            "ROWS()"
+        ],
+        "answer": 1,
+        "hint": "COUNT() is the standard SQL aggregate function for counting rows."
+    },
+    {
+        "question": "What technique is used to merge multiple databases into a single logical unit for easier management?",
+        "options": [
+            "Database mirroring",
+            "Data partitioning",
+            "Database clustering",
+            "Data archiving"
+        ],
+        "answer": 2,
+        "hint": "Clustering combines multiple database instances into one logical system."
+    },
+    {
+        "question": "How can data redundancy impact the reliability of a database system?",
+        "options": [
+            "It enhances database reliability",
+            "It has no effect on database reliability",
+            "It increases the risk of data inconsistency and errors",
+            "It simplifies data recovery processes"
+        ],
+        "answer": 2,
+        "hint": "Redundant data can become inconsistent when updates occur."
+    },
+    {
+        "question": "What is a nested SELECT statement in SQL?",
+        "options": [
+            "A SELECT statement that retrieves all columns from a table",
+            "A SELECT statement used within another SELECT statement",
+            "A SELECT statement that involves multiple JOIN operations",
+            "A SELECT statement that retrieves distinct values from a column"
+        ],
+        "answer": 1,
+        "hint": "Also known as subqueries or inner queries."
+    },
+    {
+        "question": "Which SQL constraint is used to ensure that a combination of columns is unique across rows in a table?",
+        "options": [
+            "NOT NULL",
+            "PRIMARY KEY",
+            "FOREIGN KEY",
+            "UNIQUE"
+        ],
+        "answer": 3,
+        "hint": "UNIQUE constraint ensures no duplicate values in specified columns."
+    },
+    {
+        "question": "In a FULL JOIN, what happens to unmatched rows in both tables?",
+        "options": [
+            "They are included in the result set with NULL values for the columns from the other table",
+            "They are excluded from the result set",
+            "They are included in the result set without NULL values",
+            "They are automatically filled with default values"
+        ],
+        "answer": 0,
+        "hint": "FULL JOIN returns all rows from both tables, with NULLs for missing matches."
+    },
+    {
+        "question": "In the context of a relational database, which of the following best defines an attribute?",
+        "options": [
+            "A unique identifier for a record",
+            "A named collection of related records",
+            "A specific characteristic or property of an entity",
+            "A function or procedure used to manipulate data"
+        ],
+        "answer": 2,
+        "hint": "Attributes describe the properties of entities in a database."
+    },
+    {
+        "question": "What is the primary purpose of JDBC (Java Database Connectivity)?",
+        "options": [
+            "To define the structure of a Java database and Java applications",
+            "To facilitate communication between Java applications and databases",
+            "To manage Java security protocols",
+            "To optimize Java code for performance"
+        ],
+        "answer": 1,
+        "hint": "JDBC is an API for database connectivity from Java programs."
+    },
+    {
+        "question": "Which part of the C-instruction instructs the ALU what to compute?",
+        "options": [
+            "Dest",
+            "Comp",
+            "Jump",
+            "Addr"
+        ],
+        "answer": 1,
+        "hint": "This field specifies the computation to be performed by the ALU."
+    },
+    {
+        "question": "What is the role of a Database Administrator (DBA) in maintaining database security?",
+        "options": [
+            "Designing user interfaces for database applications",
+            "Managing user access controls and permissions",
+            "Writing application code that interacts with the database",
+            "Creating marketing materials for database products"
+        ],
+        "answer": 1,
+        "hint": "DBAs manage who can access what data in the database."
+    },
+    {
+        "question": "Which SQL clause is used to filter groups in a GROUP BY query?",
+        "options": [
+            "WHERE",
+            "HAVING",
+            "FILTER",
+            "CONDITION"
+        ],
+        "answer": 1,
+        "hint": "HAVING filters groups, while WHERE filters individual rows."
+    },
+    {
+        "question": "What is the purpose of database indexing?",
+        "options": [
+            "To increase data redundancy",
+            "To decrease database security",
+            "To improve query performance",
+            "To complicate database design"
+        ],
+        "answer": 2,
+        "hint": "Indexes speed up data retrieval operations."
+    },
+    {
+        "question": "In database transactions, what does the 'A' in ACID properties stand for?",
+        "options": [
+            "Availability",
+            "Atomicity",
+            "Accessibility",
+            "Authorization"
+        ],
+        "answer": 1,
+        "hint": "Atomicity ensures transactions are all-or-nothing operations."
+    },
+    {
+        "question": "Which type of relationship exists when one record in Table A relates to multiple records in Table B?",
+        "options": [
+            "One-to-one",
+            "One-to-many",
+            "Many-to-many",
+            "Self-referencing"
+        ],
+        "answer": 1,
+        "hint": "This is the most common type of relationship in relational databases."
+    },
+    {
+        "question": "What is the purpose of the COMMIT statement in SQL?",
+        "options": [
+            "To start a new transaction",
+            "To permanently save transaction changes",
+            "To undo the current transaction",
+            "To create a backup of the database"
+        ],
+        "answer": 1,
+        "hint": "COMMIT makes transaction changes permanent in the database."
+    },
+    {
+        "question": "Which database object provides a virtual table based on the result of a SQL query?",
+        "options": [
+            "Stored Procedure",
+            "Trigger",
+            "View",
+            "Function"
+        ],
+        "answer": 2,
+        "hint": "Views don't store data but display data from underlying tables."
+    },
+    {
+        "question": "What is denormalization in database design?",
+        "options": [
+            "The process of removing all indexes from a database",
+            "The intentional introduction of redundancy to improve performance",
+            "The elimination of all primary keys from tables",
+            "The process of converting a database to first normal form"
+        ],
+        "answer": 1,
+        "hint": "Denormalization trades some redundancy for better query performance."
+    },
+    {
+        "question": "Which SQL command is used to remove a table entirely from the database?",
+        "options": [
+            "DELETE TABLE",
+            "REMOVE TABLE",
+            "DROP TABLE",
+            "ERASE TABLE"
+        ],
+        "answer": 2,
+        "hint": "This command removes both the table structure and its data."
+    },
+    {
+        "question": "What is a foreign key constraint used for?",
+        "options": [
+            "Ensuring column values are unique",
+            "Preventing NULL values in a column",
+            "Maintaining referential integrity between tables",
+            "Speeding up query performance"
+        ],
+        "answer": 2,
+        "hint": "Foreign keys create relationships between tables and enforce consistency."
+    },
+    {
+        "question": "In database design, what is an entity?",
+        "options": [
+            "A person, place, thing, or concept about which data is stored",
+            "A SQL query that retrieves data",
+            "A database user account",
+            "A type of database index"
+        ],
+        "answer": 0,
+        "hint": "Entities represent the main objects in a database model."
+    }
+]

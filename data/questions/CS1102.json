@@ -1,0 +1,602 @@
+[
+    {
+        "question": "Where in a Java file can a variable declaration like 'int x' NOT appear?",
+        "options": [
+            "In a class definition but outside a method",
+            "In the initialization part of a for loop",
+            "As an argument in a method call",
+            "Inside a method body",
+            "In a method's parameter list"
+        ],
+        "answer": 2,
+        "hint": "Method calls use variable names and values, not their declarations."
+    },
+    {
+        "question": "In Java, what is the superclass of a class that launches a JavaFX application?",
+        "options": [
+            "ActionEvent",
+            "ActionListener",
+            "launch",
+            "start",
+            "Application"
+        ],
+        "answer": 4,
+        "hint": "JavaFX applications extend a specific class from the javafx package."
+    },
+    {
+        "question": "In the declaration 'public static void main(...)', what is the term for the word 'public'?",
+        "options": [
+            "Actual Parameter",
+            "Formal Parameter",
+            "Method Call",
+            "Modifier",
+            "Return Type"
+        ],
+        "answer": 3,
+        "hint": "It controls the access level of the method."
+    },
+    {
+        "question": "What does a method that sums all elements in an array and then divides by the number of elements compute?",
+        "options": [
+            "Average",
+            "Maximum",
+            "Minimum",
+            "Sum",
+            "Transpose"
+        ],
+        "answer": 0,
+        "hint": "This is a standard way to find the central value of a dataset."
+    },
+    {
+        "question": "In the import statement 'import javax.scene.control.Button;', what is 'javax.scene.control'?",
+        "options": [
+            "A Class",
+            "A Method",
+            "An Object",
+            "A Package",
+            "A Variable"
+        ],
+        "answer": 3,
+        "hint": "It's a group of related classes and interfaces."
+    },
+    {
+        "question": "What is the output when a subclass constructor calls 'this()' and the superclass constructor prints 'bland'?",
+        "options": [
+            "bland",
+            "bland then spicy",
+            "spicy",
+            "No output",
+            "The program does not compile"
+        ],
+        "answer": 1,
+        "hint": "The superclass constructor runs before the subclass constructor."
+    },
+    {
+        "question": "What is the term for a full line of Java code like 'System.out.println(...);'?",
+        "options": [
+            "A Class",
+            "A Method",
+            "An Object",
+            "A Parameter",
+            "A Statement"
+        ],
+        "answer": 4,
+        "hint": "It is a complete unit of execution that performs an action."
+    },
+    {
+        "question": "What is the default value for elements in an array of 'Integer' (the object type)?",
+        "options": [
+            "0",
+            "null",
+            "5",
+            "An empty string",
+            "It throws an exception"
+        ],
+        "answer": 1,
+        "hint": "For non-primitive (object) types, the default value is a special 'no object' reference."
+    },
+    {
+        "question": "If a static variable 'sum' is incremented 10 times in a loop, what is its final value?",
+        "options": [
+            "0",
+            "9",
+            "10",
+            "45",
+            "100"
+        ],
+        "answer": 2,
+        "hint": "Static variables are shared across all instances and retain their value."
+    },
+    {
+        "question": "In JavaFX, what is an 'event handler' also known as?",
+        "options": [
+            "An Event Generator",
+            "An Event Listener",
+            "An Event Loop",
+            "An Event Method",
+            "An Event Class"
+        ],
+        "answer": 1,
+        "hint": "It 'listens' for and responds to events like button clicks."
+    },
+    {
+        "question": "Which expression is equivalent to the boolean test 'test == true'?",
+        "options": [
+            "test",
+            "!test",
+            "test = true",
+            "test.equals(true)",
+            "None of the above"
+        ],
+        "answer": 0,
+        "hint": "A boolean variable itself represents a true/false value."
+    },
+    {
+        "question": "Which JavaFX method is used to register an event handler to a button?",
+        "options": [
+            "import",
+            "new Button(...)",
+            "setOnAction(...)",
+            "setBottom(...)",
+            "setScene(...)"
+        ],
+        "answer": 2,
+        "hint": "This method defines what code runs when the button is activated."
+    },
+    {
+        "question": "After 'int x = 3; x = x++;', what is the value of x?",
+        "options": [
+            "0",
+            "3",
+            "4",
+            "5",
+            "Syntax Error"
+        ],
+        "answer": 1,
+        "hint": "The post-increment operator returns the original value before incrementing."
+    },
+    {
+        "question": "What is the primary function of a Java compiler?",
+        "options": [
+            "Run Java programs",
+            "Translate .class files to machine code",
+            "Translate .java files to .class bytecode",
+            "Translate .java files directly to machine code",
+            "Check for runtime errors"
+        ],
+        "answer": 2,
+        "hint": "It converts human-readable source code into an intermediate format for the Java Virtual Machine."
+    },
+    {
+        "question": "In a class, what is a method with the same name as the class and no return type?",
+        "options": [
+            "A Class Variable",
+            "A Constructor",
+            "A Local Variable",
+            "An Instance Variable",
+            "A Main Method"
+        ],
+        "answer": 1,
+        "hint": "This special method is called when a new object is created."
+    },
+    {
+        "question": "If a variable is declared inside a block (between { }), where is it accessible?",
+        "options": [
+            "Anywhere in the program",
+            "Anywhere in the class",
+            "Anywhere in the method",
+            "Only within that specific block",
+            "It is not accessible at all"
+        ],
+        "answer": 3,
+        "hint": "This is the concept of 'scope' in Java."
+    },
+    {
+        "question": "What is a variable declared with the 'static' keyword called?",
+        "options": [
+            "A Class Variable",
+            "A Constructor",
+            "A Local Variable",
+            "An Instance Variable",
+            "A Method"
+        ],
+        "answer": 0,
+        "hint": "This variable belongs to the class itself, not to any individual object."
+    },
+    {
+        "question": "What is a method that performs an operation on an object's data called?",
+        "options": [
+            "A Class Variable",
+            "A Constructor",
+            "A Local Variable",
+            "An Instance Variable",
+            "A Method"
+        ],
+        "answer": 4,
+        "hint": "It defines the behaviors of an object."
+    },
+    {
+        "question": "Which of the following is an example of a Java method call?",
+        "options": [
+            "import javax.swing.JOptionPane;",
+            "int x = 0;",
+            "compute();",
+            "return y;",
+            "void compute() {}"
+        ],
+        "answer": 2,
+        "hint": "It is a line of code that executes a method, ending with parentheses."
+    },
+    {
+        "question": "What happens if you try to create an object from an abstract class?",
+        "options": [
+            "It creates the object successfully.",
+            "The object is created but cannot be used.",
+            "The program runs but produces no output.",
+            "The program does not compile.",
+            "It creates a default concrete subclass."
+        ],
+        "answer": 3,
+        "hint": "Abstract classes are incomplete and cannot be instantiated directly."
+    },
+    {
+        "question": "What does a variable of a non-primitive type (like String) actually store?",
+        "options": [
+            "The object itself",
+            "A primitive integer",
+            "The memory address of the object",
+            "The value 'true' or 'false'",
+            "A copy of the object"
+        ],
+        "answer": 2,
+        "hint": "In Java, object variables are references, not the objects themselves."
+    },
+    {
+        "question": "Which import statement gives a class access to the JavaFX Button class?",
+        "options": [
+            "import javax.application.Application;",
+            "import javax.scene.control.Button;",
+            "Button quitButton = new Button(...);",
+            "public class TestFX extends Application",
+            "root.setBottom(buttonBar);"
+        ],
+        "answer": 1,
+        "hint": "The import statement tells the compiler where to find the class definition."
+    },
+    {
+        "question": "What is 'println' in the statement 'System.out.println()'?",
+        "options": [
+            "A Class",
+            "A Method",
+            "An Object",
+            "A Parameter",
+            "A Statement"
+        ],
+        "answer": 1,
+        "hint": "It is a subroutine that performs the action of printing a line."
+    },
+    {
+        "question": "What is the output of accessing 'a[a[1]]' when the array 'a' is {1,2,3,4,5}?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "answer": 2,
+        "hint": "First, find the value at index 1, then use that value as the next index."
+    },
+    {
+        "question": "What does an ArrayList's toString() method return?",
+        "options": [
+            "A comma-separated list in square brackets",
+            "The memory address of the list",
+            "The number of elements",
+            "The first element only",
+            "An error"
+        ],
+        "answer": 0,
+        "hint": "It provides a string representation of the list's contents."
+    },
+    {
+        "question": "If a static variable 'sum' is incremented 100 times in a loop, what is its final value?",
+        "options": [
+            "0",
+            "99",
+            "100",
+            "101",
+            "1000"
+        ],
+        "answer": 2,
+        "hint": "Static variables maintain their value across method calls."
+    },
+    {
+        "question": "A subclass method can ______ a superclass method with the same name and parameter types.",
+        "options": [
+            "extend",
+            "implement",
+            "inherit",
+            "overload",
+            "override"
+        ],
+        "answer": 4,
+        "hint": "This allows a subclass to provide a specific implementation of a method."
+    },
+    {
+        "question": "When a subclass object is stored in a superclass variable, which version of an overridden method is called?",
+        "options": [
+            "The superclass version",
+            "The subclass version",
+            "Both versions",
+            "Neither version",
+            "It causes a compile error"
+        ],
+        "answer": 1,
+        "hint": "This demonstrates polymorphism in Java."
+    },
+    {
+        "question": "In 'System.out.println(\"Hello, World!\");', what is \"Hello, World!\"?",
+        "options": [
+            "a class",
+            "a method",
+            "an object",
+            "an operator",
+            "a parameter"
+        ],
+        "answer": 4,
+        "hint": "It's data passed to the method."
+    },
+    {
+        "question": "A subclass will ______ from its superclasses.",
+        "options": [
+            "extend",
+            "implement",
+            "inherit",
+            "overload",
+            "override"
+        ],
+        "answer": 2,
+        "hint": "Subclasses automatically get fields and methods from parent classes."
+    },
+    {
+        "question": "What type of method is used to modify an object's private instance variables?",
+        "options": [
+            "a constructor",
+            "a local object variable",
+            "an instance variable",
+            "a method",
+            "a class variable"
+        ],
+        "answer": 3,
+        "hint": "These methods typically have 'set' in their name."
+    },
+    {
+        "question": "A method that finds the largest value in an array computes the:",
+        "options": [
+            "average",
+            "sum",
+            "maximum",
+            "minimum",
+            "sort"
+        ],
+        "answer": 2,
+        "hint": "It compares each element to find the biggest one."
+    },
+    {
+        "question": "In a for loop, when is the continuation condition checked?",
+        "options": [
+            "At the beginning of each iteration",
+            "At the end of each iteration",
+            "Only at the start of the loop",
+            "Only at the end of the loop",
+            "Continuously during execution"
+        ],
+        "answer": 0,
+        "hint": "The loop continues only if this condition is true."
+    },
+    {
+        "question": "Which method should be used to compare the contents of two String objects?",
+        "options": [
+            "=",
+            "==",
+            "cmp",
+            "equals",
+            "strcmp"
+        ],
+        "answer": 3,
+        "hint": "The == operator compares references, not content."
+    },
+    {
+        "question": "When creating a subclass object, which constructor runs first?",
+        "options": [
+            "Only the subclass constructor",
+            "Only the superclass constructor",
+            "The superclass constructor then subclass",
+            "The subclass constructor then superclass",
+            "Both run simultaneously"
+        ],
+        "answer": 2,
+        "hint": "Parent classes must be initialized before children."
+    },
+    {
+        "question": "A class can ______ multiple interfaces.",
+        "options": [
+            "extend",
+            "implement",
+            "inherit",
+            "overload",
+            "override"
+        ],
+        "answer": 1,
+        "hint": "This allows for multiple type inheritance in Java."
+    },
+    {
+        "question": "In method declaration 'public static void main(...)', what does 'void' represent?",
+        "options": [
+            "actual parameter",
+            "formal parameter",
+            "modifier",
+            "return type",
+            "superclass"
+        ],
+        "answer": 3,
+        "hint": "It indicates what type of value the method returns."
+    },
+    {
+        "question": "In 'System.out.println(...)', what is 'println'?",
+        "options": [
+            "a class",
+            "a method",
+            "an object",
+            "an operator",
+            "a parameter"
+        ],
+        "answer": 1,
+        "hint": "It performs the action of printing."
+    },
+    {
+        "question": "What is used in Java programming to handle asynchronous events?",
+        "options": [
+            "constructors",
+            "event handlers",
+            "overloading",
+            "pragmatics",
+            "protocols"
+        ],
+        "answer": 1,
+        "hint": "These respond to user actions like clicks and key presses."
+    },
+    {
+        "question": "Which of the following is an interface in Java?",
+        "options": [
+            "java.awt.event",
+            "JFrame",
+            "MouseEvent",
+            "MouseListener",
+            "super"
+        ],
+        "answer": 3,
+        "hint": "Interfaces define methods that classes must implement."
+    },
+    {
+        "question": "Which is NOT an effective debugging strategy?",
+        "options": [
+            "Making random code changes",
+            "Reading code step by step",
+            "Checking error messages",
+            "Adding debug statements",
+            "Using a debugger"
+        ],
+        "answer": 0,
+        "hint": "Systematic approaches work better than random changes."
+    },
+    {
+        "question": "A method that modifies an object's field is typically called a:",
+        "options": [
+            "class method",
+            "getter method",
+            "setter method",
+            "public method",
+            "static method"
+        ],
+        "answer": 2,
+        "hint": "These methods usually start with 'set'."
+    },
+    {
+        "question": "Each individual task that a CPU is working on is called:",
+        "options": [
+            "a component",
+            "an address",
+            "a message",
+            "an object",
+            "a thread"
+        ],
+        "answer": 4,
+        "hint": "This allows for concurrent execution in programs."
+    },
+    {
+        "question": "Which claim about Java is INCORRECT?",
+        "options": [
+            "An object belongs to a class",
+            "An object is an instance of a class",
+            "A class is a type",
+            "An object is a type",
+            "\"Object\" is a class"
+        ],
+        "answer": 3,
+        "hint": "Objects are instances, not types themselves."
+    },
+    {
+        "question": "When an object implements an interface, it must:",
+        "options": [
+            "generate events",
+            "handle events",
+            "record audio",
+            "run an event loop",
+            "maintain an object directory"
+        ],
+        "answer": 1,
+        "hint": "Listener interfaces handle specific types of events."
+    },
+    {
+        "question": "What happens when two variables reference the same object?",
+        "options": [
+            "They become independent copies",
+            "Changes through one affect the other",
+            "The object is duplicated",
+            "It causes a compile error",
+            "The program crashes"
+        ],
+        "answer": 1,
+        "hint": "Both variables point to the same memory location."
+    },
+    {
+        "question": "In 'Food pepper = new Food();', what is 'pepper'?",
+        "options": [
+            "a constructor",
+            "a local object variable",
+            "an instance variable",
+            "a method",
+            "a class variable"
+        ],
+        "answer": 1,
+        "hint": "It's a variable that holds a reference to an object."
+    },
+    {
+        "question": "What does ArrayList's toString() display for [0,1,2,3,4]?",
+        "options": [
+            "[0,1,2,3,4]",
+            "[1,1,1,1,1]",
+            "[1,2,3,4,5]",
+            "[2,4,6,8,10]",
+            "[1,4,9,16,25]"
+        ],
+        "answer": 0,
+        "hint": "It shows the elements in bracket notation."
+    },
+    {
+        "question": "Which keyword can exit an infinite loop?",
+        "options": [
+            "break",
+            "case",
+            "continue",
+            "extends",
+            "switch"
+        ],
+        "answer": 0,
+        "hint": "This statement immediately terminates loop execution."
+    },
+    {
+        "question": "In import statements, what identifies a package?",
+        "options": [
+            "The class name at the end",
+            "The entire import statement",
+            "The part before the class name",
+            "The keyword 'import'",
+            "The semicolon at the end"
+        ],
+        "answer": 2,
+        "hint": "Packages are hierarchical groupings of related classes."
+    }
+]

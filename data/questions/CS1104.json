@@ -1,0 +1,324 @@
+[
+    {
+        "question": "What is the most basic element of every computer system?",
+        "options": [
+            "CPU",
+            "Memory",
+            "Logic Gate",
+            "ALU"
+        ],
+        "answer": 2,
+        "hint": "This is the fundamental building block that performs basic logical operations."
+    },
+    {
+        "question": "If a demultiplexor selector bit is set to 1 and both outputs are 0, what was the input?",
+        "options": [
+            "0",
+            "1",
+            "Depends on the specific demultiplexor",
+            "Cannot be determined"
+        ],
+        "answer": 0,
+        "hint": "Consider how demultiplexors route input signals based on selector bits."
+    },
+    {
+        "question": "Variable, arrays, and objects are stored in the computer's:",
+        "options": [
+            "Data Memory",
+            "Instruction Memory",
+            "Cache Memory",
+            "Register Memory"
+        ],
+        "answer": 0,
+        "hint": "This memory stores the actual data being processed by programs."
+    },
+    {
+        "question": "High level commands are translated into machine language and stored in the computer's:",
+        "options": [
+            "Data Memory",
+            "Instruction Memory",
+            "Cache Memory",
+            "Register Memory"
+        ],
+        "answer": 1,
+        "hint": "This memory stores the program instructions to be executed."
+    },
+    {
+        "question": "DFF (D Flip-Flop) behavior can be represented as:",
+        "options": [
+            "out(t) = in(t-1)",
+            "in(t) = out(t+1)",
+            "out(t) = out(t+1)",
+            "out(t) = out(t-1)"
+        ],
+        "answer": 0,
+        "hint": "D Flip-Flops store and delay the input signal by one clock cycle."
+    },
+    {
+        "question": "A counter is combinational logic that simply adds a constant to a given number.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Counters typically involve sequential logic and memory elements."
+    },
+    {
+        "question": "In an 8-way multiplexor, the selection is specified by how many control bits?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "8"
+        ],
+        "answer": 1,
+        "hint": "The number of control bits needed is log2(number of inputs)."
+    },
+    {
+        "question": "Every Boolean function can be constructed from only:",
+        "options": [
+            "And function",
+            "Or function",
+            "Nand function",
+            "Not Function"
+        ],
+        "answer": 2,
+        "hint": "This is a universal gate that can create all other logic functions."
+    },
+    {
+        "question": "The von Neumann architecture is based on a central processing unit interacting with:",
+        "options": [
+            "Memory device",
+            "Input device",
+            "Output device",
+            "All of the above"
+        ],
+        "answer": 3,
+        "hint": "This architecture integrates all these components into a unified system."
+    },
+    {
+        "question": "Which Two-Input Boolean function will return 0 for every input it receives?",
+        "options": [
+            "Constant 0",
+            "Not",
+            "Nor",
+            "And"
+        ],
+        "answer": 0,
+        "hint": "This function ignores its inputs and always outputs the same value."
+    },
+    {
+        "question": "The program that translates from assembly to binary is called:",
+        "options": [
+            "Compiler",
+            "Assembler",
+            "Interpreter",
+            "Linker"
+        ],
+        "answer": 1,
+        "hint": "This program converts human-readable assembly code into machine code."
+    },
+    {
+        "question": "Which gate outputs 1 only when both inputs are 1?",
+        "options": [
+            "And",
+            "Or",
+            "Nand",
+            "Not"
+        ],
+        "answer": 0,
+        "hint": "This gate performs logical conjunction."
+    },
+    {
+        "question": "Which gate outputs 0 only when both inputs are 1?",
+        "options": [
+            "And",
+            "Or",
+            "Nand",
+            "Not"
+        ],
+        "answer": 2,
+        "hint": "This is the negation of the AND gate."
+    },
+    {
+        "question": "The A-instruction in assembly language is used for:",
+        "options": [
+            "Entering a constant",
+            "Selecting a data memory location",
+            "Selecting an instruction memory location",
+            "All of these answers are correct"
+        ],
+        "answer": 3,
+        "hint": "A-instructions serve multiple purposes in the Hack architecture."
+    },
+    {
+        "question": "Which register keeps the address of the next instruction that must be fetched?",
+        "options": [
+            "Data Register",
+            "Addressing Register",
+            "PC Register",
+            "Accumulator Register"
+        ],
+        "answer": 2,
+        "hint": "This register controls the flow of program execution."
+    },
+    {
+        "question": "The ability to use @label before the label is declared is thanks to:",
+        "options": [
+            "The order of HDL statements being insignificant",
+            "The two-pass assembly process",
+            "Subsequent VM translation process",
+            "Multi-purpose use of the A register"
+        ],
+        "answer": 1,
+        "hint": "This process allows the assembler to resolve forward references."
+    },
+    {
+        "question": "Which part of the C-instruction instructs the ALU what to compute?",
+        "options": [
+            "Dest",
+            "Comp",
+            "Jump",
+            "Addr"
+        ],
+        "answer": 1,
+        "hint": "This field specifies the computation to be performed."
+    },
+    {
+        "question": "Which part of the CPU is in charge of decoding instructions?",
+        "options": [
+            "ALU",
+            "Control Unit",
+            "Registers",
+            "Cache"
+        ],
+        "answer": 1,
+        "hint": "This unit manages instruction interpretation and execution flow."
+    },
+    {
+        "question": "The Full Adder chip has how many input and output pins?",
+        "options": [
+            "2 input pins, 2 output pins",
+            "2 input pins, 1 output pin",
+            "3 input pins, 2 output pins",
+            "3 input pins, 1 output pin"
+        ],
+        "answer": 2,
+        "hint": "Full adders handle three inputs (including carry-in) and produce two outputs."
+    },
+    {
+        "question": "When implementing a 1-bit register, what component tells it when to store new data?",
+        "options": [
+            "Demultiplexor",
+            "Multiplexor",
+            "Decoder",
+            "Encoder"
+        ],
+        "answer": 1,
+        "hint": "This component selects between maintaining current value or loading new data."
+    },
+    {
+        "question": "The clock in a sequential logic circuit keeps track of real-world time.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "hint": "Digital clocks in circuits are for synchronization, not timekeeping.",
+        "answer": 1
+    },
+    {
+        "question": "A RAM device accepts what minimum inputs?",
+        "options": [
+            "Data input, and a load bit",
+            "Data input, an address input, and a load bit",
+            "Data input, and an address input",
+            "Data input, and a clock input"
+        ],
+        "answer": 1,
+        "hint": "RAM needs to know what to store, where to store it, and when to store it."
+    },
+    {
+        "question": "During the first pass of assembly, what does the assembler construct?",
+        "options": [
+            "Binary code",
+            "Symbol table",
+            "Object file",
+            "Executable file"
+        ],
+        "answer": 1,
+        "hint": "This table maps symbolic names to their actual addresses."
+    },
+    {
+        "question": "What is the mnemonic for an instruction that causes an unconditional branch?",
+        "options": [
+            "jmp",
+            "br",
+            "goto",
+            "jump"
+        ],
+        "answer": 0,
+        "hint": "This instruction always transfers control to the specified location."
+    },
+    {
+        "question": "The basic idea of the stored program concept is that program logic is embedded in hardware.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Stored program concept means programs are stored in memory like data."
+    },
+    {
+        "question": "Any symbol not predefined and not defined as a label is treated as a:",
+        "options": [
+            "Constant",
+            "Variable",
+            "Function",
+            "Macro"
+        ],
+        "answer": 1,
+        "hint": "The assembler automatically allocates memory for these symbols."
+    },
+    {
+        "question": "The data structure used for representing symbol correspondence is typically a:",
+        "options": [
+            "Queue",
+            "Stack",
+            "Hash Table",
+            "List"
+        ],
+        "answer": 2,
+        "hint": "This data structure provides efficient lookup of key-value pairs."
+    },
+    {
+        "question": "Name a unary Boolean function:",
+        "options": [
+            "And",
+            "Or",
+            "Not",
+            "Nand"
+        ],
+        "answer": 2,
+        "hint": "Unary functions operate on a single input."
+    },
+    {
+        "question": "In a 16-bit Multiplexor, the selector is 16-bit wide.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Selector width depends on the number of inputs, not the data width."
+    },
+    {
+        "question": "What does '16' represent in '16-bit / 64-register memory'?",
+        "options": [
+            "Number of registers",
+            "Data width of each register",
+            "Address width",
+            "Clock speed"
+        ],
+        "answer": 1,
+        "hint": "This specifies how many bits each register can store."
+    }
+]

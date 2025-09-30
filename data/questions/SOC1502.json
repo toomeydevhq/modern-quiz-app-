@@ -1,1 +1,590 @@
-{"encoded":true,"data":"W3sicXVlc3Rpb24iOiJcIkFkIHBvcHVsdW1cIiBtZWFucyB0aGF0IHRoZSBhcmd1bWVudCBpcyBiYXNlZCBvbjoiLCJvcHRpb25zIjpbIkVtb3Rpb25hbCBhcHBlYWwiLCJMb2dpY2FsIHJlYXNvbmluZyIsIkV2ZXJ5b25lIGRvZXMgaXQiLCJFeHBlcnQgb3BpbmlvbiJdLCJhbnN3ZXIiOjIsImhpbnQiOiJUaGlzIGlzIGEgbG9naWNhbCBmYWxsYWN5IHdoZXJlIHNvbWV0aGluZyBpcyBjbGFpbWVkIHRvIGJlIHRydWUgYmVjYXVzZSBtYW55IHBlb3BsZSBiZWxpZXZlIGl0LiJ9LHsicXVlc3Rpb24iOiJUaGUgYmVzdCBzdHJhdGVneSB0byBwcmVwYXJlIGZvciB5b3VyIGZpbmFsIGV4YW0gaXM6Iiwib3B0aW9ucyI6WyJDcmFtbWluZyB0aGUgbmlnaHQgYmVmb3JlIiwiU3R1ZHlpbmcgb25seSB0aGUgZGlmZmljdWx0IHRvcGljcyIsIlN0dWR5aW5nIHJlZ3VsYXJseSIsIlJlbHlpbmcgb24gY2xhc3Mgbm90ZXMgb25seSJdLCJhbnN3ZXIiOjIsImhpbnQiOiJDb25zaXN0ZW50LCBzcGFjZWQtb3V0IHN0dWR5IHNlc3Npb25zIGFyZSBtb3JlIGVmZmVjdGl2ZSB0aGFuIGxhc3QtbWludXRlIGNyYW1taW5nLiJ9LHsicXVlc3Rpb24iOiJDaXRhdGlvbnMgYXJlIG5vdCByZXF1aXJlZCB3aGVuOiIsIm9wdGlvbnMiOlsiVXNpbmcgaW5mb3JtYXRpb24gZnJvbSBhIHRleHRib29rIiwiSXQgaXMgc29tZXRoaW5nIHRoZSB3cml0ZXIgcGVyc29uYWxseSBleHBlcmllbmNlZCIsIlRoZSBpbmZvcm1hdGlvbiBpcyBjb21tb24ga25vd2xlZGdlIiwiQm90aCBCIGFuZCBDIl0sImFuc3dlciI6MywiaGludCI6IlBlcnNvbmFsIGV4cGVyaWVuY2VzIGFuZCBjb21tb24ga25vd2xlZGdlIGRvbid0IHJlcXVpcmUgZXh0ZXJuYWwgY2l0YXRpb25zLiJ9LHsicXVlc3Rpb24iOiJUaGUgQ29ybmVsbCBNZXRob2QgZm9yIG5vdGUtdGFraW5nIGludm9sdmVzIHdoaWNoIG9mIHRoZSBmb2xsb3dpbmc/Iiwib3B0aW9ucyI6WyJEcmF3aW5nIGNvbmNlcHQgbWFwcyIsIlJlY29yZGluZyBsZWN0dXJlcyB2ZXJiYXRpbSIsIlBsYWNpbmcga2V5IHdvcmRzIGluIHRoZSBsZWZ0LWhhbmQgc2lkZSBtYXJnaW4iLCJVc2luZyBkaWZmZXJlbnQgY29sb3JlZCBwZW5zIl0sImFuc3dlciI6MiwiaGludCI6IlRoaXMgbWV0aG9kIG9yZ2FuaXplcyBub3RlcyBpbnRvIG1haW4gaWRlYXMgYW5kIGRldGFpbHMgZm9yIGJldHRlciByZXZpZXcuIn0seyJxdWVzdGlvbiI6IkNyaXRpY2FsIHRoaW5raW5nIGlzOiIsIm9wdGlvbnMiOlsiQSBmb3VuZGF0aW9uIGZvciBlZmZlY3RpdmUgY29tbXVuaWNhdGlvbiIsIlRoZSBwcmluY2lwbGUgc2tpbGwgdXNlZCBpbiBlZmZlY3RpdmUgZGVjaXNpb24gbWFraW5nIiwiQSB3YXkgdG8gdW5jb3ZlciBiaWFzIGFuZCBwcmVqdWRpY2UiLCJBbGwgb2YgdGhlIGFib3ZlIl0sImFuc3dlciI6MywiaGludCI6IkNyaXRpY2FsIHRoaW5raW5nIGVuY29tcGFzc2VzIG11bHRpcGxlIGNvZ25pdGl2ZSBza2lsbHMgZm9yIGFuYWx5emluZyBpbmZvcm1hdGlvbi4ifSx7InF1ZXN0aW9uIjoiQ3JpdGljYWwgdGhpbmtpbmcgaXMgYSBtZXRhLXRoaW5raW5nIHNraWxsLCB3aGljaCByZXF1aXJlcyB0aGlua2luZyBhYm91dCB0aGlua2luZy4iLCJvcHRpb25zIjpbIlRydWUiLCJGYWxzZSJdLCJhbnN3ZXIiOjAsImhpbnQiOiJNZXRhLWNvZ25pdGlvbiBpbnZvbHZlcyBhd2FyZW5lc3MgYW5kIHVuZGVyc3RhbmRpbmcgb2Ygb25lJ3Mgb3duIHRob3VnaHQgcHJvY2Vzc2VzLiJ9LHsicXVlc3Rpb24iOiJFZmZlY3RpdmUgcmVhZGluZyBpbnZvbHZlcyB3aGF0IGZvdXIgc3RlcHM/Iiwib3B0aW9ucyI6WyJTa2ltbWluZywgc2Nhbm5pbmcsIHJlYWRpbmcsIHJldmlld2luZyIsIlByZXBhcmluZywgcmVhZGluZywgY2FwdHVyaW5nIGtleSBpZGVhcywgYW5kIHJldmlld2luZyIsIkhpZ2hsaWdodGluZywgc3VtbWFyaXppbmcsIHF1ZXN0aW9uaW5nLCByZWZsZWN0aW5nIiwiUHJldmlld2luZywgcmVhZGluZywgbm90ZS10YWtpbmcsIHRlc3RpbmciXSwiYW5zd2VyIjoxLCJoaW50IjoiVGhpcyBzeXN0ZW1hdGljIGFwcHJvYWNoIGVuc3VyZXMgY29tcHJlaGVuc2l2ZSB1bmRlcnN0YW5kaW5nIGFuZCByZXRlbnRpb24uIn0seyJxdWVzdGlvbiI6IkVmZmVjdGl2ZSByZWFkaW5nIHN0cmF0ZWdpZXMgaW5jbHVkZToiLCJvcHRpb25zIjpbIlJlYWRpbmcgYXMgZmFzdCBhcyBwb3NzaWJsZSIsIlJlZmxlY3Rpbmcgb24gY29udGVudCBhZnRlciByZWFkaW5nIiwiTWVtb3JpemluZyBldmVyeSB3b3JkIiwiQXZvaWRpbmcgbm90ZS10YWtpbmciXSwiYW5zd2VyIjoxLCJoaW50IjoiUmVmbGVjdGlvbiBoZWxwcyBjb25zb2xpZGF0ZSBsZWFybmluZyBhbmQgY29ubmVjdCBuZXcgaW5mb3JtYXRpb24gdG8gZXhpc3Rpbmcga25vd2xlZGdlLiJ9LHsicXVlc3Rpb24iOiJFeHRyaW5zaWMgbW90aXZhdGlvbiBpcyBhIHN0cm9uZ2VyIGluZmx1ZW5jZSB0aGFuIGludHJpbnNpYyBtb3RpdmF0aW9uLiIsIm9wdGlvbnMiOlsiVHJ1ZSIsIkZhbHNlIl0sImFuc3dlciI6MSwiaGludCI6IkludHJpbnNpYyBtb3RpdmF0aW9uIChpbnRlcm5hbCBkcml2ZSkgdHlwaWNhbGx5IGxlYWRzIHRvIG1vcmUgc3VzdGFpbmVkIGVuZ2FnZW1lbnQuIn0seyJxdWVzdGlvbiI6IkhvdyBtYW55IGRheXMgYWZ0ZXIgdGhlIGVuZCBvZiB0aGUgY291cnNlIGFyZSB0aGUgZmluYWwgZ3JhZGVzIHB1Ymxpc2hlZD8iLCJvcHRpb25zIjpbIjMgZGF5cyIsIjUgZGF5cyIsIjcgZGF5cyIsIjEwIGRheXMiXSwiYW5zd2VyIjoyLCJoaW50IjoiQ2hlY2sgdGhlIFVuaXZlcnNpdHkncyBhY2FkZW1pYyBjYWxlbmRhciBmb3Igc3BlY2lmaWMgdGltZWxpbmVzLiJ9LHsicXVlc3Rpb24iOiJGdWxsLXRpbWUsIGRlZ3JlZS1zZWVraW5nIHN0dWRlbnRzIGNhbiB0YWtlIGhvdyBtYW55IGNvdXJzZXMgcGVyIHRlcm0/Iiwib3B0aW9ucyI6WyJPbmUgY291cnNlIG9ubHkiLCJUd28tdGhyZWUgY291cnNlcyBwZXIgdGVybSIsIkZvdXItZml2ZSBjb3Vyc2VzIHBlciB0ZXJtIiwiQXMgbWFueSBhcyB0aGV5IHdhbnQiXSwiYW5zd2VyIjoxLCJoaW50IjoiVGhlIFVuaXZlcnNpdHkgaGFzIHNwZWNpZmljIGxpbWl0cyB0byBlbnN1cmUgYWNhZGVtaWMgc3VjY2Vzcy4ifSx7InF1ZXN0aW9uIjoiQSBzdHVkZW50IGNhbiByZXF1ZXN0IGEgTGVhdmUgb2YgQWJzZW5jZSB0aGF0IGJlZ2lucyB3aGVuOiIsIm9wdGlvbnMiOlsiSW1tZWRpYXRlbHkiLCJUaGUgbWlkZGxlIG9mIHRoZSBjdXJyZW50IHRlcm0iLCJUaGUgZmlyc3QgZGF5IG9mIHRoZSBmb2xsb3dpbmcgdGVybSIsIkFueSB0aW1lIHdpdGhvdXQgcmVzdHJpY3Rpb24iXSwiYW5zd2VyIjoyLCJoaW50IjoiTGVhdmVzIG9mIEFic2VuY2UgaGF2ZSBzcGVjaWZpYyBzdGFydCBkYXRlcyB0byBtYWludGFpbiBhY2FkZW1pYyBjb250aW51aXR5LiJ9LHsicXVlc3Rpb24iOiJIb3cgZG9lcyBhIHN0dWRlbnQgcmVnaXN0ZXIgYSBwcm9jdG9yIGZvciBhIGNvdXJzZSB3aXRoIGEgcmVxdWlyZWQgcHJvY3RvcmVkIGV4YW0/Iiwib3B0aW9ucyI6WyJFbWFpbCB0aGUgaW5zdHJ1Y3RvciIsIkNhbGwgdGhlIFVuaXZlcnNpdHkgYWRtaW5pc3RyYXRpb24iLCJDbGljayBvbiAnYWRkIGEgcHJvY3RvcicgbGluayBuZXh0IHRvIHRoZSBjb3Vyc2UiLCJTdWJtaXQgYSBwYXBlciBmb3JtIl0sImFuc3dlciI6MiwiaGludCI6IlRoZSBTdHVkZW50IFBvcnRhbCBwcm92aWRlcyBzcGVjaWZpYyB0b29scyBmb3IgcHJvY3RvciBtYW5hZ2VtZW50LiJ9LHsicXVlc3Rpb24iOiJXaGVuIGNhbiBhIHN0dWRlbnQgZHJvcCBhIGNvdXJzZSB3aXRob3V0IGFjYWRlbWljIHBlbmFsdHk/Iiwib3B0aW9ucyI6WyJBbnl0aW1lIGR1cmluZyB0aGUgdGVybSIsIkR1cmluZyB0aGUgZmlyc3Qgd2VlayBvZiB0aGUgY291cnNlIHNlc3Npb24iLCJPbmx5IGJlZm9yZSB0aGUgdGVybSBzdGFydHMiLCJBZnRlciBjb21wbGV0aW5nIGhhbGYgdGhlIGNvdXJzZSJdLCJhbnN3ZXIiOjEsImhpbnQiOiJUaGUgVW5pdmVyc2l0eSBoYXMgc3BlY2lmaWMgZGVhZGxpbmVzIGZvciBjb3Vyc2UgY2hhbmdlcy4ifSx7InF1ZXN0aW9uIjoiV2hpY2ggb2YgdGhlIGZvbGxvd2luZyBzdGF0ZW1lbnRzIGlzIHRydWUgYWJvdXQgYSAncHJvY3RvcicgZm9yIGV4YW0tdGFraW5nPyIsIm9wdGlvbnMiOlsiVGhlIFVuaXZlcnNpdHkgcHJvdmlkZXMgcHJvY3RvcnMgZm9yIGFsbCBzdHVkZW50cyIsIlByb2N0b3JzIGFyZSBvbmx5IHJlcXVpcmVkIGZvciBncmFkdWF0ZSBjb3Vyc2VzIiwiVW5pdmVyc2l0eSBvZiB0aGUgUGVvcGxlIHN0dWRlbnRzIGFyZSByZXNwb25zaWJsZSBmb3IgZmluZGluZyB0aGVpciBvd24gZXhhbSBwcm9jdG9yIiwiUHJvY3RvcnMgYXJlIG5vdCByZXF1aXJlZCBmb3Igb25saW5lIGV4YW1zIl0sImFuc3dlciI6MiwiaGludCI6IlN0dWRlbnRzIGhhdmUgcmVzcG9uc2liaWxpdHkgZm9yIGFycmFuZ2luZyB0aGVpciBwcm9jdG9yaW5nIHNlcnZpY2VzLiJ9LHsicXVlc3Rpb24iOiJIb3cgbWFueSBob3VycyBzaG91bGQgc3R1ZGVudHMgYnVkZ2V0IGV2ZXJ5IHdlZWsgZm9yIGEgc2luZ2xlIFVvUGVvcGxlIGNvdXJzZT8iLCJvcHRpb25zIjpbIjUtNyBob3VycyIsIjEwLTEyIGhvdXJzIiwiMTUtMTcgaG91cnMiLCIyMCsgaG91cnMiXSwiYW5zd2VyIjoyLCJoaW50IjoiT25saW5lIGNvdXJzZXMgcmVxdWlyZSBzaWduaWZpY2FudCB0aW1lIGNvbW1pdG1lbnQgZm9yIHJlYWRpbmcsIGFzc2lnbm1lbnRzLCBhbmQgZGlzY3Vzc2lvbnMuIn0seyJxdWVzdGlvbiI6IldoZXJlIGNhbiBzdHVkZW50cyBmaW5kIHRoZWlyIEdQQSBhbmQgbnVtYmVyIG9mIGNyZWRpdHMgdGFrZW4/Iiwib3B0aW9ucyI6WyJDb3Vyc2Ugc3lsbGFidXMiLCJBY2FkZW1pYyBIaXN0b3J5IHRhYiBpbiB0aGUgU3R1ZGVudCBQb3J0YWwiLCJVbml2ZXJzaXR5IENhdGFsb2ciLCJJbnN0cnVjdG9yJ3MgZ3JhZGVib29rIl0sImFuc3dlciI6MSwiaGludCI6IlRoZSBTdHVkZW50IFBvcnRhbCBjb250YWlucyBjb21wcmVoZW5zaXZlIGFjYWRlbWljIHJlY29yZHMuIn0seyJxdWVzdGlvbiI6IldoZXJlIHNob3VsZCBzdHVkZW50cyBnbyBmb3IgaW5mb3JtYXRpb24gYWJvdXQgdGhlaXIgZGVncmVlIHByb2dyYW0sIGNyZWRpdHMgbmVlZGVkIHRvIGdyYWR1YXRlLCBldGMuPyIsIm9wdGlvbnMiOlsiQXNrIG90aGVyIHN0dWRlbnRzIiwiVW5pdmVyc2l0eSBDYXRhbG9nIiwiU29jaWFsIG1lZGlhIGdyb3VwcyIsIkNvdXJzZSBkaXNjdXNzaW9uIGZvcnVtcyJdLCJhbnN3ZXIiOjEsImhpbnQiOiJUaGUgb2ZmaWNpYWwgY2F0YWxvZyBjb250YWlucyBhbGwgcHJvZ3JhbSByZXF1aXJlbWVudHMgYW5kIHBvbGljaWVzLiJ9LHsicXVlc3Rpb24iOiJXaGVyZSBzaG91bGQgc3R1ZGVudHMgZ28gdG8gZmluZCBvdXQgaWYgdGhleSBhcmUgYWxsb3dlZCB0byBhcHBlYWwgdGhlaXIgZmluYWwgZ3JhZGUgaW4gYSBjb3Vyc2U/Iiwib3B0aW9ucyI6WyJVbml2ZXJzaXR5IENhdGFsb2ciLCJDb3Vyc2UgaW5zdHJ1Y3RvciIsIlN0dWRlbnQgYWR2aXNvciIsIlBlZXIgc3R1ZGVudHMiXSwiYW5zd2VyIjowLCJoaW50IjoiR3JhZGUgYXBwZWFsIHBvbGljaWVzIGFyZSBkb2N1bWVudGVkIGluIG9mZmljaWFsIFVuaXZlcnNpdHkgcHVibGljYXRpb25zLiJ9LHsicXVlc3Rpb24iOiJXaGljaCBvZiB0aGUgZm9sbG93aW5nIGNsYXNzZXMgYXJlIG5vdCBvZmZlcmVkIGluIHRoZSBDb21wdXRlciBTY2llbmNlIHByb2dyYW0/Iiwib3B0aW9ucyI6WyJXZWIgTWV0cmljcyIsIlByb2dyYW1taW5nIEZ1bmRhbWVudGFscyIsIkRhdGFiYXNlcyIsIk9wZXJhdGluZyBTeXN0ZW1zIl0sImFuc3dlciI6MCwiaGludCI6IkNoZWNrIHRoZSBjdXJyZW50IENvbXB1dGVyIFNjaWVuY2UgcHJvZ3JhbSBjdXJyaWN1bHVtLiJ9LHsicXVlc3Rpb24iOiJHaXZpbmcgZmVlZGJhY2sgaW4gcGVlciBhc3Nlc3NtZW50OiIsIm9wdGlvbnMiOlsiSXMgb3B0aW9uYWwiLCJTdGltdWxhdGVzIHNlbGYtcmVmbGVjdGlvbiIsIk9ubHkgYmVuZWZpdHMgdGhlIHJlY2VpdmVyIiwiU2hvdWxkIGJlIGF2b2lkZWQiXSwiYW5zd2VyIjoxLCJoaW50IjoiUHJvdmlkaW5nIGZlZWRiYWNrIGhlbHBzIGRldmVsb3AgY3JpdGljYWwgdGhpbmtpbmcgYWJvdXQgb25lJ3Mgb3duIHdvcmsuIn0seyJxdWVzdGlvbiI6IkdpdmluZyBpbmNvcnJlY3QgaW5mb3JtYXRpb24gYWJvdXQgdGhlIHNvdXJjZSBvZiBhIHF1b3RhdGlvbiBjb3VsZCByZXN1bHQgaW4gZGlzbWlzc2FsIGZyb20gdGhlIFVuaXZlcnNpdHkgb2YgdGhlIFBlb3BsZS4iLCJvcHRpb25zIjpbIlRydWUiLCJGYWxzZSJdLCJhbnN3ZXIiOjAsImhpbnQiOiJBY2FkZW1pYyBpbnRlZ3JpdHkgdmlvbGF0aW9ucyBjYW4gaGF2ZSBzZXJpb3VzIGNvbnNlcXVlbmNlcy4ifSx7InF1ZXN0aW9uIjoiSW4gd3JpdGluZywgdXNpbmcgYWxsIGNhcGl0YWwgbGV0dGVycyBpcyBjb25zaWRlcmVkIHRvIGJlOiIsIm9wdGlvbnMiOlsiUHJvZmVzc2lvbmFsIiwiU2hvdXRpbmciLCJFbXBoYXNpemluZyBpbXBvcnRhbnQgcG9pbnRzIiwiQWNjZXB0YWJsZSBpbiBhY2FkZW1pYyB3cml0aW5nIl0sImFuc3dlciI6MSwiaGludCI6Ik5ldGlxdWV0dGUgZ3VpZGVsaW5lcyBkaXNjb3VyYWdlIGV4Y2Vzc2l2ZSBjYXBpdGFsaXphdGlvbi4ifSx7InF1ZXN0aW9uIjoiSWYgYSBzdHVkZW50IHdpdGggYSBkaXNhYmlsaXR5IHJlcXVpcmVzIHJlYXNvbmFibGUgYWNjb21tb2RhdGlvbnMsIHdobyBzaG91bGQgdGhlIHN0dWRlbnQgY29udGFjdD8iLCJvcHRpb25zIjpbIkNvdXJzZSBpbnN0cnVjdG9yIiwiVGhlaXIgUHJvZ3JhbSBBZHZpc29yIiwiT3RoZXIgc3R1ZGVudHMiLCJVbml2ZXJzaXR5IHByZXNpZGVudCJdLCJhbnN3ZXIiOjEsImhpbnQiOiJQcm9ncmFtIEFkdmlzb3JzIGNvb3JkaW5hdGUgYWNjb21tb2RhdGlvbiBzZXJ2aWNlcy4ifSx7InF1ZXN0aW9uIjoiTmV0aXF1ZXR0ZSBpczoiLCJvcHRpb25zIjpbIkludGVybmV0IGV0aXF1ZXR0ZSIsIlJ1bGVzIGFib3V0IG9ubGluZSBjb21tdW5pY2F0aW9uIiwiSW1wb3J0YW50IGZvciByZXNwZWN0IGluIG9ubGluZSBjbGFzc2VzIiwiQWxsIG9mIHRoZSBhYm92ZSJdLCJhbnN3ZXIiOjMsImhpbnQiOiJOZXRpcXVldHRlIGVuY29tcGFzc2VzIHByb3BlciBvbmxpbmUgYmVoYXZpb3IgYW5kIGNvbW11bmljYXRpb24gc3RhbmRhcmRzLiJ9LHsicXVlc3Rpb24iOiJPZiB0aGUgZm9sbG93aW5nIG9wdGlvbnMsIHdobyBoYXMgdGhlIG1vc3QgcmVzcG9uc2liaWxpdHkgZm9yIHN0dWRlbnQgbGVhcm5pbmc/Iiwib3B0aW9ucyI6WyJUaGUgaW5zdHJ1Y3RvciIsIlRoZSBzdHVkZW50IiwiVGhlIHVuaXZlcnNpdHkiLCJUaGUgcHJvZ3JhbSBhZHZpc29yIl0sImFuc3dlciI6MSwiaGludCI6Ik9ubGluZSBlZHVjYXRpb24gcmVxdWlyZXMgc2lnbmlmaWNhbnQgc2VsZi1kaXJlY3Rpb24gYW5kIHBlcnNvbmFsIHJlc3BvbnNpYmlsaXR5LiJ9LHsicXVlc3Rpb24iOiJQZWVyIGFzc2Vzc21lbnQ6Iiwib3B0aW9ucyI6WyJEZXZlbG9wcyBmZWVkYmFjayBza2lsbHMiLCJEZXZlbG9wcyBzdWJqZWN0IG1hdHRlciBtYXN0ZXJ5IiwiRGV2ZWxvcHMgc2VsZi1hcHByYWlzYWwgc2tpbGxzIiwiQWxsIG9mIHRoZSBhYm92ZSJdLCJhbnN3ZXIiOjMsImhpbnQiOiJQZWVyIGFzc2Vzc21lbnQgcHJvdmlkZXMgbXVsdGlwbGUgbGVhcm5pbmcgYmVuZWZpdHMgZm9yIGJvdGggcGFydGllcy4ifSx7InF1ZXN0aW9uIjoiUGVlciBhc3Nlc3NtZW50IGltcHJvdmVzIGxlYXJuaW5nIGZvcjoiLCJvcHRpb25zIjpbIlRoZSBzdHVkZW50IHJlY2VpdmluZyB0aGUgZmVlZGJhY2siLCJUaGUgc3R1ZGVudCB3cml0aW5nIHRoZSBmZWVkYmFjayIsIkJvdGggQSAmIEIiLCJOZWl0aGVyIEEgbm9yIEIiXSwiYW5zd2VyIjoyLCJoaW50IjoiQm90aCBnaXZpbmcgYW5kIHJlY2VpdmluZyBmZWVkYmFjayBjb250cmlidXRlIHRvIGxlYXJuaW5nLiJ9LHsicXVlc3Rpb24iOiJQbGFnaWFyaXppbmcgcGFydCBvZiBhbiBhc3NpZ25tZW50IGNhbiByZXN1bHQgaW4gZmFpbGluZyB0aGUgZW50aXJlIGFzc2lnbm1lbnQuIiwib3B0aW9ucyI6WyJUcnVlIiwiRmFsc2UiXSwiYW5zd2VyIjowLCJoaW50IjoiQWNhZGVtaWMgaW50ZWdyaXR5IHBvbGljaWVzIGFwcGx5IHRvIGFsbCBwb3J0aW9ucyBvZiBzdWJtaXR0ZWQgd29yay4ifSx7InF1ZXN0aW9uIjoiQSBzZWxmLWRpcmVjdGVkIGxlYXJuZXIgaXMgY2hhcmFjdGVyaXplZCBieSB3aGljaCBvZiB0aGUgZm9sbG93aW5nPyIsIm9wdGlvbnMiOlsiUmVxdWlyZXMgY29uc3RhbnQgc3VwZXJ2aXNpb24iLCJIYXMgc2VsZi1jb25maWRlbmNlIiwiQXZvaWRzIGNoYWxsZW5naW5nIG1hdGVyaWFsIiwiRGVwZW5kcyBvbiBvdGhlcnMgZm9yIG1vdGl2YXRpb24iXSwiYW5zd2VyIjoxLCJoaW50IjoiU2VsZi1kaXJlY3RlZCBsZWFybmVycyB0YWtlIGluaXRpYXRpdmUgYW5kIHJlc3BvbnNpYmlsaXR5IGZvciB0aGVpciBsZWFybmluZy4ifSx7InF1ZXN0aW9uIjoiVG8gZmluZCB0aGUgVW9QZW9wbGUgY29kZSBvZiBjb25kdWN0LCBzdHVkZW50cyBzaG91bGQ6Iiwib3B0aW9ucyI6WyJBc2sgY2xhc3NtYXRlcyIsIlJlYWQgQ2hhcHRlciAxNSBvZiB0aGUgVW9QZW9wbGUgY2F0YWxvZyIsIlNlYXJjaCBvbmxpbmUgZm9ydW1zIiwiRW1haWwgdGhlIHVuaXZlcnNpdHkgcHJlc2lkZW50Il0sImFuc3dlciI6MSwiaGludCI6IlRoZSBjYXRhbG9nIGNvbnRhaW5zIGFsbCBvZmZpY2lhbCBVbml2ZXJzaXR5IHBvbGljaWVzLiJ9LHsicXVlc3Rpb24iOiJUbyB3cml0ZSBhIHN1Y2Nlc3NmdWwgZGlzY3Vzc2lvbiBwb3N0LCBzdHVkZW50cyBzaG91bGQ6Iiwib3B0aW9ucyI6WyJVc2UgYSB3cml0aW5nIHByb2Nlc3Mgc2ltaWxhciB0byB3cml0aW5nIHBhcGVycyIsIldyaXRlIHF1aWNrbHkgd2l0aG91dCBwbGFubmluZyIsIkNvcHkgZnJvbSBvdGhlciBzdHVkZW50cyIsIlVzZSBpbmZvcm1hbCBsYW5ndWFnZSBvbmx5Il0sImFuc3dlciI6MCwiaGludCI6IlF1YWxpdHkgZGlzY3Vzc2lvbiBwb3N0cyByZXF1aXJlIHBsYW5uaW5nLCByZXNlYXJjaCwgYW5kIGNhcmVmdWwgd3JpdGluZy4ifSx7InF1ZXN0aW9uIjoiQWN0aXZlIGxlYXJuaW5nIGltcHJvdmVzIHJldGVudGlvbiBvZiBpbmZvcm1hdGlvbi4iLCJvcHRpb25zIjpbIlRydWUiLCJGYWxzZSJdLCJhbnN3ZXIiOjAsImhpbnQiOiJFbmdhZ2luZyBhY3RpdmVseSB3aXRoIG1hdGVyaWFsIGVuaGFuY2VzIG1lbW9yeSBhbmQgdW5kZXJzdGFuZGluZy4ifSx7InF1ZXN0aW9uIjoiQSBzdHVkeSBwbGFuIHNob3VsZCBpbnZvbHZlIGV4YW1pbmluZyBjb25mbGljdGluZyBwcmlvcml0aWVzIGluIHlvdXIgbGlmZS4iLCJvcHRpb25zIjpbIlRydWUiLCJGYWxzZSJdLCJhbnN3ZXIiOjAsImhpbnQiOiJFZmZlY3RpdmUgcGxhbm5pbmcgY29uc2lkZXJzIGFsbCBsaWZlIHJlc3BvbnNpYmlsaXRpZXMgYW5kIGNvbW1pdG1lbnRzLiJ9LHsicXVlc3Rpb24iOiJBICd0aW1lIHN0ZWFsZXInIGlzIHNvbWVvbmUgd2hvIHN0ZWFscyBjbG9ja3MgYW5kIHdyaXN0d2F0Y2hlcy4iLCJvcHRpb25zIjpbIlRydWUiLCJGYWxzZSJdLCJhbnN3ZXIiOjEsImhpbnQiOiJUaW1lIHN0ZWFsZXJzIHJlZmVyIHRvIGFjdGl2aXRpZXMgb3IgaGFiaXRzIHRoYXQgd2FzdGUgdmFsdWFibGUgdGltZS4ifSx7InF1ZXN0aW9uIjoiQ3JhbW1pbmcgYmVmb3JlIGFuIGV4YW0gY2FuIGJlIGEgdmVyeSBlZmZlY3RpdmUgd2F5IHRvIGxlYXJuIG5ldyBtYXRlcmlhbC4iLCJvcHRpb25zIjpbIlRydWUiLCJGYWxzZSJdLCJhbnN3ZXIiOjEsImhpbnQiOiJTcGFjZWQgcmVwZXRpdGlvbiBhbmQgcmVndWxhciBzdHVkeSBhcmUgbW9yZSBlZmZlY3RpdmUgdGhhbiBjcmFtbWluZy4ifSx7InF1ZXN0aW9uIjoiQ3JpdGljYWwgdGhpbmtpbmcgaW1wcm92ZXMgbGFuZ3VhZ2UgYW5kIHByZXNlbnRhdGlvbiBza2lsbHMuIiwib3B0aW9ucyI6WyJUcnVlIiwiRmFsc2UiXSwiYW5zd2VyIjowLCJoaW50IjoiQ2xlYXIgdGhpbmtpbmcgbGVhZHMgdG8gY2xlYXJlciBjb21tdW5pY2F0aW9uIGFuZCBleHByZXNzaW9uLiJ9LHsicXVlc3Rpb24iOiJDcml0aWNhbCB0aGlua2luZyBza2lsbHMgYXJlIGltcGFjdGVkIGJ5IGtub3dsZWRnZSBhbmQgcHJhY3RpY2UuIiwib3B0aW9ucyI6WyJUcnVlIiwiRmFsc2UiXSwiYW5zd2VyIjowLCJoaW50IjoiTGlrZSBhbnkgc2tpbGwsIGNyaXRpY2FsIHRoaW5raW5nIGltcHJvdmVzIHdpdGggbGVhcm5pbmcgYW5kIGFwcGxpY2F0aW9uLiJ9LHsicXVlc3Rpb24iOiJEZXZlbG9waW5nIGluZGVwZW5kZW50IHRob3VnaHQgaW52b2x2ZXMgd2F0Y2hpbmcgdGhlIG5pZ2h0bHkgbmV3cyB0byBnZXQgYWxsIG9mIHlvdXIgaW5mb3JtYXRpb24uIiwib3B0aW9ucyI6WyJUcnVlIiwiRmFsc2UiXSwiYW5zd2VyIjoxLCJoaW50IjoiSW5kZXBlbmRlbnQgdGhvdWdodCByZXF1aXJlcyBldmFsdWF0aW5nIG11bHRpcGxlIHNvdXJjZXMgYW5kIHBlcnNwZWN0aXZlcy4ifSx7InF1ZXN0aW9uIjoiRGlzY3Vzc2lvbiBwb3N0cyBmYWNpbGl0YXRlIGRpc2N1c3Npb25zIHNpbWlsYXIgdG8gb24tc2l0ZSBjbGFzcyBkaXNjdXNzaW9ucy4iLCJvcHRpb25zIjpbIlRydWUiLCJGYWxzZSJdLCJhbnN3ZXIiOjAsImhpbnQiOiJPbmxpbmUgZGlzY3Vzc2lvbnMgY2FuIHJlcGxpY2F0ZSBhbmQgZXZlbiBlbmhhbmNlIGNsYXNzcm9vbSBpbnRlcmFjdGlvbnMuIn0seyJxdWVzdGlvbiI6IkVmZmVjdGl2ZSB0aW1lIG1hbmFnZW1lbnQgcmVxdWlyZXMgcHJpb3JpdGl6YXRpb24uIiwib3B0aW9ucyI6WyJUcnVlIiwiRmFsc2UiXSwiYW5zd2VyIjowLCJoaW50IjoiSWRlbnRpZnlpbmcgd2hhdCdzIG1vc3QgaW1wb3J0YW50IGlzIGtleSB0byBtYW5hZ2luZyB0aW1lIGVmZmVjdGl2ZWx5LiJ9LHsicXVlc3Rpb24iOiJGb3JnaXZpbmcgb3RoZXJzIGhlbHBzIHRvIHJlZHVjZSBvdXIgcGVyc29uYWwgc3RyZXNzLiIsIm9wdGlvbnMiOlsiVHJ1ZSIsIkZhbHNlIl0sImFuc3dlciI6MCwiaGludCI6IkxldHRpbmcgZ28gb2YgZ3J1ZGdlcyBjb250cmlidXRlcyB0byBlbW90aW9uYWwgd2VsbC1iZWluZy4ifSx7InF1ZXN0aW9uIjoiR29hbC1zZXR0aW5nIGltcHJvdmVzIHRpbWUgbWFuYWdlbWVudC4iLCJvcHRpb25zIjpbIlRydWUiLCJGYWxzZSJdLCJhbnN3ZXIiOjAsImhpbnQiOiJDbGVhciBnb2FscyBwcm92aWRlIGRpcmVjdGlvbiBmb3IgaG93IHRvIGFsbG9jYXRlIHRpbWUgZWZmZWN0aXZlbHkuIn0seyJxdWVzdGlvbiI6IklmIHlvdSBoYXZlIGEgbGFyZ2VyIHRhc2sgdG8gYWNjb21wbGlzaCwgaXQgaXMgcmVjb21tZW5kZWQgdG8gd2FpdCB1bnRpbCB5b3UgaGF2ZSBhbiBlbnRpcmUgZGF5IHRvIGRlZGljYXRlIHRvIGl0IGJlZm9yZSBnZXR0aW5nIHN0YXJ0ZWQuIiwib3B0aW9ucyI6WyJUcnVlIiwiRmFsc2UiXSwiYW5zd2VyIjoxLCJoaW50IjoiQnJlYWtpbmcgbGFyZ2UgdGFza3MgaW50byBzbWFsbGVyIHN0ZXBzIGlzIG1vcmUgZWZmZWN0aXZlIHRoYW4gd2FpdGluZyBmb3IgbGFyZ2UgYmxvY2tzIG9mIHRpbWUuIn0seyJxdWVzdGlvbiI6IkluIGEgJ3Jvb3QgY2F1c2UgYW5hbHlzaXMnIHlvdSBvbmx5IGRpYWdub3NlIHRoZSBjYXVzZSBvZiB0aGUgaXNzdWUsIGJ1dCBkbyBub3Qgc3VnZ2VzdCBwb3NzaWJsZSBzb2x1dGlvbnMuIiwib3B0aW9ucyI6WyJUcnVlIiwiRmFsc2UiXSwiYW5zd2VyIjoxLCJoaW50IjoiUm9vdCBjYXVzZSBhbmFseXNpcyB0eXBpY2FsbHkgaW5jbHVkZXMgYm90aCBpZGVudGlmeWluZyBjYXVzZXMgYW5kIHByb3Bvc2luZyBzb2x1dGlvbnMuIn0seyJxdWVzdGlvbiI6Ikl0IGRvZXNuJ3QgbWF0dGVyIGhvdyB5b3UgdGFrZSBub3RlcyAtIGFueSB0eXBlIG9mIG5vdGVzIGFyZSBlZmZlY3RpdmUgYXMgbG9uZyBhcyB5b3UncmUgdGFraW5nIG5vdGVzLiIsIm9wdGlvbnMiOlsiVHJ1ZSIsIkZhbHNlIl0sImFuc3dlciI6MSwiaGludCI6IkVmZmVjdGl2ZSBub3RlLXRha2luZyBtZXRob2RzIHNpZ25pZmljYW50bHkgaW1wYWN0IGxlYXJuaW5nIGFuZCByZXRlbnRpb24uIn0seyJxdWVzdGlvbiI6IlBlZXIgYW5kIHNlbGYtYXNzZXNzbWVudHMgaGVscCBhIHN0dWRlbnQgdG8gZGV2ZWxvcCB0aGUgYWJpbGl0eSB0byBtYWtlIGp1ZGdtZW50cy4iLCJvcHRpb25zIjpbIlRydWUiLCJGYWxzZSJdLCJhbnN3ZXIiOjAsImhpbnQiOiJBc3Nlc3NtZW50IGFjdGl2aXRpZXMgZGV2ZWxvcCBjcml0aWNhbCBldmFsdWF0aW9uIHNraWxscy4ifSx7InF1ZXN0aW9uIjoiU2VsZi1kaXJlY3RlZCBsZWFybmVycyBhcmUgbW9yZSBsaWtlbHkgdG8gYmUgZXh0cmluc2ljYWxseSBtb3RpdmF0ZWQuIiwib3B0aW9ucyI6WyJUcnVlIiwiRmFsc2UiXSwiYW5zd2VyIjoxLCJoaW50IjoiU2VsZi1kaXJlY3RlZCBsZWFybmVycyB0eXBpY2FsbHkgaGF2ZSBzdHJvbmcgaW50ZXJuYWwgbW90aXZhdGlvbi4ifSx7InF1ZXN0aW9uIjoiU3BlbGwtY2hlY2sgd2lsbCBmaW5kIGFsbCBvZiB0aGUgc3BlbGxpbmcgZXJyb3JzIGluIGEgZG9jdW1lbnQsIHNvIHByb29mcmVhZGluZyBpcyBub3QgbmVjZXNzYXJ5LiIsIm9wdGlvbnMiOlsiVHJ1ZSIsIkZhbHNlIl0sImFuc3dlciI6MSwiaGludCI6IlNwZWxsLWNoZWNrIG1pc3NlcyBjb250ZXh0IGVycm9ycywgaG9tb3Bob25lcywgYW5kIHByb3BlciBub3Vucy4ifSx7InF1ZXN0aW9uIjoiVGFraW5nIGEgd2FsayBjYW4gcmVhbGx5IGhlbHAgeW91IHRvIHJlbGF4IGFuZCByZWR1Y2UgeW91ciBzdHJlc3MgYWZ0ZXIgYSBkaWZmaWN1bHQgZGF5LiIsIm9wdGlvbnMiOlsiVHJ1ZSIsIkZhbHNlIl0sImFuc3dlciI6MCwiaGludCI6IlBoeXNpY2FsIGFjdGl2aXR5IGlzIGFuIGVmZmVjdGl2ZSBzdHJlc3MgbWFuYWdlbWVudCB0ZWNobmlxdWUuIn0seyJxdWVzdGlvbiI6IlRoZSBMYWRkZXIgb2YgSW5mZXJlbmNlIGhlbHBzIHVzIHRvIHN0b3Agb3Vyc2VsdmVzIGZyb20ganVtcGluZyB0byBjb25jbHVzaW9ucyBhYm91dCBzaXR1YXRpb25zLiIsIm9wdGlvbnMiOlsiVHJ1ZSIsIkZhbHNlIl0sImFuc3dlciI6MCwiaGludCI6IlRoaXMgbWVudGFsIG1vZGVsIGVuY291cmFnZXMgZXhhbWluaW5nIGFzc3VtcHRpb25zIGFuZCBldmlkZW5jZS4ifSx7InF1ZXN0aW9uIjoiVGhlIHRlcm0gJ0EuUC5BLiBzdGFuZGFyZHMnIGZvciBwcm9wZXJseSBjaXRpbmcgc291cmNlcyBhbmQgc3RydWN0dXJpbmcgcmVzZWFyY2ggcGFwZXJzLCBzdGFuZHMgZm9yICdBbWVyaWNhbiBQcmludCBBZG1pbmlzdHJhdGlvbi4nIiwib3B0aW9ucyI6WyJUcnVlIiwiRmFsc2UiXSwiYW5zd2VyIjoxLCJoaW50IjoiQVBBIHN0YW5kcyBmb3IgQW1lcmljYW4gUHN5Y2hvbG9naWNhbCBBc3NvY2lhdGlvbi4ifSx7InF1ZXN0aW9uIjoiV2hlbiBwYXJ0aWNpcGF0aW5nIGluIHRoZSBkaXNjdXNzaW9uIGJvYXJkLCBhIG9uZS1zZW50ZW5jZSBwb3N0IHRoYXQgY29uc2lzdHMgb2YgJ0dvb2Qgam9iLCBJIGxpa2UgdGhlIHdheSB5b3Ugd3JvdGUgdGhpcyEnIGNvdW50cyBhcyBhIHN1YnN0YW50aXZlIHBhcnRpY2lwYXRpb24gcG9zdC4iLCJvcHRpb25zIjpbIlRydWUiLCJGYWxzZSJdLCJhbnN3ZXIiOjEsImhpbnQiOiJTdWJzdGFudGl2ZSBwb3N0cyBzaG91bGQgY29udHJpYnV0ZSBtZWFuaW5nZnVsIGNvbnRlbnQgdG8gdGhlIGRpc2N1c3Npb24uIn0seyJxdWVzdGlvbiI6IlVuZGVyc3RhbmRpbmcgdGhlIG1vdGl2YXRpb24gYSBwZXJzb24gaGFzIHRvIGRvIHNvbWV0aGluZyBiZWNhdXNlIGl0IGlzIGluaGVyZW50bHkgaW50ZXJlc3RpbmcgdG8gdGhlbSBpcyBjaGFyYWN0ZXJpemVkIGJ5IHdoaWNoIHRoZW9yeT8iLCJvcHRpb25zIjpbIkJlaGF2aW9yYWwgdGhlb3J5IiwiU2VsZi1kZXRlcm1pbmF0aW9uIHRoZW9yeSIsIkNvZ25pdGl2ZSB0aGVvcnkiLCJTb2NpYWwgbGVhcm5pbmcgdGhlb3J5Il0sImFuc3dlciI6MSwiaGludCI6IlRoaXMgdGhlb3J5IGZvY3VzZXMgb24gaW50cmluc2ljIG1vdGl2YXRpb24gYW5kIHBzeWNob2xvZ2ljYWwgbmVlZHMuIn0seyJxdWVzdGlvbiI6IldoZXJlIGNhbiBzdHVkZW50cyBmaW5kIGEgY29weSBvZiB0aGUgVW5pdmVyc2l0eSBDYXRhbG9nIHRvIHByaW50IG91dCBhbmQgcmVmZXIgdG8gcmVndWxhcmx5PyIsIm9wdGlvbnMiOlsiT25seSBpbiBwcmludGVkIGZvcm1hdCBieSBtYWlsIiwiQm90aCBpbiB0aGUgU3R1ZGVudCBQb3J0YWwgdW5kZXIgJ0xpbmtzJyBhbmQgYXMgYSB0YWIgb24gdGhlIHN0dWRlbnQgaG9tZSBwYWdlIiwiT25seSBmcm9tIHRoZSBpbnN0cnVjdG9yIiwiTm90IGF2YWlsYWJsZSB0byBzdHVkZW50cyJdLCJhbnN3ZXIiOjEsImhpbnQiOiJUaGUgY2F0YWxvZyBpcyBhY2Nlc3NpYmxlIHRocm91Z2ggbXVsdGlwbGUgZGlnaXRhbCBjaGFubmVscy4ifSx7InF1ZXN0aW9uIjoiV2hhdCBpcyBhIHByb2N0b3I/Iiwib3B0aW9ucyI6WyJBIHR5cGUgb2YgZXhhbSIsIkEgcmVzcG9uc2libGUgaW5kaXZpZHVhbCB3aG8gdmVyaWZpZXMgc3R1ZGVudCBpZGVudGl0eSBkdXJpbmcgdGhlIGV4YW0iLCJBIHN0dWR5IGd1aWRlIiwiQSBjb3Vyc2UgdGV4dGJvb2siXSwiYW5zd2VyIjoxLCJoaW50IjoiUHJvY3RvcnMgZW5zdXJlIGV4YW0gaW50ZWdyaXR5IGFuZCBhY2FkZW1pYyBob25lc3R5LiJ9LHsicXVlc3Rpb24iOiJXaGF0IGlzIHRoZSBtb3N0IGVmZmVjdGl2ZSBzdHJhdGVneSBmb3Igbm90ZS10YWtpbmc/Iiwib3B0aW9ucyI6WyJXcml0aW5nIGFzIGZhc3QgYXMgcG9zc2libGUiLCJCb3RoIHJldmlld2luZyB5b3VyIG5vdGVzIGFuZCB3cml0aW5nIHN1bW1hcmllcyIsIlVzaW5nIG9ubHkgZGlnaXRhbCBkZXZpY2VzIiwiQ29weWluZyB0ZXh0Ym9vayBwYXNzYWdlcyB2ZXJiYXRpbSJdLCJhbnN3ZXIiOjEsImhpbnQiOiJBY3RpdmUgZW5nYWdlbWVudCB3aXRoIG5vdGVzIHRocm91Z2ggcmV2aWV3IGFuZCBzdW1tYXJpemF0aW9uIGVuaGFuY2VzIGxlYXJuaW5nLiJ9LHsicXVlc3Rpb24iOiJXaGF0IGlzIHRoZSBtb3N0IGVmZmVjdGl2ZSBzdHJhdGVneSBmb3Igc3RyZXNzIG1hbmFnZW1lbnQ/Iiwib3B0aW9ucyI6WyJBdm9pZGluZyBkZWFkbGluZXMiLCJUaW1lIG1hbmFnZW1lbnQiLCJXb3JraW5nIGxvbmdlciBob3VycyIsIk11bHRpdGFza2luZyJdLCJhbnN3ZXIiOjEsImhpbnQiOiJFZmZlY3RpdmUgdGltZSBvcmdhbml6YXRpb24gcmVkdWNlcyBwcmVzc3VyZSBhbmQgbGFzdC1taW51dGUgc3RyZXNzLiJ9LHsicXVlc3Rpb24iOiJXaGF0IGlzIHRoZSBtb3N0IGVmZmVjdGl2ZSBzdHJhdGVneSB0byBtYW5hZ2UgdGVzdCBhbnhpZXR5PyIsIm9wdGlvbnMiOlsiQmUgcHJlcGFyZWQiLCJBdm9pZCBzdHVkeWluZyIsIlJlbHkgb24gbHVjayIsIkNyYW0gYXQgdGhlIGxhc3QgbWludXRlIl0sImFuc3dlciI6MCwiaGludCI6IlRob3JvdWdoIHByZXBhcmF0aW9uIGJ1aWxkcyBjb25maWRlbmNlIGFuZCByZWR1Y2VzIGFueGlldHkuIn0seyJxdWVzdGlvbiI6IldoZW4gaXMgdGhlIENvbmNlcHQgTWFwIE1ldGhvZCBmb3Igbm90ZS10YWtpbmcgYmVzdCB1c2VkPyIsIm9wdGlvbnMiOlsiRm9yIGxpbmVhciBpbmZvcm1hdGlvbiIsIldoZW4geW91IHdhbnQgdG8gY2FwdHVyZSByZWxhdGlvbnNoaXBzIiwiRm9yIG1hdGhlbWF0aWNhbCBmb3JtdWxhcyBvbmx5IiwiV2hlbiB0aW1lIGlzIGxpbWl0ZWQiXSwiYW5zd2VyIjoxLCJoaW50IjoiQ29uY2VwdCBtYXBzIHZpc3VhbGx5IHJlcHJlc2VudCBjb25uZWN0aW9ucyBiZXR3ZWVuIGlkZWFzLiJ9LHsicXVlc3Rpb24iOiJXaGVyZSBjYW4gc3R1ZGVudHMgZmluZCBvdXQgd2hlbiBjb3Vyc2UgcmVnaXN0cmF0aW9uIHdpbGwgYmUgb3Blbj8iLCJvcHRpb25zIjpbIkFjYWRlbWljIENhbGVuZGFyIiwiU29jaWFsIG1lZGlhIiwiT3RoZXIgc3R1ZGVudHMiLCJMb2NhbCBuZXdzcGFwZXIiXSwiYW5zd2VyIjowLCJoaW50IjoiVGhlIEFjYWRlbWljIENhbGVuZGFyIGNvbnRhaW5zIGFsbCBpbXBvcnRhbnQgVW5pdmVyc2l0eSBkYXRlcy4ifSx7InF1ZXN0aW9uIjoiV2hpY2ggb2YgdGhlIGZvbGxvd2luZyBhcmUgY2hhcmFjdGVyaXN0aWNzIG9mIGVmZmVjdGl2ZSBnb2Fscz8iLCJvcHRpb25zIjpbIlZhZ3VlLCBmbGV4aWJsZSwgb3Blbi1lbmRlZCIsIlJlYWxpc3RpYywgc3BlY2lmaWMsIHRpbWUtYm91bmQsIGFuZCBtb3RpdmF0aW5nIiwiRWFzeSB0byBhY2hpZXZlIHdpdGhvdXQgZWZmb3J0IiwiQmFzZWQgb24gb3RoZXJzJyBleHBlY3RhdGlvbnMiXSwiYW5zd2VyIjoxLCJoaW50IjoiU01BUlQgZ29hbHMgZnJhbWV3b3JrIGVtcGhhc2l6ZXMgc3BlY2lmaWMsIG1lYXN1cmFibGUsIGFjaGlldmFibGUsIHJlbGV2YW50LCB0aW1lLWJvdW5kIG9iamVjdGl2ZXMuIn0seyJxdWVzdGlvbiI6IldoaWNoIG9mIHRoZSBmb2xsb3dpbmcgYXJlIHBhcnQgb2YgYSBwZXJzb24ncyB0aW1lIHBlcnNvbmFsaXR5PyIsIm9wdGlvbnMiOlsiRmF2b3JpdGUgY29sb3IiLCJCZWluZyBtb3N0IHByb2R1Y3RpdmUgaW4gdGhlIG1vcm5pbmciLCJQb2xpdGljYWwgYmVsaWVmcyIsIk11c2ljYWwgcHJlZmVyZW5jZXMiXSwiYW5zd2VyIjoxLCJoaW50IjoiVGltZSBwZXJzb25hbGl0eSByZWZlcnMgdG8gaW5kaXZpZHVhbCBwYXR0ZXJucyBvZiBlbmVyZ3kgYW5kIHByb2R1Y3Rpdml0eS4ifSx7InF1ZXN0aW9uIjoiV2hpY2ggb2YgdGhlIGZvbGxvd2luZyBpcyBhIGdvb2Qgd2F5IHRvIHN0YXJ0IHRoZSB3cml0aW5nIHByb2Nlc3M/Iiwib3B0aW9ucyI6WyJXYWl0aW5nIGZvciBpbnNwaXJhdGlvbiIsIk91dGxpbmluZyIsIldyaXRpbmcgdGhlIGNvbmNsdXNpb24gZmlyc3QiLCJVc2luZyBjb21wbGV4IHZvY2FidWxhcnkgaW1tZWRpYXRlbHkiXSwiYW5zd2VyIjoxLCJoaW50IjoiT3V0bGluaW5nIHByb3ZpZGVzIHN0cnVjdHVyZSBhbmQgb3JnYW5pemF0aW9uIGZvciB3cml0aW5nIHByb2plY3RzLiJ9LHsicXVlc3Rpb24iOiJXaGljaCBvZiB0aGUgZm9sbG93aW5nIGlzIGFuIGV4YW1wbGUgb2YgaW50cmluc2ljIG1vdGl2YXRpb24/Iiwib3B0aW9ucyI6WyJMZWFybmluZyBmb3IgYSBncmFkZSIsIkxlYXJuaW5nIHRvIGF2b2lkIHB1bmlzaG1lbnQiLCJMZWFybmluZyBhIG5ldyBza2lsbCBmb3IgYW4gZXhjaXRpbmcgcHJvamVjdCIsIkxlYXJuaW5nIGJlY2F1c2Ugb3RoZXJzIGV4cGVjdCBpdCJdLCJhbnN3ZXIiOjIsImhpbnQiOiJJbnRyaW5zaWMgbW90aXZhdGlvbiBjb21lcyBmcm9tIHBlcnNvbmFsIGludGVyZXN0IGFuZCBzYXRpc2ZhY3Rpb24uIn0seyJxdWVzdGlvbiI6IldoaWNoIG9mIHRoZSBmb2xsb3dpbmcgaXMgYSB0ZWNobmlxdWUgZm9yIGJyYWluc3Rvcm1pbmcgbmV3IGlkZWFzIGJ5IGFza2luZyBhIGxvdCBvZiBxdWVzdGlvbnM/Iiwib3B0aW9ucyI6WyJNaW5kIG1hcHBpbmciLCJTdGFyYnVyc3RpbmciLCJGcmVlIHdyaXRpbmciLCJDbHVzdGVyaW5nIl0sImFuc3dlciI6MSwiaGludCI6IlN0YXJidXJzdGluZyBmb2N1c2VzIG9uIGdlbmVyYXRpbmcgcXVlc3Rpb25zIGFib3V0IGEgdG9waWMuIn0seyJxdWVzdGlvbiI6IldoaWNoIG9mIHRoZSBmb2xsb3dpbmcgaXMgTk9UIGNvbnNpZGVyZWQgcGxhZ2lhcmlzbT8iLCJvcHRpb25zIjpbIkNvcHlpbmcgdGV4dCB3aXRob3V0IGNpdGF0aW9uIiwiUmV3b3JkaW5nIHNvbWVvbmUgZWxzZSdzIGlkZWFzIGFuZCBjaXRpbmcgdGhlIHNvdXJjZSIsIlVzaW5nIHNvbWVvbmUgZWxzZSdzIHdvcmsgYXMgeW91ciBvd24iLCJGYWlsaW5nIHRvIGNpdGUgc291cmNlcyJdLCJhbnN3ZXIiOjEsImhpbnQiOiJQcm9wZXIgcGFyYXBocmFzaW5nIHdpdGggY2l0YXRpb24gaXMgYWNjZXB0YWJsZSBhY2FkZW1pYyBwcmFjdGljZS4ifSx7InF1ZXN0aW9uIjoiV2hpY2ggb2YgdGhlIGZvbGxvd2luZyBpcyB0aGUgY29ycmVjdCBjaXRhdGlvbiBmb3IgYW4gYXJ0aWNsZSBvbiBhIHdlYnNpdGU/Iiwib3B0aW9ucyI6WyJKdXN0IHRoZSBVUkwiLCJBdXRob3IsIGRhdGUsIHRpdGxlLCBhbmQgVVJMIiwiVGl0bGUgb25seSIsIldlYnNpdGUgbmFtZSBvbmx5Il0sImFuc3dlciI6MSwiaGludCI6IkFQQSBmb3JtYXQgcmVxdWlyZXMgc3BlY2lmaWMgZWxlbWVudHMgZm9yIHdlYnNpdGUgY2l0YXRpb25zLiJ9LHsicXVlc3Rpb24iOiJXaGljaCBvZiB0aGUgZm9sbG93aW5nIGlzIHRydWUgYWJvdXQgdXNpbmcgZGlyZWN0IHF1b3RhdGlvbnM/Iiwib3B0aW9ucyI6WyJVc2UgdGhlbSBhcyBtdWNoIGFzIHBvc3NpYmxlIiwiUXVvdGF0aW9ucyBzaG91bGQgYmUgdXNlZCBvbmx5IHdoZW4gbmVjZXNzYXJ5IiwiTmV2ZXIgdXNlIHF1b3RhdGlvbnMiLCJVc2UgdGhlbSB3aXRob3V0IGNpdGF0aW9uIl0sImFuc3dlciI6MSwiaGludCI6IlF1b3RhdGlvbnMgc2hvdWxkIHN1cHBsZW1lbnQsIG5vdCByZXBsYWNlLCB5b3VyIG93biBhbmFseXNpcy4ifSx7InF1ZXN0aW9uIjoiV2hpY2ggb2YgdGhlIGZvbGxvd2luZyBqb3VybmFsIGFydGljbGUgY2l0YXRpb25zIGFyZSBjb3JyZWN0PyIsIm9wdGlvbnMiOlsiQXV0aG9yIChZZWFyKS4gVGl0bGUuIEpvdXJuYWwsIFZvbHVtZShJc3N1ZSksIHBhZ2VzLiBET0kiLCJUaXRsZSBvbmx5IiwiSm91cm5hbCBuYW1lIGFuZCB5ZWFyIiwiQXV0aG9yIGFuZCB0aXRsZSB3aXRob3V0IG90aGVyIGRldGFpbHMiXSwiYW5zd2VyIjowLCJoaW50IjoiQVBBIGZvcm1hdCBoYXMgc3BlY2lmaWMgcmVxdWlyZW1lbnRzIGZvciBqb3VybmFsIGFydGljbGUgY2l0YXRpb25zLiJ9LHsicXVlc3Rpb24iOiJXaGljaCBvZiB0aGUgZm9sbG93aW5nIHRhc2tzIHJlcXVpcmVzIGNyaXRpY2FsIHRoaW5raW5nIHNraWxscz8iLCJvcHRpb25zIjpbIk1lbW9yaXppbmcgZmFjdHMiLCJJZGVudGlmeWluZyB0aGUgcmVsZXZhbmNlIGFuZCBpbXBvcnRhbmNlIG9mIGlkZWFzIiwiQ29weWluZyBpbmZvcm1hdGlvbiIsIkZvbGxvd2luZyBpbnN0cnVjdGlvbnMgd2l0aG91dCBxdWVzdGlvbiJdLCJhbnN3ZXIiOjEsImhpbnQiOiJDcml0aWNhbCB0aGlua2luZyBpbnZvbHZlcyBldmFsdWF0aW9uIGFuZCBqdWRnbWVudC4ifSx7InF1ZXN0aW9uIjoiV2hpY2ggb2YgdGhlc2UgZGljdGlvbmFyeSBjaXRhdGlvbnMgaXMgY29ycmVjdD8iLCJvcHRpb25zIjpbIldvcmQuIChZZWFyKS4gSW4gRGljdGlvbmFyeSBOYW1lLiBVUkwiLCJKdXN0IHRoZSB3b3JkIGRlZmluaXRpb24iLCJEaWN0aW9uYXJ5IG5hbWUgb25seSIsIlVSTCBvbmx5Il0sImFuc3dlciI6MCwiaGludCI6IlJlZmVyZW5jZSB3b3JrcyByZXF1aXJlIHNwZWNpZmljIGNpdGF0aW9uIGZvcm1hdHMuIn0seyJxdWVzdGlvbiI6IldoaWNoIG9mIHRoZXNlIGlzIE5PVCBhbiBleGFtcGxlIG9mIGFjdGl2ZSBsZWFybmluZz8iLCJvcHRpb25zIjpbIkRpc2N1c3NpbmcgY29uY2VwdHMgd2l0aCBwZWVycyIsIlJlYWRpbmcgcXVpY2tseSIsIlNvbHZpbmcgcHJvYmxlbXMiLCJUZWFjaGluZyBvdGhlcnMiXSwiYW5zd2VyIjoxLCJoaW50IjoiQWN0aXZlIGxlYXJuaW5nIHJlcXVpcmVzIGVuZ2FnZW1lbnQgYW5kIHByb2Nlc3NpbmcsIG5vdCBqdXN0IHBhc3NpdmUgcmVhZGluZy4ifSx7InF1ZXN0aW9uIjoiV2hpY2ggb2YgdGhlc2UgaXMgTk9UIGEgc3RyYXRlZ3kgZm9yIHNlbGYtZGlyZWN0ZWQgbGVhcm5pbmc/Iiwib3B0aW9ucyI6WyJTZXR0aW5nIHBlcnNvbmFsIGdvYWxzIiwiQ29tcGFydG1lbnRhbGl6ZSB5b3VyIGxlYXJuaW5nIiwiU2Vla2luZyBmZWVkYmFjayIsIlJlZmxlY3Rpbmcgb24gcHJvZ3Jlc3MiXSwiYW5zd2VyIjoxLCJoaW50IjoiU2VsZi1kaXJlY3RlZCBsZWFybmluZyBpbnZvbHZlcyBpbnRlZ3JhdGlvbiwgbm90IGNvbXBhcnRtZW50YWxpemF0aW9uLiJ9LHsicXVlc3Rpb24iOiJXaGljaCBvZiB0aGVzZSBpcyB0cnVlIGFib3V0IHRoZSBsaXN0IG1ldGhvZCBvZiBub3RlLXRha2luZz8iLCJvcHRpb25zIjpbIkl0IGZvY3VzZXMgb24gdGhvcm91Z2hseSBjYXB0dXJpbmcgaW5mb3JtYXRpb24iLCJJdCBtaW5pbWl6ZXMgdGhlIGFiaWxpdHkgdG8gcHJvY2VzcyBpbmZvcm1hdGlvbiBhcyBub3RlcyBhcmUgdGFrZW4iLCJCb3RoIEEgYW5kIEIiLCJOZWl0aGVyIEEgbm9yIEIiXSwiYW5zd2VyIjoyLCJoaW50IjoiTGlzdCBtZXRob2QgaGFzIGJvdGggc3RyZW5ndGhzIGFuZCBsaW1pdGF0aW9ucyBjb21wYXJlZCB0byBvdGhlciBtZXRob2RzLiJ9LHsicXVlc3Rpb24iOiJXaGljaCBvZiB0aGVzZSBvcHRpb25zIGFyZSB0cnVlIGZvciB0aGUgT3V0bGluZSBNZXRob2QgZm9yIG5vdGUtdGFraW5nPyIsIm9wdGlvbnMiOlsiSXQncyBlYXNpZXN0IHRvIGRvIGVsZWN0cm9uaWNhbGx5IiwiSXQgYWxsb3dzIHlvdSB0byBwcmlvcml0aXplIGluZm9ybWF0aW9uIiwiSXQgY2FuIGJlIGNvbXBsaWNhdGVkIHRvIHVzZSBkdXJpbmcgbGVjdHVyZXMiLCJBbGwgb2YgdGhlIGFib3ZlIl0sImFuc3dlciI6MywiaGludCI6Ik91dGxpbmUgbWV0aG9kIGhhcyBzZXZlcmFsIGNoYXJhY3RlcmlzdGljcyB0aGF0IGFmZmVjdCBpdHMgdXNlZnVsbmVzcy4ifSx7InF1ZXN0aW9uIjoiV2hpY2ggb2YgdGhlc2Ugc3RyYXRlZ2llcyBpcyBOT1QgYW4gZWZmZWN0aXZlIHRlc3QtdGFraW5nIHN0cmF0ZWd5PyIsIm9wdGlvbnMiOlsiUmV2aWV3aW5nIG1hdGVyaWFsIHJlZ3VsYXJseSIsIldhaXQgdW50aWwgdGhlIGRlYWRsaW5lIiwiUHJhY3RpY2luZyB3aXRoIHNhbXBsZSBxdWVzdGlvbnMiLCJHZXR0aW5nIGFkZXF1YXRlIHJlc3QgYmVmb3JlIHRoZSBleGFtIl0sImFuc3dlciI6MSwiaGludCI6IlByb2NyYXN0aW5hdGlvbiByZWR1Y2VzIHByZXBhcmF0aW9uIHRpbWUgYW5kIGluY3JlYXNlcyBzdHJlc3MuIn0seyJxdWVzdGlvbiI6IldoaWNoIG9mIHRoZXNlIHN0cmF0ZWdpZXMgd291bGQgYSBzZWxmLWRpcmVjdGVkIGxlYXJuZXIgYmUgbW9zdCBsaWtlbHkgdG8gdXNlPyIsIm9wdGlvbnMiOlsiQ2FyZWZ1bGx5IGZvbGxvdyB0aGUgc3lsbGFidXMgdG8gc3RheSBvbiB0cmFjayIsIlJlZmxlY3Qgb24ga25vd2xlZGdlIGdhcHMgYW5kIHVzZSByZXNlYXJjaCB0byBmaWxsIHRob3NlIGdhcHMiLCJBY3RpdmVseSBicmFpbnN0b3JtIHdheXMgdG8gYXBwbHkgY291cnNlIG1hdGVyaWFsIG91dHNpZGUgb2YgY2xhc3MiLCJBbGwgb2YgdGhlIGFib3ZlIl0sImFuc3dlciI6MywiaGludCI6IlNlbGYtZGlyZWN0ZWQgbGVhcm5lcnMgZW1wbG95IG11bHRpcGxlIHN0cmF0ZWdpZXMgdG8gdGFrZSBjb250cm9sIG9mIHRoZWlyIGxlYXJuaW5nLiJ9XQ=="}
+[
+    {
+        "question": "Which research approach is best suited to the scientific method?",
+        "options": [
+            "Ethnography",
+            "Secondary data analysis",
+            "Case study",
+            "Questionnaire"
+        ],
+        "answer": 1,
+        "hint": "This method involves analyzing existing data rather than collecting new data."
+    },
+    {
+        "question": "How is 'elderly' defined in sociology?",
+        "options": [
+            "Solely by chronological age starting at sixty-five",
+            "By AARP membership eligibility at age fifty",
+            "There is no universal standard - it varies by location and culture",
+            "Primarily determined by physical health status"
+        ],
+        "answer": 2,
+        "hint": "Sociological definitions often consider cultural and contextual factors."
+    },
+    {
+        "question": "Gender socialization occurs through four major agents of socialization which are:",
+        "options": [
+            "family, education, peer groups and mass media",
+            "education, government, religious institutions and mass media",
+            "education, religious institutions, economic institutions and family",
+            "family, education, government and mass media"
+        ],
+        "answer": 0,
+        "hint": "These are the primary socializing influences that teach gender roles."
+    },
+    {
+        "question": "What is a criminal justice system?",
+        "options": [
+            "The regulation and enforcement of norms",
+            "An organization that exists to enforce a legal code",
+            "A civil force in charge of regulating laws and public order",
+            "A system that has the authority to make decisions based on law"
+        ],
+        "answer": 1,
+        "hint": "It's the formal system designed to maintain social control through legal enforcement."
+    },
+    {
+        "question": "Which best describes a literature review in scholarly research?",
+        "options": [
+            "Creating new theories and hypotheses",
+            "Identifying and studying all existing studies on a topic to inform new research",
+            "Conducting experiments to generate new data",
+            "Collecting primary data through surveys or interviews"
+        ],
+        "answer": 1,
+        "hint": "It involves comprehensive examination of previous research on a subject."
+    },
+    {
+        "question": "Paradigms are philosophical and theoretical frameworks used within a discipline to formulate theories and experiments.",
+        "options": [
+            "FALSE",
+            "TRUE"
+        ],
+        "answer": 1,
+        "hint": "Paradigms provide the fundamental framework for scientific inquiry."
+    },
+    {
+        "question": "There is consensus among different generations regarding the age at which people become officially OLD.",
+        "options": [
+            "TRUE",
+            "FALSE"
+        ],
+        "answer": 1,
+        "hint": "Perceptions of aging vary significantly across cultures and generations."
+    },
+    {
+        "question": "In many Eastern cultures such as Hinduism and Buddhism, death is often viewed as:",
+        "options": [
+            "A temporary state followed by resurrection",
+            "The end of existence with no afterlife beliefs",
+            "A transition to a new reincarnated life based on karma",
+            "A punishment for past wrongdoings"
+        ],
+        "answer": 2,
+        "hint": "This belief involves cycles of rebirth determined by one's actions."
+    },
+    {
+        "question": "What are the three types of innovation according to the U.S Patent Office?",
+        "options": [
+            "Trademark, Copyright, and Patent",
+            "Utility, Design, and Plant",
+            "Design, Chemical, and Mechanical",
+            "Invention, Discovery, and Improvement"
+        ],
+        "answer": 1,
+        "hint": "These categories protect different types of intellectual property."
+    },
+    {
+        "question": "What is the result of media consolidation?",
+        "options": [
+            "A diversification of media ownership",
+            "An increase in the number of independent media outlets",
+            "Creation of an oligopoly with a few dominant firms",
+            "A decrease in the control exerted by corporations over media outlets"
+        ],
+        "answer": 2,
+        "hint": "This leads to concentrated ownership and reduced diversity in media voices."
+    },
+    {
+        "question": "What was one reason for the decline of structural-functionalism in the 1960s and 1970s?",
+        "options": [
+            "The dominance of symbolic interactionism",
+            "Rapid social changes and social movements like women's and Civil Rights movements",
+            "The emergence of postmodern social theory",
+            "The lack of empirical evidence supporting its principles"
+        ],
+        "answer": 1,
+        "hint": "Major social transformations challenged the stability-focused assumptions of this theory."
+    },
+    {
+        "question": "Prior to the 19th Amendment being ratified, which statement is CORRECT about women?",
+        "options": [
+            "Women were requested to be a legal person on their own",
+            "Women were not considered as legal person on their own",
+            "Women were supported to be a legal person on their own",
+            "Women were considered as legal person on their own"
+        ],
+        "answer": 1,
+        "hint": "This constitutional amendment addressed fundamental legal status issues."
+    },
+    {
+        "question": "What does racism encompass?",
+        "options": [
+            "Both prejudice and discrimination",
+            "Discrimination",
+            "Thoughts and feelings",
+            "Prejudice"
+        ],
+        "answer": 0,
+        "hint": "It includes both attitudes and actions based on racial categories."
+    },
+    {
+        "question": "Which statement best defines POWER in sociology?",
+        "options": [
+            "Personal charisma and charm",
+            "The capacity to enforce rules and regulations",
+            "Legitimate control over a specific domain or group",
+            "The ability to influence others and achieve desired outcomes"
+        ],
+        "answer": 3,
+        "hint": "Power involves the capacity to affect the behavior of others."
+    },
+    {
+        "question": "What type of government system is in place in the United States?",
+        "options": [
+            "Totalitarian dictatorship",
+            "Constitutional federal republic",
+            "Monarchy",
+            "Pure democracy"
+        ],
+        "answer": 1,
+        "hint": "This system combines written constitutional limits with state and federal division of power."
+    },
+    {
+        "question": "School choice advocates promote the idea that choice allows parents and students a more effective educational experience.",
+        "options": [
+            "FALSE",
+            "TRUE"
+        ],
+        "answer": 1,
+        "hint": "This perspective emphasizes individualized educational options."
+    },
+    {
+        "question": "What can be considered as a Head Start program?",
+        "options": [
+            "A program where people learn about their values, beliefs and social norms of their culture",
+            "A program to improve one's social standing",
+            "A federal program where test results determine eligibility for funding",
+            "A federal program that provides academically focused preschool to students of low socioeconomic status"
+        ],
+        "answer": 3,
+        "hint": "This program aims to address educational inequality early in life."
+    },
+    {
+        "question": "A small group of wealthy and influential people at the top of society who hold power and resources is called:",
+        "options": [
+            "Influencers",
+            "Socialite",
+            "The Elites",
+            "Power Elite"
+        ],
+        "answer": 3,
+        "hint": "This term describes those who control major societal institutions."
+    },
+    {
+        "question": "What is the definition of corrections system?",
+        "options": [
+            "The system that focuses on crime prevention in society",
+            "The system that involves data collection using voluntary response methods",
+            "The system that supervises individuals arrested for, convicted of, or sentenced for criminal offenses",
+            "The system that has authority to make decisions based on law"
+        ],
+        "answer": 2,
+        "hint": "This system manages individuals after they enter the criminal justice process."
+    },
+    {
+        "question": "Which best defines a social class according to sociology?",
+        "options": [
+            "A group of individuals who attend the same educational institution",
+            "A group of people who share similar hobbies and interests",
+            "A hierarchical set of social categories based on economic and social status",
+            "A group of people who live in the same neighborhood"
+        ],
+        "answer": 2,
+        "hint": "Social class involves stratification based on wealth, income, education, and social position."
+    },
+    {
+        "question": "The concept anomie can be defined as:",
+        "options": [
+            "A situation in which society no longer has the support of a firm collective consciousness",
+            "How strongly a person is connected to his or her social group",
+            "A person's beliefs and ideology are in conflict with her best interests",
+            "When one or more of an individual's roles clash"
+        ],
+        "answer": 0,
+        "hint": "This concept relates to social instability from weakened norms and values."
+    },
+    {
+        "question": "Which of the following is NOT true about old age?",
+        "options": [
+            "Women notice wrinkles as one of the first signs of aging",
+            "Elderly people lose all appetite and drive for sex",
+            "Elderly men sometimes start to go bald as they age",
+            "Elderly people start dying their hair to replace the color they lose"
+        ],
+        "answer": 1,
+        "hint": "Aging affects people differently and doesn't eliminate all basic human drives."
+    },
+    {
+        "question": "Which classification method best shows how competitive a nation's economy is in global terms?",
+        "options": [
+            "Using phrases like 'first world,' 'second world,' and 'third world'",
+            "Calculating the GDP per capita of each country and using those numbers to create a global average",
+            "Classifying countries based on their level of development and using phrases like 'more developed' or 'less developed'",
+            "Visiting each country and polling a select handful of the population about their income"
+        ],
+        "answer": 1,
+        "hint": "Economic competitiveness is often measured using standardized economic indicators."
+    },
+    {
+        "question": "When major news outlets all feature the same story prominently, this is referred to as:",
+        "options": [
+            "Homogenization",
+            "Telecommunication",
+            "Fragmentation",
+            "Illiteration"
+        ],
+        "answer": 0,
+        "hint": "This term describes media content becoming uniform across different outlets."
+    },
+    {
+        "question": "Which group within Canada has been stereotyped as the model minority?",
+        "options": [
+            "The Asian Canadian community",
+            "The African Canadian community",
+            "The Arab Canadian community",
+            "The Hispanic Canadian community"
+        ],
+        "answer": 0,
+        "hint": "This stereotype portrays certain minority groups as exceptionally successful."
+    },
+    {
+        "question": "Which of the following is NOT a characteristic of a bureaucracy?",
+        "options": [
+            "Clear division of labor",
+            "Impersonality",
+            "Explicit rules",
+            "Personality-based promotion"
+        ],
+        "answer": 3,
+        "hint": "Bureaucracies emphasize formal procedures over personal relationships."
+    },
+    {
+        "question": "When survivors of a plane crash learn new behaviors to adapt to their situation, this illustrates which theory?",
+        "options": [
+            "Immersed socialization",
+            "Assembling",
+            "Emergent norm",
+            "Abrams"
+        ],
+        "answer": 2,
+        "hint": "This theory explains how new social norms develop in crisis situations."
+    },
+    {
+        "question": "What correlation between religion and society did Max Weber see and study?",
+        "options": [
+            "Religion was pushed out of society as countries began to industrialize",
+            "Religion was important to lower class people, but not very important to those in higher classes",
+            "Religion was very influential over the economy and the habits of workers",
+            "Religion was just a way for governments to justify and control their people"
+        ],
+        "answer": 2,
+        "hint": "Weber famously studied the relationship between Protestantism and capitalism."
+    },
+    {
+        "question": "When people try to hide a diagnosis because they've seen others discriminated against for it, this is an example of a:",
+        "options": [
+            "Untreatable illness",
+            "Stigmatized illness",
+            "Withdrawn illness",
+            "Contested illness"
+        ],
+        "answer": 1,
+        "hint": "This occurs when society attaches negative stereotypes to certain health conditions."
+    },
+    {
+        "question": "From the functionalist perspective, which of the following is NOT a purpose of government?",
+        "options": [
+            "Planning and directing society",
+            "Meeting social needs",
+            "Managing international relations",
+            "Lobbying for domestic corporate interests"
+        ],
+        "answer": 3,
+        "hint": "Functionalists see government as serving broader societal functions rather than specific interests."
+    },
+    {
+        "question": "What is one of the largest contributors to health problems in low-income countries?",
+        "options": [
+            "Veganism",
+            "Clean water access",
+            "High caloric diets",
+            "Sterilization"
+        ],
+        "answer": 1,
+        "hint": "Lack of basic infrastructure contributes significantly to public health issues."
+    },
+    {
+        "question": "When a mother dresses her baby in gender-specific clothing to communicate she has a girl, this fits which paradigm?",
+        "options": [
+            "Structural Functionalism",
+            "Conflict",
+            "Symbolic Interactionism",
+            "Exchange Theory"
+        ],
+        "answer": 2,
+        "hint": "This perspective focuses on how people create meaning through social interaction."
+    },
+    {
+        "question": "Which factors contributed to high divorce rates during the 1960's in North America?",
+        "options": [
+            "Increase in women working outside the home and greater social acceptance of divorce",
+            "Men working from home putting strain on marriages and women becoming more aware of legal rights",
+            "The zero-tolerance concept applied to marriages",
+            "World War II generation struggling with lifestyle changes"
+        ],
+        "answer": 0,
+        "hint": "Changing gender roles and social attitudes significantly impacted marriage patterns."
+    },
+    {
+        "question": "What would a sociologist suggest to a farmer wanting to increase his cattle herd?",
+        "options": [
+            "Examine the carrying capacity of his lands and consider setting aside more land",
+            "Make sure he has at least one bull to keep breeding cattle",
+            "Start training his son at age 5 to deal with cattle",
+            "Sell his farm to the highest bidder and relax more often"
+        ],
+        "answer": 0,
+        "hint": "Sociologists consider the relationship between population and available resources."
+    },
+    {
+        "question": "When someone believes racial beliefs are based on media images rather than personal experience, this perspective is:",
+        "options": [
+            "Functionalist",
+            "Conflict theorist",
+            "Feminist",
+            "Symbolic interactionist"
+        ],
+        "answer": 3,
+        "hint": "This perspective examines how people interpret symbols and media representations."
+    },
+    {
+        "question": "According to Kohlberg's theory of moral development, when do humans begin to think about others' feelings?",
+        "options": [
+            "When they are born",
+            "When they first go to school",
+            "In their teenage years",
+            "After they graduate from college"
+        ],
+        "answer": 2,
+        "hint": "Moral development progresses through distinct stages as people mature."
+    },
+    {
+        "question": "An example of slavery, according to Anti-Slavery International, is:",
+        "options": [
+            "Factories employing adults at salary level",
+            "Factories using child labor",
+            "Children attending school",
+            "Children playing with friends"
+        ],
+        "answer": 1,
+        "hint": "Modern slavery includes various forms of forced labor exploitation."
+    },
+    {
+        "question": "Which of the following is NOT a product of gender stereotyping?",
+        "options": [
+            "Encouraging a girl to take home economics over shop class",
+            "Encouraging a woman to study piano instead of drums",
+            "Discouraging a female student from entering the military",
+            "A father buying a basketball hoop for his daughter's birthday"
+        ],
+        "answer": 3,
+        "hint": "Gender stereotyping involves limiting people based on traditional gender roles."
+    },
+    {
+        "question": "When students are placed in lower-level classes based on early performance, this process is known as:",
+        "options": [
+            "Tracking",
+            "Grade inflation",
+            "Feminism",
+            "Manifest function"
+        ],
+        "answer": 0,
+        "hint": "This educational practice sorts students into different academic paths."
+    },
+    {
+        "question": "When powerful media outlets control which news stories are reported to the public, this is called:",
+        "options": [
+            "Social control",
+            "The great divide",
+            "Gatekeeping",
+            "Discriminatory journalism"
+        ],
+        "answer": 2,
+        "hint": "This term describes how media professionals filter information for public consumption."
+    },
+    {
+        "question": "A court-ordered rehabilitation center is an example of what type of organization?",
+        "options": [
+            "Voluntary organization",
+            "Paparazzi organization",
+            "Utilitarian organization",
+            "Coercive organization"
+        ],
+        "answer": 3,
+        "hint": "This type of organization involves involuntary participation."
+    },
+    {
+        "question": "When someone is concerned about how technology reinforces inequalities, this aligns with which perspective?",
+        "options": [
+            "Functionalist",
+            "Cyberfeminist",
+            "Symbolic Interactionist",
+            "Conflict"
+        ],
+        "answer": 3,
+        "hint": "This perspective focuses on power struggles and inequality in society."
+    },
+    {
+        "question": "Obesity is rising at the fastest rate in which type of countries?",
+        "options": [
+            "High income",
+            "Middle income",
+            "Low income",
+            "All are rising at high rates"
+        ],
+        "answer": 1,
+        "hint": "Economic development patterns affect health and nutrition trends."
+    },
+    {
+        "question": "When someone sees men as dominant and women as subordinate, this view aligns with:",
+        "options": [
+            "Conflict Theory",
+            "Structural Functionalism",
+            "Cyberfeminism",
+            "Symbolic Interactionism"
+        ],
+        "answer": 0,
+        "hint": "This perspective examines power imbalances and social conflict."
+    },
+    {
+        "question": "What is a dependency ratio?",
+        "options": [
+            "The comparison of working people to non-working people",
+            "The comparison of children to parents",
+            "The comparison of grandparents to parents",
+            "The comparison of healthcare professionals to the elderly"
+        ],
+        "answer": 0,
+        "hint": "This demographic measure indicates economic pressure on working populations."
+    },
+    {
+        "question": "When someone benefits from cultural knowledge and experiences from their upbringing, they are enjoying:",
+        "options": [
+            "Grade inflation",
+            "Cultural capital",
+            "Tracking",
+            "The education gap"
+        ],
+        "answer": 1,
+        "hint": "This concept describes non-financial social assets that promote social mobility."
+    },
+    {
+        "question": "A cultural universal is:",
+        "options": [
+            "An object or a belonging of a group",
+            "A pattern or trait common to all societies",
+            "The ideas, attitudes and beliefs of a particular society",
+            "A written document outlining appropriate behavior"
+        ],
+        "answer": 1,
+        "hint": "These are elements found in all human cultures worldwide."
+    },
+    {
+        "question": "Corporal Punishment is another way of saying:",
+        "options": [
+            "White Collar Crime",
+            "Life in prison",
+            "Spanking",
+            "The death penalty"
+        ],
+        "answer": 2,
+        "hint": "This refers to physical punishment intended to cause pain."
+    },
+    {
+        "question": "When religious practices are similar to mainstream denominations but distinct, this is typically a:",
+        "options": [
+            "Faith that is not part of any larger category",
+            "Cult within the Christian faith",
+            "Sect within the Christian faith",
+            "Ecclesia within the Christian faith"
+        ],
+        "answer": 2,
+        "hint": "This type of religious group breaks away from established churches."
+    },
+    {
+        "question": "Which perspective argues that sick people fill a societal role and are stigmatized if they stay in it too long?",
+        "options": [
+            "Conflict theory",
+            "Feminist",
+            "Symbolic interactionism",
+            "Functionalism"
+        ],
+        "answer": 3,
+        "hint": "This perspective views social institutions as serving necessary functions."
+    },
+    {
+        "question": "From a conflict theory perspective, how would one view Occupy Wall Street?",
+        "options": [
+            "Positive; capitalist economy increases social inequality",
+            "A waste of time; capitalism keeps the nation healthy and efficient",
+            "A threat; large gatherings risk violence breaking out",
+            "Dangerous; large crowds increase risk of sexual abuse"
+        ],
+        "answer": 0,
+        "hint": "Conflict theorists focus on economic inequality and class struggle."
+    },
+    {
+        "question": "What was the name of the agreement where countries pledged to reduce carbon emissions?",
+        "options": [
+            "The Hong Kong Pact",
+            "The Beijing Pollution Reduction Agreement",
+            "The Kyoto Protocol",
+            "The Seoul Greener Earth Initiative"
+        ],
+        "answer": 2,
+        "hint": "This international treaty addressed climate change through emission reductions."
+    },
+    {
+        "question": "When social movements merge their goals with other movements, this is called:",
+        "options": [
+            "Ecofeminism",
+            "Frame diagnostics",
+            "Motivational framing",
+            "Frame alignment process"
+        ],
+        "answer": 3,
+        "hint": "This process helps social movements build coalitions and shared purpose."
+    },
+    {
+        "question": "Which best defines a social movement?",
+        "options": [
+            "All politicians and elected officials",
+            "A collection of rights and laws aimed at the silent majority",
+            "A purposeful organized group hoping to work toward a common social goal",
+            "A group of people organized at a meeting, such as a town hall or a courtroom"
+        ],
+        "answer": 2,
+        "hint": "Social movements involve collective action to achieve social change."
+    }
+]

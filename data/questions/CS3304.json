@@ -1,0 +1,100 @@
+[
+    {
+        "question": "True/False: Recursive routines cannot be used in Dynamic Programming algorithms.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Dynamic programming often uses recursion with memoization to solve overlapping subproblems efficiently."
+    },
+    {
+        "question": "True/False: Linear programming is an excellent approach for optimization problems where the objective function graphs as a curvilinear line.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Linear programming requires linear objective functions and constraints; curvilinear functions fall under nonlinear programming."
+    },
+    {
+        "question": "Consider: A farmer can plant up to 20 acres of land with wheat and barley. He can earn $8,000 for every acre he plants with wheat and $5,000 for every acre he plants with barley. His use of a necessary pesticide is limited by federal regulations to 10 gallons for his entire 20 acres. Wheat requires 2 gallons of pesticide for every acre planted and barley requires just 1 gallon per acre. Problem: What is the maximum profit he can make? Assumptions: let x = the number of acres of wheat, let y = the number of acres of barley. Which of the following is a valid constraint for this problem?",
+        "options": [
+            "y <= 10 - 2x",
+            "x <= 0",
+            "x <= 10 - x",
+            "y <= 20 - 2x"
+        ],
+        "answer": 0,
+        "hint": "Consider the pesticide constraint: 2x + y ≤ 10, and rearrange for y."
+    },
+    {
+        "question": "True/False: By the master theorem, the solution to the recurrence T(n) = 3T(n/3) + log n is T(n) = Θ(n log n), assuming the standard master theorem definition.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Compare a, b, and i values to determine which case of the master theorem applies."
+    },
+    {
+        "question": "True/False: In a linear programming problem there can be no more than 3 constraints.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Linear programming problems can have any number of constraints; there is no inherent limit of 3."
+    },
+    {
+        "question": "In linear programming, when constraints conflict and no solution satisfies all constraints simultaneously, this is called:",
+        "options": [
+            "The optimal solution",
+            "An infeasible solution",
+            "An Alternate vertex",
+            "None of these answers"
+        ],
+        "answer": 1,
+        "hint": "This occurs when the feasible region is empty due to contradictory constraints."
+    },
+    {
+        "question": "Counting only assignment statements as operations, what is the exact number of operations executed by the following code fragment in terms of n? x = n; while (x > 0) { z = 0; while (z <= 6) z = z + 2; x = x - 1; }",
+        "options": [
+            "6n+1",
+            "n²",
+            "2(6n)",
+            "6n"
+        ],
+        "answer": 0,
+        "hint": "Count the assignment operations in both loops and consider how many times each executes."
+    },
+    {
+        "question": "What is the running time of the following algorithm (in the worst case) expressed in terms of n? for i = 1 to n do if A[i] = x then return i elseif A[i] < x then i = i + 1 else return 'x not found' return 'x not found'",
+        "options": [
+            "T(n) = n",
+            "T(n) = n log n",
+            "T(n) = 2n",
+            "T(n) = n²/2"
+        ],
+        "answer": 0,
+        "hint": "Consider the worst-case scenario where the algorithm must check every element in the array."
+    },
+    {
+        "question": "True/False: The upper bound always specifies the worst case performance of an algorithm within the constraints of the constants, which are usually represented by c and n₀.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Upper bound (Big O) describes worst-case performance, accounting for constants c and n₀."
+    },
+    {
+        "question": "True/False: O(1) is the time complexity of an algorithm that operates in constant time. The process time required stays constant regardless of the data size.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Constant time complexity means execution time doesn't depend on input size."
+    }
+]

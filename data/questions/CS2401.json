@@ -1,0 +1,310 @@
+[
+    {
+        "question": "Software is a product and can be manufactured using the same technologies used for other engineering artifacts.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Consider the unique characteristics of software development versus traditional manufacturing."
+    },
+    {
+        "question": "Because Use Cases represent recipes for users achieving 'goals', each use case name must include a 'verb' capturing the goal achievement.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Use cases describe interactions and should reflect actions or goals."
+    },
+    {
+        "question": "Software engineering umbrella activities are only applied during the initial phases of software development projects.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Umbrella activities span across the entire software development lifecycle."
+    },
+    {
+        "question": "Methods that are even more aggressive in terms of short iterations and heavy user involvement are often characterized as:",
+        "options": [
+            "Waterfall",
+            "Agile",
+            "Spiral",
+            "V-Model"
+        ],
+        "answer": 1,
+        "hint": "This methodology emphasizes flexibility and customer collaboration."
+    },
+    {
+        "question": "Concept Maps, while representing knowledge about the problem domain, are expressed in terms of 'concepts' and:",
+        "options": [
+            "Objects",
+            "Propositions",
+            "Methods",
+            "Attributes"
+        ],
+        "answer": 1,
+        "hint": "These connect concepts and show relationships in knowledge representation."
+    },
+    {
+        "question": "Objects are abstractions that specify the state and behavior of different collections of objects.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Objects represent individual entities, not collections of objects."
+    },
+    {
+        "question": "Decomposing a problem into simpler ones is common when dealing with complex problems. This is known as:",
+        "options": [
+            "Encapsulation",
+            "Divide & conquer and modularity",
+            "Abstraction",
+            "Inheritance"
+        ],
+        "answer": 1,
+        "hint": "This approach breaks down complex problems into manageable parts."
+    },
+    {
+        "question": "Hiding the object state, so that it can be observed or affected only via the object's methods is known as:",
+        "options": [
+            "Inheritance",
+            "Polymorphism",
+            "Encapsulation",
+            "Abstraction"
+        ],
+        "answer": 2,
+        "hint": "This OOP principle protects object data from direct external access."
+    },
+    {
+        "question": "An ______ is a software packaging of data and code together into a unit within a running computer program.",
+        "options": [
+            "Algorithm",
+            "Object",
+            "Function",
+            "Module"
+        ],
+        "answer": 1,
+        "hint": "This is a fundamental building block in object-oriented programming."
+    },
+    {
+        "question": "Process models are described as agile because they:",
+        "options": [
+            "follow strict documentation standards",
+            "emphasize maneuverability and adaptability",
+            "require extensive planning phases",
+            "focus on comprehensive documentation"
+        ],
+        "answer": 1,
+        "hint": "Agile methods prioritize flexibility and responsiveness to change."
+    },
+    {
+        "question": "The result of the requirements engineering elaboration task is an analysis model that defines which of the following problem domain(s)?",
+        "options": [
+            "Information domain",
+            "Function domain",
+            "Behavioral domain",
+            "All of the above"
+        ],
+        "answer": 3,
+        "hint": "Requirements engineering covers multiple aspects of the problem space."
+    },
+    {
+        "question": "The job of the requirements engineer is to categorize all stakeholder information in a way that allows decision-makers to choose an internally consistent set of requirements.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Requirements engineering involves organizing and prioritizing stakeholder needs."
+    },
+    {
+        "question": "The correct order for all requirement engineering techniques is:",
+        "options": [
+            "Gathering, Analysis, Specifications",
+            "Analysis, Gathering, Specifications",
+            "Specifications, Analysis, Gathering",
+            "Gathering, Specifications, Analysis"
+        ],
+        "answer": 0,
+        "hint": "Requirements typically progress from collection to analysis to formal documentation."
+    },
+    {
+        "question": "Software architecture focuses on ______ requirements and decomposition of ______ requirements.",
+        "options": [
+            "Functional, Non-functional",
+            "Non-functional, Functional",
+            "Technical, Business",
+            "Business, Technical"
+        ],
+        "answer": 1,
+        "hint": "Architecture addresses system qualities while decomposing functionality."
+    },
+    {
+        "question": "The term FURPS refers to:",
+        "options": [
+            "Functional system properties",
+            "Non-functional system properties",
+            "User interface requirements",
+            "Performance specifications"
+        ],
+        "answer": 1,
+        "hint": "FURPS categorizes quality attributes of a system."
+    },
+    {
+        "question": "Software Architecture is a phase of software development.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Architecture represents a distinct activity in the software development process."
+    },
+    {
+        "question": "'Velocity' of the development team (in effort estimation) is defined as the:",
+        "options": [
+            "Speed of coding",
+            "Productivity of the team",
+            "Number of team members",
+            "Project deadline pressure"
+        ],
+        "answer": 1,
+        "hint": "In agile methodologies, velocity measures work completed per iteration."
+    },
+    {
+        "question": "Acceptance Tests are the test specified by the customer, written during the requirements analysis.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Acceptance tests validate that the system meets customer requirements."
+    },
+    {
+        "question": "The final outcome of requirement engineering is a Requirement Specification Document.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Requirements engineering culminates in formal documentation of system requirements."
+    },
+    {
+        "question": "Which of the following statements characterize use cases?",
+        "options": [
+            "Use cases specify the user interface design",
+            "Use cases specify the functionalities and the behavior that the system which is being developed should have",
+            "Use cases define the database schema",
+            "Use cases specify the programming language to be used"
+        ],
+        "answer": 1,
+        "hint": "Use cases describe system functionality from a user perspective."
+    },
+    {
+        "question": "To prioritize the work on use cases, we use:",
+        "options": [
+            "Gantt Chart",
+            "Traceability Matrix",
+            "PERT Chart",
+            "Flowchart"
+        ],
+        "answer": 1,
+        "hint": "This matrix helps link requirements to implementation and testing."
+    },
+    {
+        "question": "A use case represents an activity that an actor can perform on the system and what the system does in response.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Use cases capture interactions between actors and the system."
+    },
+    {
+        "question": "In UML diagrams, the relationship between object and component parts is represented by:",
+        "options": [
+            "Inheritance",
+            "Aggregation",
+            "Association",
+            "Dependency"
+        ],
+        "answer": 1,
+        "hint": "This relationship represents a 'whole-part' connection between objects."
+    },
+    {
+        "question": "An actor is any entity (human, physical object, or another system) external to the system-to-be that interacts with the system-to-be.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Actors represent external entities that interact with the system."
+    },
+    {
+        "question": "The association between an actor and a use case is:",
+        "options": [
+            "A directed arrow",
+            "Is an undirected continuous line and is binary",
+            "A dashed line",
+            "A double-headed arrow"
+        ],
+        "answer": 1,
+        "hint": "In UML, actor-use case relationships have specific graphical representations."
+    },
+    {
+        "question": "The initiating actor is the ______ actor whereas participating actor is the ______ actor.",
+        "options": [
+            "Secondary, Primary",
+            "Primary, Secondary",
+            "Internal, External",
+            "External, Internal"
+        ],
+        "answer": 1,
+        "hint": "Primary actors initiate interactions, while secondary actors respond to them."
+    },
+    {
+        "question": "Analysis phase is concerned about the ______ aspect of software engineering where as Design is more focused on ______ aspect.",
+        "options": [
+            "How, What",
+            "What, How",
+            "When, Why",
+            "Why, When"
+        ],
+        "answer": 1,
+        "hint": "Analysis determines what the system should do, design determines how it will do it."
+    },
+    {
+        "question": "Object's coupling is indirectly proportional to the number of different messages the object sends to other objects.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Coupling typically increases with more inter-object communication."
+    },
+    {
+        "question": "A popular approach to micro-level design is known as responsibility-driven design (RDD). What are the three types of responsibilities that objects can have?",
+        "options": [
+            "Knowing: Property, Doing: Method, Communicating: Message",
+            "Storing: Attribute, Processing: Function, Connecting: Link",
+            "Input: Parameter, Output: Return, Processing: Algorithm",
+            "Reading: Getter, Writing: Setter, Calculating: Operation"
+        ],
+        "answer": 0,
+        "hint": "RDD focuses on assigning clear responsibilities to objects for knowing, doing, and communicating."
+    },
+    {
+        "question": "Coupling is a qualitative indication of the degree to which a module:",
+        "options": [
+            "focuses on just one thing",
+            "is connected to other modules and the outside world",
+            "can be tested independently",
+            "follows coding standards"
+        ],
+        "answer": 1,
+        "hint": "Coupling measures interdependencies between software modules."
+    }
+]

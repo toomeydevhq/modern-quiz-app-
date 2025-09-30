@@ -1,1 +1,202 @@
-{"encoded":true,"data":"eyJlbmNvZGVkIjp0cnVlLCJkYXRhIjoiVzNzaWNYVmxjM1JwYjI0aU9pSlhhR0YwSUdseklIUm9aU0J3Y21sdFlYSjVJR2R2WVd3Z2IyWWdZU0JpZFhOcGJtVnpjejhpTENKdmNIUnBiMjV6SWpwYklsUnZJR2hwY21VZ1pXMXdiRzk1WldWeklpd2lWRzhnYldGNGFXMXBlbVVnY0hKdlptbDBjeUlzSWxSdklIQmhlU0IwWVhobGN5SXNJbFJ2SUdOeVpXRjBaU0JoWkhabGNuUnBjMlZ0Wlc1MGN5SmRMQ0poYm5OM1pYSWlPakVzSW1ocGJuUWlPaUpDZFhOcGJtVnpjMlZ6SUdGcGJTQjBieUJuWlc1bGNtRjBaU0J5WlhabGJuVmxJR0Z1WkNCd2NtOW1hWFJ6TGlKOUxIc2ljWFZsYzNScGIyNGlPaUpYYUdsamFDQnZaaUIwYUdVZ1ptOXNiRzkzYVc1bklHbHpJRTVQVkNCaElHWmhZM1J2Y2lCdlppQndjbTlrZFdOMGFXOXVQeUlzSW05d2RHbHZibk1pT2xzaVRHRnVaQ0lzSWt4aFltOXlJaXdpUTJGd2FYUmhiQ0lzSWxkbFlYUm9aWElpWFN3aVlXNXpkMlZ5SWpvekxDSm9hVzUwSWpvaVJtRmpkRzl5Y3lCdlppQndjbTlrZFdOMGFXOXVJR0Z5WlNCeVpYTnZkWEpqWlhNZ2RYTmxaQ0IwYnlCd2NtOWtkV05sSUdkdmIyUnpJR0Z1WkNCelpYSjJhV05sY3k0aWZWMD0iLCJ3YXRlcm1hcmsiOiLCqSAyMDI1IEJyYWlueVF1aXouIFVuYXV0aG9yaXplZCB1c2UgcHJvaGliaXRlZC4ifQ=="}
+[
+    {
+        "question": "According to the principles of visionary leadership, the essentials for successful revolution include all EXCEPT:",
+        "options": [
+            "Physical systems",
+            "Cultural systems",
+            "Organizational systems",
+            "Behavioral systems"
+        ],
+        "answer": 1,
+        "hint": "Visionary leadership focuses on structural and behavioral changes rather than existing cultural systems."
+    },
+    {
+        "question": "The values and assumptions that shape the organization's culture can be uncovered by observing all of the following EXCEPT:",
+        "options": [
+            "How employees interact",
+            "Employee beliefs and perceptions regarding what is right and appropriate behavior",
+            "The choice employees make",
+            "The stakeholders involved in the organization"
+        ],
+        "answer": 3,
+        "hint": "Culture is revealed through internal behaviors and choices, not external stakeholder relationships."
+    },
+    {
+        "question": "What kind of expertise do supply chain masters need at Intel?",
+        "options": [
+            "Science, communication, engineering",
+            "Statistics, risk management and modeling",
+            "Transportation planning, green energy, and global supply",
+            "Math, science and engineering"
+        ],
+        "answer": 1,
+        "hint": "Intel's supply chain requires analytical and predictive capabilities for complex operations."
+    },
+    {
+        "question": "Firms with clearly communicated, widely understood and collectively shared mission and vision have been shown:",
+        "options": [
+            "To create and advance technology",
+            "Embrace diversity",
+            "Perform better than those without them",
+            "Employ a smarter workforce"
+        ],
+        "answer": 2,
+        "hint": "Clear strategic direction correlates with improved organizational performance."
+    },
+    {
+        "question": "How we perceive others will shape our behavior, which in turn:",
+        "options": [
+            "Will shape the behavior of the person we are interacting with",
+            "Will lead to undue success or failure",
+            "May lead to wrong inferences about objects in our environment",
+            "Will lead to generalizations"
+        ],
+        "answer": 0,
+        "hint": "Social perception creates a reciprocal interaction pattern in relationships."
+    },
+    {
+        "question": "The structure of an organization is usually represented:",
+        "options": [
+            "in the job design",
+            "in the chain of command",
+            "in the operational plan",
+            "in the tactical plan"
+        ],
+        "answer": 1,
+        "hint": "Organizational structure defines reporting relationships and authority lines."
+    },
+    {
+        "question": "Tactical planning in an organization is usually an intermediate-range plan designed to develop specific means to implement the strategic plan.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Tactical planning bridges long-term strategy with short-term operations."
+    },
+    {
+        "question": "Countries with low institutional collectivism emphasize individual achievement and rewards.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Low collectivism cultures prioritize individual over group accomplishments."
+    },
+    {
+        "question": "Believing that women are more cooperative than men, or men are more assertive than women, are examples of:",
+        "options": [
+            "Categorizing",
+            "Stereotyping",
+            "Biasing",
+            "Reality check"
+        ],
+        "answer": 1,
+        "hint": "This involves making generalized assumptions about groups of people."
+    },
+    {
+        "question": "Lateral thinking can generate completely new concepts and ideas, and brilliant improvements to existing systems.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Lateral thinking approaches problems from unconventional angles."
+    },
+    {
+        "question": "When a scorecard is disseminated, strategy becomes a tool specifically for top management.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Disseminated scorecards make strategy relevant across organizational levels."
+    },
+    {
+        "question": "Identifying a set of values that might be used to describe an organization's culture helps us identify, measure, and manage culture more effectively.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Cultural values provide a framework for understanding organizational behavior."
+    },
+    {
+        "question": "Competition among employers and countries for the best and brightest puts pressure on firms to invest in present and future leadership capabilities.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Talent competition drives investment in leadership development programs."
+    },
+    {
+        "question": "By the end of 2008, 60% of the world's population was using mobile phones.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Mobile phone adoption reached significant global penetration by this time."
+    },
+    {
+        "question": "There are two decisional managerial roles in an organization.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Mintzberg's managerial roles include more than two decisional categories."
+    },
+    {
+        "question": "Strategy is the concept of how an organization will achieve its objectives; therefore strategic management is:",
+        "options": [
+            "knowledge to help in the development and implementation of strategies",
+            "definitions to help in the development and implementation of good strategies",
+            "processes to help the organization in the development of strategies",
+            "the purpose of developing strategies in an organization"
+        ],
+        "answer": 0,
+        "hint": "Strategic management encompasses the body of knowledge for strategy formulation and execution."
+    },
+    {
+        "question": "Mechanistic structures limit individual autonomy and self determination which will likely lead to lower levels of intrinsic motivation on the job.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Mechanistic structures emphasize control and standardization over autonomy."
+    },
+    {
+        "question": "Good vision statements need to create some dissonance with the status quo of an organization.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Effective vision statements should inspire change and improvement."
+    },
+    {
+        "question": "The communication step of the mission and vision statements development process is analogous to which step in the principles of management framework:",
+        "options": [
+            "Planning",
+            "Organizing",
+            "Leading",
+            "Controlling"
+        ],
+        "answer": 2,
+        "hint": "Communication aligns with the influencing and guiding aspects of management."
+    },
+    {
+        "question": "Motivating employees is a managerial function of:",
+        "options": [
+            "Leading",
+            "Controlling",
+            "Organizing",
+            "Planning"
+        ],
+        "answer": 0,
+        "hint": "Motivation falls under the influencing and directing functions of management."
+    }
+]

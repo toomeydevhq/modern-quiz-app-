@@ -1,0 +1,256 @@
+[
+    {
+        "question": "IP is a best effort system; there are no IP-layer acknowledgments or retransmissions.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "IP focuses on delivery without guarantees; reliability is handled by higher layers."
+    },
+    {
+        "question": "Which is an important characteristic of UDP?",
+        "options": [
+            "acknowledgement of data delivery",
+            "minimal delays in data delivery",
+            "high reliability of data delivery",
+            "same order data delivery",
+            "flow control"
+        ],
+        "answer": 1,
+        "hint": "UDP sacrifices reliability for faster transmission."
+    },
+    {
+        "question": "The reverse address resolution protocol (RARP) allows a host to discover its Internet address when it knows only its physical address.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "RARP is the reverse of ARP - it maps physical addresses to IP addresses."
+    },
+    {
+        "question": "UDP (like TCP) avoids IP fragmentation by relying on the Path MTU Discovery mechanism.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "UDP does not implement Path MTU Discovery; TCP does."
+    },
+    {
+        "question": "A link-state routing algorithm computes routes from the network map using:",
+        "options": [
+            "the Spanning Tree algorithm",
+            "the Shortest Path First algorithm",
+            "the Routing Internet Protocol",
+            "Dykstra's projection algorithm"
+        ],
+        "answer": 1,
+        "hint": "This algorithm finds the optimal path through a network graph."
+    },
+    {
+        "question": "Category 5 UTP cable is often used in which networks?",
+        "options": [
+            "Telephone",
+            "USB",
+            "10 Mbps Ethernet",
+            "100 Mbps Ethernet"
+        ],
+        "answer": 3,
+        "hint": "Cat5 cables support Fast Ethernet speeds."
+    },
+    {
+        "question": "Subnetting allows aggregation of IP address blocks in a way that is visible to the Internet backbone.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Subnetting is internal to organizations; supernetting aggregates for the backbone."
+    },
+    {
+        "question": "The size of the UDP port field is:",
+        "options": [
+            "8 bits",
+            "16 bits",
+            "32 bits",
+            "48 bits",
+            "64 bits"
+        ],
+        "answer": 1,
+        "hint": "UDP ports use the same size as TCP ports."
+    },
+    {
+        "question": "In Sliding Windows, the sender is allowed to send up to this many packets (starting with the next packet after the last acknowledged packet):",
+        "options": [
+            "half of the window size",
+            "window size minus 1",
+            "window size",
+            "window size plus 1"
+        ],
+        "answer": 2,
+        "hint": "The window size determines how many unacknowledged packets can be in flight."
+    },
+    {
+        "question": "ATM Adaptation Layer AAL 5 uses a CRC-32 checksum and is able to detect lost ATM cells.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "AAL5 includes error detection mechanisms for ATM networks."
+    },
+    {
+        "question": "What characteristic of UTP cable helps reduce the effects of interference?",
+        "options": [
+            "the metal braiding in the shielding",
+            "the reflective cladding around core",
+            "the twisting of the wires in the cable",
+            "the insulating material in the outer jacket",
+            "the type of metal used for the wires"
+        ],
+        "answer": 2,
+        "hint": "The twisting pattern cancels out electromagnetic interference."
+    },
+    {
+        "question": "Which of the following is a characteristic of single-mode fiber-optic cable?",
+        "options": [
+            "generally uses LEDs as the light source",
+            "no longer in use",
+            "uses relatively larger core with multiple light paths",
+            "is cheaper than multi-mode fiber",
+            "generally uses semiconductor lasers as the light source"
+        ],
+        "answer": 4,
+        "hint": "Single-mode fiber requires more precise, focused light sources."
+    },
+    {
+        "question": "What is the primary reason for the eventual retirement of IPv4?",
+        "options": [
+            "security",
+            "header format specification",
+            "limited addressing capabilities",
+            "addressing simplifications",
+            "performance issues"
+        ],
+        "answer": 2,
+        "hint": "The main issue is the exhaustion of available IP addresses."
+    },
+    {
+        "question": "How is an Ethernet card (or network interface) assigned a unique MAC address?",
+        "options": [
+            "By the computer vendor",
+            "By the network administrator",
+            "By the Ethernet card manufacturer",
+            "By the computer Operating System"
+        ],
+        "answer": 2,
+        "hint": "MAC addresses are burned into the hardware during manufacturing."
+    },
+    {
+        "question": "A protocol that allows mail users agents to copy email from the email server to the user is:",
+        "options": [
+            "POP3",
+            "SMTP",
+            "IMAP",
+            "MIME"
+        ],
+        "answer": 0,
+        "hint": "This protocol typically downloads emails to the local client."
+    },
+    {
+        "question": "The TCP Persist Timer is used to poll when the window size is zero. This timer is used by:",
+        "options": [
+            "the sender side",
+            "the receiver side",
+            "both the sender and the receiver sides",
+            "the socket owner application"
+        ],
+        "answer": 0,
+        "hint": "This timer helps the sender detect when the window reopens."
+    },
+    {
+        "question": "The degeneration of a signal over distance on a network cable is called attenuation.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Attenuation is the loss of signal strength over distance."
+    },
+    {
+        "question": "What is the primary reason for the development of IPv6?",
+        "options": [
+            "security",
+            "header format specification",
+            "expanded addressing capabilities",
+            "addressing simplifications"
+        ],
+        "answer": 2,
+        "hint": "IPv6 provides a massively larger address space than IPv4."
+    },
+    {
+        "question": "According to Nyquist, a perfect (noiseless) channel has infinite transmission capacity.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Nyquist's theorem gives a finite maximum capacity even for noiseless channels."
+    },
+    {
+        "question": "ARP-cache entries eventually expire and the timeout interval is on the order of:",
+        "options": [
+            "1 day",
+            "1 hour",
+            "a few seconds",
+            "from half a minute to a few minutes"
+        ],
+        "answer": 3,
+        "hint": "ARP cache timeouts are relatively short to handle network changes."
+    },
+    {
+        "question": "The use of ______ lets the base station receive CDMA messages from unsynchronized mobile phones.",
+        "options": [
+            "large antennas",
+            "expensive digital filter components",
+            "sophisticated software algorithms",
+            "pseudorandom sequences"
+        ],
+        "answer": 3,
+        "hint": "CDMA uses special codes to distinguish between different transmissions."
+    },
+    {
+        "question": "Overlapping TCP segments raises the possibility of signature-based detection evasion.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Overlapping segments can be reassembled differently by different systems."
+    },
+    {
+        "question": "What OSI layer identifies the communicating applications?",
+        "options": [
+            "Layer 1",
+            "Layer 2",
+            "Layer 3",
+            "Layer 4",
+            "Layer 5"
+        ],
+        "answer": 3,
+        "hint": "This layer uses port numbers to identify applications."
+    },
+    {
+        "question": "In most TCP implementations, data can be sent only after the 3-way handshake completes. Therefore, the delay before any data can be sent is:",
+        "options": [
+            "2 RTTs",
+            "1 RTT",
+            "1.5 RTT",
+            "2.5 RTTs"
+        ],
+        "answer": 1,
+        "hint": "The 3-way handshake takes one round trip time to complete."
+    }
+]

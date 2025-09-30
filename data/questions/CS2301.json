@@ -1,0 +1,298 @@
+[
+    {
+        "question": "Setting up the trap handlers and starting an interrupt timer serve to ______ the system.",
+        "options": [
+            "Lock",
+            "Optimize",
+            "Baby proof",
+            "Shut down"
+        ],
+        "answer": 1,
+        "hint": "These mechanisms help improve system performance and reliability."
+    },
+    {
+        "question": "The process list is a data structure.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "The process list organizes information about running processes in memory."
+    },
+    {
+        "question": "For Windows Defender, event ID 3002 means?",
+        "options": [
+            "Action on malware failed",
+            "Failed to update signatures",
+            "Real time protection failed",
+            "Unexpected error"
+        ],
+        "answer": 2,
+        "hint": "This event ID relates to the core protection feature of Windows Defender."
+    },
+    {
+        "question": "Paging introduces a problem that page tables are too big and thus consume too much memory.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Large page tables can consume significant memory resources in virtual memory systems."
+    },
+    {
+        "question": "Randomness has 3 advantages except:",
+        "options": [
+            "Fast",
+            "Lightweight",
+            "Avoids strange corner-case behaviors",
+            "Simple"
+        ],
+        "answer": 3,
+        "hint": "Random algorithms are often complex rather than simple in implementation."
+    },
+    {
+        "question": "Processes running in the system are sometimes called workload.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Workload refers to the collection of processes that the system must handle."
+    },
+    {
+        "question": "Allows the kernel to carefully expose certain key pieces of functionality to user programs?",
+        "options": [
+            "user mode",
+            "system call",
+            "kernel mode",
+            "trap"
+        ],
+        "answer": 1,
+        "hint": "This is the interface between user applications and the operating system kernel."
+    },
+    {
+        "question": "COW means:",
+        "options": [
+            "Copy-to-write",
+            "Copy-on-write",
+            "Copy right",
+            "COW means Cow"
+        ],
+        "answer": 1,
+        "hint": "This is an optimization technique used in memory management and process creation."
+    },
+    {
+        "question": "Virtual page numbers and page offsets are used to:",
+        "options": [
+            "Track RAM usage",
+            "Store memory values",
+            "Translate virtual addresses to physical memory addresses",
+            "Store RAM values"
+        ],
+        "answer": 2,
+        "hint": "These components help map virtual memory addresses to physical memory locations."
+    },
+    {
+        "question": "Consult the figure; which page frame will be used first?",
+        "options": [
+            "Page frame 1",
+            "Page frame 2",
+            "Page frame 3",
+            "Page frame 4"
+        ],
+        "answer": 3,
+        "hint": "Look for the first available (unused) page frame in the physical memory layout."
+    },
+    {
+        "question": "The concept of proportional-share scheduling is discussed in which two implementations:",
+        "options": [
+            "Windows VM's and Linux",
+            "Proportional-share schedulers",
+            "Lottery and stride scheduling",
+            "Identifies TARGET machine"
+        ],
+        "answer": 2,
+        "hint": "These are two specific algorithms that implement proportional-share scheduling."
+    },
+    {
+        "question": "The VAX-11 provides a 32-bit virtual address space per process, divided into 512-byte pages.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "This describes the memory architecture of the historical VAX-11 system."
+    },
+    {
+        "question": "Protection bits indicate whether the page could be read from, written to, or executed from.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Protection bits control access permissions for memory pages."
+    },
+    {
+        "question": "MLFQ tries to address the issues below with the exception of:",
+        "options": [
+            "Optimize turnaround time",
+            "Unresponsiveness to interactive users",
+            "Responsiveness to interactive users",
+            "Minimize response times"
+        ],
+        "answer": 1,
+        "hint": "MLFQ is designed to improve responsiveness, not cause unresponsiveness."
+    },
+    {
+        "question": "Implementing paging support without care will lead to a faster machine.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Poor paging implementation can actually degrade performance due to overhead."
+    },
+    {
+        "question": "Direct execution refers to running a program directly on the CPU.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "This is the basic concept of executing programs on the processor hardware."
+    },
+    {
+        "question": "As a concept, virtual machines can exist outside and inside the operation system.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Virtualization can be implemented at different levels of the system architecture."
+    },
+    {
+        "question": "The ticket is used to represent a process's share of the CPU.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "This refers to lottery scheduling where tickets represent CPU time allocation."
+    },
+    {
+        "question": "Memory is just an array of bytes; to read memory, one must specify ______ to be able to access the data stored there.",
+        "options": [
+            "Location",
+            "Address",
+            "Structure",
+            "The Byte"
+        ],
+        "answer": 1,
+        "hint": "Memory addresses uniquely identify each byte location in memory."
+    },
+    {
+        "question": "The Windows operating system has a built-in network based firewall.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Windows includes firewall functionality as part of its security features."
+    },
+    {
+        "question": "Turnaround time is defined as the time at which the job finally completes minus the time at which the job arrived in the system.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "This is the standard definition of turnaround time in scheduling algorithms."
+    },
+    {
+        "question": "There are usually two types of locality, temporal and spatial.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "These are fundamental concepts in memory hierarchy and caching."
+    },
+    {
+        "question": "A 32-bit logical address with 8 KB page size will have 1,000,000 entries in a conventional page table?",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Calculate the number of page table entries based on address space size and page size."
+    },
+    {
+        "question": "Used to help decide when to start evicting pages from memory:",
+        "options": [
+            "High watermark (HW) only",
+            "High watermark (HW) and low watermark (LW)",
+            "Page-Fault Control Flow Algorithm",
+            "Low watermark (LW) only"
+        ],
+        "answer": 1,
+        "hint": "These thresholds help manage page replacement in memory systems."
+    },
+    {
+        "question": "Internal fragmentation happens when big pages waste space within each page.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Internal fragmentation occurs within allocated memory blocks."
+    },
+    {
+        "question": "Fragmentation does not occur in a paging system.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Paging can still suffer from fragmentation issues, particularly internal fragmentation."
+    },
+    {
+        "question": "All that's required for a good lottery is a good non-random number generator to pick the winning ticket, a simple data structure to track the processes of the system (e.g., a list), and the total number of tickets.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Lottery scheduling actually requires a random number generator, not a non-random one."
+    },
+    {
+        "question": "The ___ scheduler allocates available memory to each process using a percentage.",
+        "options": [
+            "Equal",
+            "Global",
+            "Fair-Share",
+            "Slab"
+        ],
+        "answer": 2,
+        "hint": "This scheduler type focuses on equitable distribution of resources."
+    },
+    {
+        "question": "Demand paging means the OS simply brings the page into memory when it is accessed, 'on demand.'",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "This is the fundamental concept behind demand paging in virtual memory systems."
+    },
+    {
+        "question": "The term random-access memory or RAM means that:",
+        "options": [
+            "Memory is dynamically accessed",
+            "Memory is randomly accessed",
+            "RAM is hard to gauge",
+            "Memory is not random"
+        ],
+        "answer": 1,
+        "hint": "RAM allows accessing any memory location directly without sequential access."
+    }
+]

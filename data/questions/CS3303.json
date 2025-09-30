@@ -1,0 +1,328 @@
+[
+    {
+        "question": "A list that organizes the order of records within the list based upon patterns of actual record access is called a/an:",
+        "options": [
+            "Quadratic Binary search order",
+            "A Zipf Distribution",
+            "A Self-organizing list",
+            "A range query"
+        ],
+        "answer": 2,
+        "hint": "This type of list adapts its ordering based on how frequently elements are accessed."
+    },
+    {
+        "question": "Which of the following is not a characteristic of an algorithm?",
+        "options": [
+            "It must be correct",
+            "It must be composed of concrete steps",
+            "It can have no ambiguity",
+            "It must be composed of an infinite number of steps"
+        ],
+        "answer": 3,
+        "hint": "Algorithms must terminate after a finite number of steps."
+    },
+    {
+        "question": "The best asymptotic analysis for the selection sort is represented by:",
+        "options": [
+            "O(n log n)",
+            "O(n²)",
+            "O(n²)",
+            "Θ(n²)"
+        ],
+        "answer": 3,
+        "hint": "Selection sort has both upper and lower bounds that are quadratic."
+    },
+    {
+        "question": "Asymptotic Algorithm Analysis is primarily concerned with:",
+        "options": [
+            "The size of the constant in the algorithm running time equation",
+            "The speed of the computer running the algorithm",
+            "The speed of the compiler",
+            "The growth rate demonstrated in the algorithm running time equation"
+        ],
+        "answer": 3,
+        "hint": "Asymptotic analysis focuses on how running time grows as input size increases."
+    },
+    {
+        "question": "Which of the following is not one of the general approaches to search algorithms:",
+        "options": [
+            "Buffer cache access methods",
+            "Sequential and list methods",
+            "Direct access by key value (hashing)",
+            "Tree indexing methods"
+        ],
+        "answer": 0,
+        "hint": "Buffer caching is a memory management technique, not a search algorithm approach."
+    },
+    {
+        "question": "The implementation of a data type as a data structure is the physical form of an ADT.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "ADT defines the interface, while data structure provides the implementation."
+    },
+    {
+        "question": "The process of storing blocks of data in main memory after reading from disk is referred to as:",
+        "options": [
+            "Buffering",
+            "Hashing",
+            "Pooling",
+            "Indexing"
+        ],
+        "answer": 0,
+        "hint": "This technique helps improve I/O performance by keeping frequently accessed data in memory."
+    },
+    {
+        "question": "A list is:",
+        "options": [
+            "An ADT for storing and retrieving data",
+            "A tree data structure",
+            "Finite ordered sequence of data items",
+            "A collection of operations to implement an ADT"
+        ],
+        "answer": 2,
+        "hint": "A list is defined by its sequential organization of elements."
+    },
+    {
+        "question": "Which of the following is NOT one of the buffer pool heuristics defined in the text:",
+        "options": [
+            "FIFO",
+            "LIFO",
+            "LRU",
+            "LFU"
+        ],
+        "answer": 1,
+        "hint": "LIFO is not commonly used as a buffer pool replacement strategy."
+    },
+    {
+        "question": "An ADT is:",
+        "options": [
+            "A type together with a collection of operations to manipulate the type",
+            "An implementation of a flyweight design pattern",
+            "The realization of a data type as a software component",
+            "An implementation in Java of a class for a data type"
+        ],
+        "answer": 0,
+        "hint": "ADT defines the abstract behavior without specifying implementation details."
+    },
+    {
+        "question": "The lower bound for the growth of the Algorithms running time is represented by:",
+        "options": [
+            "Big Oh (O)",
+            "Big Omega (Ω)",
+            "Big Theta (Θ)",
+            "Exponential growth"
+        ],
+        "answer": 1,
+        "hint": "This notation describes the best-case scenario for algorithm performance."
+    },
+    {
+        "question": "For the code fragment that prints all elements of an array, select the most appropriate asymptotic analysis:",
+        "options": [
+            "O(n)",
+            "O(2ⁿ)",
+            "O(n log n)",
+            "O(n²)"
+        ],
+        "answer": 0,
+        "hint": "The loop executes exactly n times, where n is the array length."
+    },
+    {
+        "question": "A sort that features a limit of n-1 of record swaps is called:",
+        "options": [
+            "Insertion sort",
+            "Bubble sort",
+            "Inversion sort",
+            "Selection sort"
+        ],
+        "answer": 3,
+        "hint": "This sort algorithm finds the minimum element and swaps it into position."
+    },
+    {
+        "question": "A list is said to be empty when all of its elements have a zero (0) value.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "An empty list contains no elements, regardless of their values."
+    },
+    {
+        "question": "For the code fragment that initializes an array, select the most appropriate asymptotic analysis:",
+        "options": [
+            "O(n²)",
+            "O(2ⁿ)",
+            "Ω(n²)",
+            "Θ(n)"
+        ],
+        "answer": 3,
+        "hint": "The loop runs exactly n times, initializing each array element."
+    },
+    {
+        "question": "Enqueue and Dequeue are notations associated with which data structure:",
+        "options": [
+            "Queue",
+            "Stack",
+            "List",
+            "Array"
+        ],
+        "answer": 0,
+        "hint": "These operations follow the FIFO (First-In-First-Out) principle."
+    },
+    {
+        "question": "A sort algorithm that uses two nested loops with the inner loop moving through the array from bottom to top is called the:",
+        "options": [
+            "Insertion sort",
+            "Bubble sort",
+            "Inversion sort",
+            "Selection sort"
+        ],
+        "answer": 1,
+        "hint": "This sort repeatedly steps through the list, comparing adjacent elements."
+    },
+    {
+        "question": "The process of determining if two objects are in the same set and then merging those sets is called:",
+        "options": [
+            "a Union Operation",
+            "Union / Find",
+            "a Weighted Union",
+            "a Merge Operation"
+        ],
+        "answer": 1,
+        "hint": "This is a fundamental operation in disjoint-set data structures."
+    },
+    {
+        "question": "In a stack, which option would access the 3rd element from the top of the stack S:",
+        "options": [
+            "S.push(-1);",
+            "S.dequeue(-3);",
+            "S.pop(); S.pop(); S.pop();",
+            "S.pop(n-3);"
+        ],
+        "answer": 2,
+        "hint": "Stack operations follow LIFO order - you must remove elements to access deeper ones."
+    },
+    {
+        "question": "Correctly identify the following heap structure:",
+        "options": [
+            "partially ordered heap",
+            "max-heap structure",
+            "priority heap",
+            "min-heap structure"
+        ],
+        "answer": 1,
+        "hint": "In this heap type, parent nodes have values greater than or equal to their children."
+    },
+    {
+        "question": "If A={1, 2, 3, 4} and B={4, 5, 6}, find A ∪ B.",
+        "options": [
+            "{1,2,3,4,4,5,6}",
+            "{4}",
+            "{x | x is all positive integers}",
+            "{1,2,3,4,5,6}"
+        ],
+        "answer": 3,
+        "hint": "The union of sets contains all distinct elements from both sets."
+    },
+    {
+        "question": "For the nested loops where outer loop doubles i and inner loop runs n times, select the asymptotic analysis:",
+        "options": [
+            "O(1)",
+            "O(2ⁿ)",
+            "O(n log n)",
+            "O(n²)"
+        ],
+        "answer": 2,
+        "hint": "The outer loop runs log n times while the inner loop runs n times each iteration."
+    },
+    {
+        "question": "A sorting algorithm that assigns records to bins and then relies on some other sorting technique to sort the records within each bin is called:",
+        "options": [
+            "Radix Sort",
+            "Quicksort",
+            "Hash sort",
+            "Bucket sort"
+        ],
+        "answer": 3,
+        "hint": "This distribution sort works by scattering elements into buckets then sorting each bucket."
+    },
+    {
+        "question": "The upper bound for the growth of the Algorithms running time is represented by:",
+        "options": [
+            "Big Oh (O)",
+            "Big Omega (Ω)",
+            "Big Theta (Θ)",
+            "Exponential growth"
+        ],
+        "answer": 0,
+        "hint": "This notation describes the worst-case scenario for algorithm performance."
+    },
+    {
+        "question": "A binary tree traversal that lists every node in the tree exactly once is called:",
+        "options": [
+            "a Traversal",
+            "A visitor design pattern",
+            "An enumeration",
+            "Natural ordering sequence"
+        ],
+        "answer": 2,
+        "hint": "This term describes the process of visiting all nodes systematically."
+    },
+    {
+        "question": "For the binary search code fragment, select the most appropriate asymptotic analysis:",
+        "options": [
+            "Θ(n)",
+            "O(2ⁿ)",
+            "O(log n)",
+            "O(n²)"
+        ],
+        "answer": 2,
+        "hint": "Binary search halves the search space with each comparison."
+    },
+    {
+        "question": "An important advantage of the sequential tree implementation is that:",
+        "options": [
+            "It is an extremely shallow tree",
+            "The data structure can be transmitted between computers",
+            "It saves space because no pointers are stored",
+            "It uses dynamic nodes"
+        ],
+        "answer": 2,
+        "hint": "This implementation uses array indexing instead of pointer references."
+    },
+    {
+        "question": "A technique that allows a programmer to use more main memory than exists in the computer is called:",
+        "options": [
+            "Buffer cache",
+            "Random access memory",
+            "Secondary storage",
+            "Virtual memory"
+        ],
+        "answer": 3,
+        "hint": "This technique uses disk storage to extend available memory space."
+    },
+    {
+        "question": "In linked lists there are no NULL links in:",
+        "options": [
+            "Single linked list",
+            "Linear doubly linked list",
+            "Circular linked list",
+            "None of these"
+        ],
+        "answer": 2,
+        "hint": "In this type of list, the last node points back to the first node."
+    },
+    {
+        "question": "A finite set of one or more nodes such that there is one designated node call the root is a:",
+        "options": [
+            "Parent root",
+            "a B+ tree data structure",
+            "Index",
+            "Tree"
+        ],
+        "answer": 3,
+        "hint": "This is the fundamental definition of a tree data structure."
+    }
+]

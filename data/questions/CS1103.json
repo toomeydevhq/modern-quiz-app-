@@ -1,0 +1,201 @@
+[
+    {
+        "question": "Which answer is a correct skeleton for a recursive Java method?",
+        "options": [
+            "Method with base case and recursive call that divides the problem",
+            "Method with base case that calls itself with same parameter",
+            "Method that divides problem but has no base case",
+            "Method that checks base case after dividing the problem"
+        ],
+        "answer": 0,
+        "hint": "A proper recursive method must have a base case and make progress toward it."
+    },
+    {
+        "question": "To declare a class named A with a generic type, use:",
+        "options": [
+            "public class A<E> { ... }",
+            "public class A<E, F> { ... }",
+            "public class A(E) { ... }",
+            "public class A(E, F) { ... }"
+        ],
+        "answer": 0,
+        "hint": "Generic types in Java use angle brackets <> not parentheses."
+    },
+    {
+        "question": "Which of the following statements about recursion are true?",
+        "options": [
+            "Recursive methods usually take more memory space than non-recursive methods",
+            "A recursive method can always be replaced by a non-recursive method",
+            "Recursion can provide natural, straightforward solutions to difficult problems",
+            "Recursive methods run faster than non-recursive methods"
+        ],
+        "answer": 2,
+        "hint": "Consider the trade-offs and appropriate use cases for recursion."
+    },
+    {
+        "question": "Which data structure is appropriate when workers who arrive later leave earlier?",
+        "options": [
+            "Stack",
+            "Queue",
+            "Array List",
+            "Linked List"
+        ],
+        "answer": 0,
+        "hint": "This follows Last-In-First-Out (LIFO) behavior."
+    },
+    {
+        "question": "To declare an interface named A with two generic types, use:",
+        "options": [
+            "public interface A<E> { ... }",
+            "public interface A<E, F> { ... }",
+            "public interface A(E) { ... }",
+            "public interface A(E, F) { ... }"
+        ],
+        "answer": 1,
+        "hint": "Interfaces can also use generic type parameters in angle brackets."
+    },
+    {
+        "question": "To create a list to store integers, use:",
+        "options": [
+            "ArrayList<Object> list = new ArrayList<Integer>();",
+            "ArrayList<Integer> list = new ArrayList<Integer>();",
+            "ArrayList<int> list = new ArrayList<int>();",
+            "ArrayList<Number> list = new ArrayList<Integer>();"
+        ],
+        "answer": 1,
+        "hint": "Use wrapper classes for primitive types in generics."
+    },
+    {
+        "question": "What is the printout when removing elements from a list during iteration?",
+        "options": [
+            "ABCD",
+            "AB",
+            "AC",
+            "AD"
+        ],
+        "answer": 2,
+        "hint": "Consider how the list indices change when elements are removed during iteration."
+    },
+    {
+        "question": "The server listens for a connection request from a client using:",
+        "options": [
+            "Socket s = new Socket(ServerName, port);",
+            "Socket s = serverSocket.getSocket()",
+            "Socket s = new Socket(ServerName);",
+            "Socket s = serverSocket.accept()"
+        ],
+        "answer": 3,
+        "hint": "This method blocks until a connection is made."
+    },
+    {
+        "question": "Which code is correct to obtain hour from a Calendar object?",
+        "options": [
+            "cal.get(Calendar.HOUR);",
+            "cal.getHour();",
+            "cal.hour();",
+            "cal.get(Hour);"
+        ],
+        "answer": 0,
+        "hint": "Calendar uses constants and get() method to retrieve fields."
+    },
+    {
+        "question": "In a recursive factorial function, where is the base case?",
+        "options": [
+            "Method signature line",
+            "Condition checking if number equals 1",
+            "Else clause line",
+            "Recursive call line"
+        ],
+        "answer": 1,
+        "hint": "The base case stops the recursion."
+    },
+    {
+        "question": "In a recursive factorial function, where is the recursive call?",
+        "options": [
+            "Method signature line",
+            "Condition checking line",
+            "Else clause line",
+            "Line where method calls itself"
+        ],
+        "answer": 3,
+        "hint": "This is where the function calls itself with a modified parameter."
+    },
+    {
+        "question": "True or False: A Set is used to store objects in a particular order.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Sets generally don't guarantee order, though some implementations may."
+    },
+    {
+        "question": "True or False: a.equals(b) and a==b always yield the same value for Strings.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Consider the difference between value comparison and reference comparison."
+    },
+    {
+        "question": "Overloaded methods must be differentiated by:",
+        "options": [
+            "method name",
+            "data type of arguments",
+            "method signature",
+            "None of the above"
+        ],
+        "answer": 2,
+        "hint": "Method signature includes name and parameter types."
+    },
+    {
+        "question": "True or False: An Interface contains method declarations as well as implementations.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Traditional interfaces only declare methods; implementations are in classes."
+    },
+    {
+        "question": "True or False: A class that implements an interface may only implement a few of that interface's method declarations.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Classes must implement all methods declared in interfaces they implement."
+    },
+    {
+        "question": "True or False: Every 'try' block must end with a 'finally' block.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Try blocks can be followed by catch blocks or finally blocks, but finally is optional."
+    },
+    {
+        "question": "If A and B are logical expressions: !(A && B) is equivalent to:",
+        "options": [
+            "(A || B)",
+            "(!A || !B)",
+            "(!A && !B)",
+            "None of the above"
+        ],
+        "answer": 1,
+        "hint": "This is one of De Morgan's Laws."
+    },
+    {
+        "question": "Which of the following are true about stacks and queues?",
+        "options": [
+            "Stack elements are accessed only from the top",
+            "Queue elements are inserted at tail and deleted from head",
+            "Array lists are more efficient than linked lists for stacks",
+            "Linked lists are more efficient than array lists for queues"
+        ],
+        "answer": 3,
+        "hint": "Consider the performance characteristics of different data structure implementations."
+    }
+]

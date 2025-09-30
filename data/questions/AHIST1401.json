@@ -1,0 +1,277 @@
+[
+    {
+        "question": "A fresco is a painting on:",
+        "options": [
+            "plaster",
+            "bronze",
+            "wood",
+            "marble"
+        ],
+        "answer": 0,
+        "hint": "Fresco involves painting on wet surfaces that dry to become permanent."
+    },
+    {
+        "question": "Spontaneity and improvisation were valued highly in:",
+        "options": [
+            "Abstract Expressionism",
+            "Pop Art",
+            "Conceptual Art",
+            "Postmodernism"
+        ],
+        "answer": 0,
+        "hint": "This 20th century movement emphasized spontaneous, automatic creation."
+    },
+    {
+        "question": "Who is considered to be the inventor of modern Photography?",
+        "options": [
+            "Nadar",
+            "Gaucheraud",
+            "Renoir",
+            "Daguerre"
+        ],
+        "answer": 3,
+        "hint": "He developed one of the first practical photographic processes in the 1830s."
+    },
+    {
+        "question": "As a part of the Catholic Counter-Reformation, the Council of Trent was significant because it:",
+        "options": [
+            "banned the use of art in churches",
+            "jailed offensive artists",
+            "reaffirmed the use of religious art",
+            "managed the rebuilding of St. Peter's"
+        ],
+        "answer": 2,
+        "hint": "The Council responded to Protestant criticisms by clarifying the role of religious imagery."
+    },
+    {
+        "question": "Originally a Roman public building, the ______ became a popular form for the Early Christian church.",
+        "options": [
+            "colosseum",
+            "catacomb",
+            "temple",
+            "basilica"
+        ],
+        "answer": 3,
+        "hint": "This Roman building type was adapted for Christian worship with a longitudinal plan."
+    },
+    {
+        "question": "The style most closely associated with the French Revolution was:",
+        "options": [
+            "Baroque",
+            "Realism",
+            "Neoclassicism",
+            "Renaissance"
+        ],
+        "answer": 2,
+        "hint": "This style drew inspiration from classical antiquity and emphasized republican virtues."
+    },
+    {
+        "question": "History, mythology, portrait and landscape are all examples of ______ of art.",
+        "options": [
+            "genres",
+            "styles",
+            "elements",
+            "attributes"
+        ],
+        "answer": 0,
+        "hint": "These are categories or types of subject matter in art."
+    },
+    {
+        "question": "The primary patron of art in the Middle Ages was:",
+        "options": [
+            "the emperor",
+            "the government",
+            "the church",
+            "museums"
+        ],
+        "answer": 2,
+        "hint": "Religious institutions commissioned most artwork during this period."
+    },
+    {
+        "question": "The weight shift seen in the David sculptures of Donatello and Michelangelo is known as:",
+        "options": [
+            "contrapposto",
+            "cellini",
+            "chiaroscuro",
+            "counter-reformation"
+        ],
+        "answer": 0,
+        "hint": "This Italian term describes a standing figure with weight on one leg."
+    },
+    {
+        "question": "What separated Cezanne from the Impressionists was his focus on ______ over color.",
+        "options": [
+            "light",
+            "texture",
+            "form",
+            "space"
+        ],
+        "answer": 2,
+        "hint": "He was more concerned with structural composition than atmospheric effects."
+    },
+    {
+        "question": "In many early societies, art was used for ______ purposes since many people were illiterate.",
+        "options": [
+            "entertainment",
+            "religious",
+            "economic",
+            "teaching"
+        ],
+        "answer": 3,
+        "hint": "Art served as visual education before widespread literacy."
+    },
+    {
+        "question": "The Neoclassical style can be seen as a reaction against which artistic style?",
+        "options": [
+            "Baroque",
+            "Dutch Realism",
+            "Rococo",
+            "English Tudor"
+        ],
+        "answer": 2,
+        "hint": "Neoclassicism rejected the ornate, playful style that preceded it."
+    },
+    {
+        "question": "Which dramatic style followed the Renaissance?",
+        "options": [
+            "Baroque",
+            "Neoclassicism",
+            "Gothic",
+            "Hellenistic"
+        ],
+        "answer": 0,
+        "hint": "This 17th century style featured emotional intensity and dynamic movement."
+    },
+    {
+        "question": "The artists of the Northern Renaissance preferred ______ as their medium.",
+        "options": [
+            "tempera",
+            "fresco",
+            "sculpture",
+            "oil paint"
+        ],
+        "answer": 3,
+        "hint": "This medium allowed for detailed, luminous effects popular in Northern Europe."
+    },
+    {
+        "question": "A nonsensical style created in the aftermath of World War I was:",
+        "options": [
+            "Pop Art",
+            "Fauvism",
+            "Cubism",
+            "Dada"
+        ],
+        "answer": 3,
+        "hint": "This anti-art movement rejected logic and embraced absurdity."
+    },
+    {
+        "question": "Arch of Constantine is a ______ monument.",
+        "options": [
+            "Egyptian",
+            "Greek",
+            "Roman",
+            "Mesopotamian"
+        ],
+        "answer": 2,
+        "hint": "This triumphal arch commemorates a Roman emperor's victory."
+    },
+    {
+        "question": "The ______ was a mid-18th century movement that focused on reason.",
+        "options": [
+            "Renaissance",
+            "École des Beaux-Arts",
+            "Enlightenment",
+            "Revolution"
+        ],
+        "answer": 2,
+        "hint": "This intellectual movement emphasized rationality and scientific thinking."
+    },
+    {
+        "question": "A painting consisting of three panels is known as a:",
+        "options": [
+            "triforium",
+            "triptych",
+            "triumvirate",
+            "trinity"
+        ],
+        "answer": 1,
+        "hint": "This format was commonly used for altarpieces in Christian art."
+    },
+    {
+        "question": "______ is a way of representing an object so that it conveys an illusion of depth.",
+        "options": [
+            "foreshadowing",
+            "foreboding",
+            "foreshortening",
+            "foregoing"
+        ],
+        "answer": 2,
+        "hint": "This technique makes objects appear to recede into space."
+    },
+    {
+        "question": "The Renaissance practice of using scientific tools to make art more naturalistic is known as:",
+        "options": [
+            "scientific naturalism",
+            "scientific artistry",
+            "naturalistic science",
+            "artistic naturalism"
+        ],
+        "answer": 0,
+        "hint": "This approach combined artistic skill with scientific observation."
+    },
+    {
+        "question": "The method for creating a convincing illusion of space on a flat surface is called:",
+        "options": [
+            "pictorialism",
+            "point of view",
+            "perspective",
+            "pictage"
+        ],
+        "answer": 2,
+        "hint": "This mathematical system creates the appearance of three-dimensional space."
+    },
+    {
+        "question": "The contemporary movement that sought to remove all trace of the artist's authorship was:",
+        "options": [
+            "Performance Art",
+            "Conceptual Art",
+            "Postmodernism",
+            "Minimalism"
+        ],
+        "answer": 3,
+        "hint": "This movement emphasized impersonal, geometric forms and industrial materials."
+    },
+    {
+        "question": "Iconoclast means ______.",
+        "options": [
+            "someone who is vain",
+            "someone who destroys what is conventional",
+            "someone who likes to set fires",
+            "someone who has low self-esteem"
+        ],
+        "answer": 1,
+        "hint": "Literally 'image breaker,' this term describes those who oppose traditional beliefs."
+    },
+    {
+        "question": "Pointed arches and flying buttresses were defining architectural elements of which style?",
+        "options": [
+            "Roman",
+            "Romanesque",
+            "Gothic",
+            "Neoclassical"
+        ],
+        "answer": 2,
+        "hint": "This medieval style featured verticality and luminous stained glass windows."
+    },
+    {
+        "question": "According to the standards of the Royal Academy ______ painting was the most noble.",
+        "options": [
+            "history",
+            "still-life",
+            "genre",
+            "portrait"
+        ],
+        "answer": 0,
+        "hint": "The Academy hierarchy valued paintings with grand, educational subjects."
+    }
+]

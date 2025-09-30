@@ -1,0 +1,580 @@
+[
+    {
+        "question": "Which of the following is true about ARPANET?",
+        "options": [
+            "The plan for this computer network (to be called ARPANET) was presented in October 1967, and in December 1969 the first three-computer network was up and running.",
+            "The plan for this computer network (to be called ARPANET) was presented in October 1967, and in December 1969 the first five-computer network was up and running.",
+            "The plan for this computer network (to be called ARPANET) was presented in October 1968, and in December 1969 the first four-computer network was up and running.",
+            "The plan for this computer network (to be called ARPANET) was presented in October 1967, and in December 1969 the first four-computer network was up and running."
+        ],
+        "answer": 3,
+        "hint": "ARPANET initially connected four university computers in 1969."
+    },
+    {
+        "question": "What was Gopher in the early 1990s?",
+        "options": [
+            "was an information retrieval system used in the early 1990s",
+            "was a database system used in the early 1990s",
+            "was a file system used in the early 1990s",
+            "was an operating system used in the early 1990s"
+        ],
+        "answer": 0,
+        "hint": "Gopher was a precursor to the World Wide Web for organizing and displaying files."
+    },
+    {
+        "question": "What does CERN stand for?",
+        "options": [
+            "European Council for Nuclear Research",
+            "Central European Research Network",
+            "Central European Research Node",
+            "Council European Research Network"
+        ],
+        "answer": 0,
+        "hint": "CERN is the European organization where the World Wide Web was invented."
+    },
+    {
+        "question": "Tim Berners-Lee had been working on an information management system with links and references between documents.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "This describes the early concept of hypertext that became the World Wide Web."
+    },
+    {
+        "question": "Which of the following is not a web browser?",
+        "options": [
+            "Internet Explorer",
+            "Google Chrome",
+            "Mozilla Firefox",
+            "Twitter"
+        ],
+        "answer": 3,
+        "hint": "Twitter is a social media platform, not a web browser."
+    },
+    {
+        "question": "Which of the following is true about web development?",
+        "options": [
+            "Anyone can access the Internet from anywhere",
+            "NASA created the Internet",
+            "You do not have to have Internet connectivity to build a web site in HTML",
+            "You MUST be on the Internet to view a web site"
+        ],
+        "answer": 2,
+        "hint": "HTML files can be created and viewed locally without internet connection."
+    },
+    {
+        "question": "Netscape and ____ each tried to get a competitive edge in features, leading to the ____ wars.",
+        "options": [
+            "(a) IBM (b) operating",
+            "(a) ATT (b) software",
+            "(a) Microsoft (b) browser",
+            "(a) Telenor (b) browser"
+        ],
+        "answer": 2,
+        "hint": "This was the famous competition between Netscape Navigator and Internet Explorer."
+    },
+    {
+        "question": "Cascading Style Sheets give you complete control over how an element is displayed.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "CSS provides comprehensive styling control over HTML elements."
+    },
+    {
+        "question": "File extensions like .php, .asp, .aspx, .jsp are examples of static web technologies.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "These extensions typically indicate server-side dynamic technologies."
+    },
+    {
+        "question": "Browsers often come with plugins pre-installed for displaying certain content.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Modern browsers include built-in support for various media types."
+    },
+    {
+        "question": "On a dynamic web site, content may display different data depending on user input.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Dynamic sites generate content on-the-fly based on various factors."
+    },
+    {
+        "question": "PHP, Python, Ruby on Rails, ASP.NET, Coldfusion are examples of ______ languages",
+        "options": [
+            "Static",
+            "Dynamic",
+            "Sequential",
+            "Virtual",
+            "Database"
+        ],
+        "answer": 1,
+        "hint": "These are server-side scripting languages that generate dynamic content."
+    },
+    {
+        "question": "One reason for following Web Standards is Device Compatibility",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Web standards ensure websites work across different devices and browsers."
+    },
+    {
+        "question": "Which one of the following is true about HTML and XHTML differences?",
+        "options": [
+            "In HTML Shorthand can not be used for certain attributes.",
+            "In XHTML Attribute values must not be enclosed by quotes.",
+            "In HTML Certain elements don't need a closing tag, in XHTML all elements must be explicitly closed.",
+            "In CSS you can not have more than one of the same class on each page"
+        ],
+        "answer": 2,
+        "hint": "XHTML requires stricter syntax including closing all tags."
+    },
+    {
+        "question": "JavaScript is the scripting language used to add behaviour to web pages.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "JavaScript provides interactivity and dynamic behavior in web browsers."
+    },
+    {
+        "question": "The W3C validator at http://validator.w3.org/ is used to check for errors in:",
+        "options": [
+            "HTML/XHTML",
+            "CSS",
+            "Java",
+            "Javascript"
+        ],
+        "answer": 0,
+        "hint": "This specific validator checks markup language compliance."
+    },
+    {
+        "question": "CSS can be validated using the CSS validator available at http://jigsaw.w3.org/css-validator/",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "W3C provides separate validators for HTML and CSS."
+    },
+    {
+        "question": "Three-tier is a client-server architecture in which:",
+        "options": [
+            "the user interface, functional process logic ('business rules'), and computer data storage are developed and maintained as independent modules",
+            "the user interface, functional process logic ('business rules'), and data access are developed and maintained as independent modules",
+            "the user interface, computer data storage and data access are developed and maintained as dependent modules",
+            "the user interface, functional process logic ('business rules'), computer data storage and data access are developed and maintained as independent modules"
+        ],
+        "answer": 1,
+        "hint": "Three-tier separates presentation, application logic, and data management."
+    },
+    {
+        "question": "The three-tier model is a:",
+        "options": [
+            "software architecture",
+            "software architecture and a software design pattern",
+            "software design pattern"
+        ],
+        "answer": 1,
+        "hint": "It's both an architectural pattern and a design approach."
+    },
+    {
+        "question": "Three-tier architecture has the following three tiers:",
+        "options": [
+            "Presentation tier, Control Tier and Data tier",
+            "Presentation tier, Application tier and Data tier",
+            "Application tier, Control Tier and Data tier",
+            "Presentation tier, Application tier and Network tier"
+        ],
+        "answer": 1,
+        "hint": "The standard three tiers are presentation, application/business logic, and data."
+    },
+    {
+        "question": "Concerning the Home Page, which of the following is true?",
+        "options": [
+            "It is true to think that the home page is the first page your site visitors will see.",
+            "In an article about 'their decision to stop charging for access to old content', the New York Times notes that the behavior of their visitors has not changed. The Times said, '...most readers come to the site directly to NYTimes.com.'",
+            "This kind of overwhelming 'throw everything in but the kitchen sink, then add the kitchen sink' home page never works.",
+            "It is a common misconception to think that the home page is the first page your site visitors will see."
+        ],
+        "answer": 3,
+        "hint": "Many users enter websites through internal pages via search engines."
+    },
+    {
+        "question": "It's better to use the home page to highlight other content areas and drive traffic to them rather than cramming everything on it.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Home pages should serve as gateways to deeper content."
+    },
+    {
+        "question": "The home page should provide at least:",
+        "options": [
+            "define the main goal of the site and provide an overview, lead people further into the site, show what's new.",
+            "define the main goal of the site and provide an overview, show what's new, introduce the brand, provide navigation to other areas of the site.",
+            "define the main goal of the site and provide an overview, show what's new, introduce the brand.",
+            "show what's new, introduce the brand, provide navigation to other areas of the site."
+        ],
+        "answer": 1,
+        "hint": "A comprehensive home page serves multiple purposes including branding and navigation."
+    },
+    {
+        "question": "In web design, 'content is king' and organized, accessible content is crucial.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Quality content and good organization are fundamental to website success."
+    },
+    {
+        "question": "Which approach is recommended for website design inspiration?",
+        "options": [
+            "A poor technique is to search the web for other websites in your line of business. Take a look at their design, content and navigation for ideas as how to organize the content of your website.",
+            "This is a golden rule 'never search other web sites to take ideas as you never know the result may be'.",
+            "A good technique is to search the web for other websites in your line of business. Take a look at their design, content and navigation for ideas as how to organize the content of your website.",
+            "Try to concentrate to create a well-thought-out layout and navigational structure, so that your content will be easy to find. Do not pay attention what the others are doing."
+        ],
+        "answer": 2,
+        "hint": "Researching competitors can provide valuable insights for your own design."
+    },
+    {
+        "question": "Which statement about website navigation is true?",
+        "options": [
+            "We should always try to achieve that a page should be at most three clicks away.",
+            "As long as there is an apparent progress from one link to the next, and the indication is that they are still on track to reach their end goal, users will tend to continue through a site.",
+            "It is nonsense that too much choice is as paralyzing as too little choice."
+        ],
+        "answer": 1,
+        "hint": "Clear navigation cues help users feel confident in exploring a site."
+    },
+    {
+        "question": "Concerning navigation in web design:",
+        "options": [
+            "One of the most crucial aspects of successful site navigation is consistency",
+            "Inconsistency may be confusing but it certainly fits to the nature of some sites especially those belonging to the Chaotic Sites category",
+            "Consistency is overemphasized and usually leads to complex code"
+        ],
+        "answer": 0,
+        "hint": "Consistent navigation patterns help users learn and use websites effectively."
+    },
+    {
+        "question": "Mobile intranet access has doubled from 30% to 60% of winning intranets in one year.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Mobile accessibility has become increasingly important for intranet systems."
+    },
+    {
+        "question": "Mobile websites with fewer features have better usability than full-featured websites.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Simplified mobile interfaces typically provide better user experience."
+    },
+    {
+        "question": "Which characteristic is very important for an intranet?",
+        "options": [
+            "Knowledge Sharing: Offering repositories for case studies, samples, and other existing information can help people with similar problems avoid having to start building their solutions from scratch",
+            "Knowledge Sharing: The simplest way to inspire user-contributed intranet content is to let employees comment on existing information, ranging from news stories to knowledge bank resources."
+        ],
+        "answer": 0,
+        "hint": "Knowledge repositories help prevent redundant work and promote efficiency."
+    },
+    {
+        "question": "Simple Q&A tools can facilitate knowledge sharing among employees.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Question and answer systems connect people with questions to those with answers."
+    },
+    {
+        "question": "Systems that force people to create content from scratch every time promote user participation.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Barriers to content creation typically discourage participation."
+    },
+    {
+        "question": "Which characteristics should exist in an intranet?",
+        "options": [
+            "Knowledge Sharing, Comments, Ratings, Participation rewards, Customized collections.",
+            "Knowledge Sharing, Innovation management, Comments, Ratings, Participation rewards, Customized collections.",
+            "Knowledge Sharing, Innovation management, Ratings, Participation rewards, Customized collections.",
+            "Knowledge Sharing, Innovation management, Comments, Ratings, Participation rewards."
+        ],
+        "answer": 1,
+        "hint": "Comprehensive intranets include multiple features to encourage collaboration."
+    },
+    {
+        "question": "Most web designers want to add signature touches with design elements despite accessibility concerns.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Designers often balance aesthetic goals with usability requirements."
+    },
+    {
+        "question": "Color can be added to sites without losing accessibility if designed properly.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Good design considers both aesthetics and accessibility."
+    },
+    {
+        "question": "Which statement about primary colors is correct?",
+        "options": [
+            "The primary colours consist of red, green and blue, and they're called primary colours because you don't need to mix colours to make these three hues.",
+            "The primary colours consist of red, yellow and blue, and they're called primary colours because you don't need to mix colours to make these three hues.",
+            "The primary colours consist of red, black and blue, and they're called primary colours because you don't need to mix colours to make these three hues.",
+            "The primary colours consist of red, white and blue, and they're called primary colours because you don't need to mix colours to make these three hues."
+        ],
+        "answer": 1,
+        "hint": "Traditional color theory uses red, yellow, and blue as primary colors."
+    },
+    {
+        "question": "To check color contrast for accessibility, you should use a:",
+        "options": [
+            "Colour Analyzer tool. This tool checks the contrast between foreground and background colours.",
+            "Colour Contract tool. This tool checks the contrast between foreground and background colours.",
+            "Contrast Analyser tool. This tool checks the contrast between foreground and background colours.",
+            "Background Foreground contrast tool. This tool checks the contrast between foreground and background colours."
+        ],
+        "answer": 2,
+        "hint": "Contrast analyzers help ensure text is readable against background colors."
+    },
+    {
+        "question": "Complementary color schemes are great for websites as they contain both warm and cool colors.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Complementary colors provide visual balance and interest."
+    },
+    {
+        "question": "A triadic color scheme is created:",
+        "options": [
+            "when you pick two colours and then pick one colour that lies equidistant from the other two around the circle",
+            "when you pick three colours that lie equidistant from each other around the circle",
+            "when you pick one colour and then pick two other colours that lie equidistant from each other around the circle",
+            "when you pick four colours that lie equidistant from each other around the circle"
+        ],
+        "answer": 1,
+        "hint": "Triadic schemes use three colors equally spaced on the color wheel."
+    },
+    {
+        "question": "You should create visual design mockups for client approval before adding graphics and colors.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Getting client approval on mockups saves time and ensures alignment."
+    },
+    {
+        "question": "What information should a web designer gather before beginning site design?",
+        "options": [
+            "Web site name, Logo and branding, Competition research, Information architecture, Site content, Research web hosts, Directed departure, Deadlines.",
+            "Web site name, Logo and branding, Web site domain name, Competition research, Information architecture, Research web hosts, Directed departure, Deadlines.",
+            "Web site name, Logo and branding, Web site domain name, Information architecture, Site content, Research web hosts, Directed departure, Deadlines.",
+            "Web site name, Logo and branding, Web site domain name, Competition research, Information architecture, Site content, Research web hosts, Directed departure, Deadlines."
+        ],
+        "answer": 3,
+        "hint": "Comprehensive planning includes all aspects from branding to technical requirements."
+    },
+    {
+        "question": "What is the most effective way to control typography on web pages?",
+        "options": [
+            "The most effective way to control how typography looks on a web page is through using Cascading Style Sheets (CSS) or through a Markup Validation Service.",
+            "The most effective way to control how typography looks on a web page is through a Markup Validation Service.",
+            "The most effective way to control how typography looks on a web page is through using Cascading Style Sheets (CSS)."
+        ],
+        "answer": 2,
+        "hint": "CSS provides comprehensive control over text appearance and layout."
+    },
+    {
+        "question": "Users don't like to see navigation changes from page to page once they learn a site.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "Consistent navigation helps users build mental models of site structure."
+    },
+    {
+        "question": "Which fonts are most commonly available across systems for web design?",
+        "options": [
+            "Andale Mono, Times New Roman, Georgia, Verdana, Arial/Arial Black, Courier/Courier New, Trebuchet MS, Comic Sans (this is an unprofessional, many would say ugly font—don't use this, except perhaps sparingly on sites aimed at children), Impact",
+            "Andale Mono, Georgia, Verdana, Arial/Arial Black, Courier/Courier New, Trebuchet MS, Comic Sans (this is an unprofessional, many would say ugly font—don't use this, except perhaps sparingly on sites aimed at children), Impact",
+            "Andale Mono, Times New Roman, Georgia, Verdana, Arial/Arial Black, Courier/Courier New, Trebuchet MS, Comic Sans (this is an unprofessional, many would say ugly font—don't use this, except perhaps sparingly on sites aimed at children).",
+            "Times New Roman, Georgia, Verdana, Arial/Arial Black, Courier/Courier New, Trebuchet MS, Comic Sans (this is an unprofessional, many would say ugly font—don't use this, except perhaps sparingly on sites aimed at children), Impact"
+        ],
+        "answer": 0,
+        "hint": "Web-safe fonts ensure consistent display across different operating systems."
+    },
+    {
+        "question": "Which statement about HTML is correct?",
+        "options": [
+            "HTML stands for Hyper Text Markup Language is a language for describing web pages and a programming language",
+            "HTML stands for Hyper Text Markup Language is a language for describing web files and a structured programming language",
+            "HTML stands for Hyper Text Markup Language is a language for describing web pages and not a programming language",
+            "HTML stands for Hyper Text Markup Language is a language for describing web pages and sequential programming language"
+        ],
+        "answer": 2,
+        "hint": "HTML is a markup language for structure, not a programming language for logic."
+    },
+    {
+        "question": "Which statement about markup languages is correct?",
+        "options": [
+            "A markup language is a set of markup commands. HTML commands are keywords surrounded by angle brackets like <html>",
+            "A markup language is a set of markup tags. HTML tags are keywords surrounded by angle brackets like <html>",
+            "A markup language is a set of markup tags. HTML tags are keywords surrounded by ( ) like (html)",
+            "A markup language is a set of markup commands. HTML commands are keywords surrounded by ( ) like (html)"
+        ],
+        "answer": 1,
+        "hint": "HTML uses tags enclosed in angle brackets to define elements."
+    },
+    {
+        "question": "HTML documents are also called web pages.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "HTML files form the foundation of web pages displayed in browsers."
+    },
+    {
+        "question": "Which statement about HTML file extensions is correct?",
+        "options": [
+            "When you save an HTML file, you can use either the .htm or the .html file extension depending on the type of HTML documents.",
+            "When you save an HTML file, you can use only the .html file extension.",
+            "When you save an HTML file, you can use either the .htm or the .html file extension. There is no difference, it is entirely up to you.",
+            "When you save an HTML file, you can use the .htm"
+        ],
+        "answer": 2,
+        "hint": "Both .htm and .html extensions work interchangeably for HTML files."
+    },
+    {
+        "question": "HTML documents consist of nested HTML elements.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "HTML uses a hierarchical structure with elements contained within other elements."
+    },
+    {
+        "question": "HTML tags are case sensitive: <P> means the same as <p>.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "In HTML, tags are not case sensitive, but lowercase is recommended for consistency."
+    },
+    {
+        "question": "Which statement about HTML attributes is correct?",
+        "options": [
+            "HTML elements can have attributes. Attributes provide additional information about an element. Attributes are always specified in the start tag. Attributes come in name/value pairs like: name='value'",
+            "HTML elements can have attributes. Attributes provide additional information about an element. Attributes are specified in either the start tag or the end tag. Attributes come in name/value pairs like: name='value'",
+            "HTML elements can have attributes. Attributes provide additional information about an element. Attributes are always specified in the end tag. Attributes come in name/value pairs like: name='value'"
+        ],
+        "answer": 0,
+        "hint": "Attributes are always placed in the opening tag and use name='value' format."
+    },
+    {
+        "question": "A <td> tag can contain text, links, images, lists, forms, but not other tables.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 1,
+        "hint": "Table cells can contain nested tables as well as other content."
+    },
+    {
+        "question": "The <tbody> tag should be used with thead and tfoot elements.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "These elements help structure tables into logical sections."
+    },
+    {
+        "question": "A URL can be composed of words like 'uopeople.org' or an IP address like 192.68.20.50.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "URLs can use domain names or direct IP addresses."
+    },
+    {
+        "question": "What is the default port number for HTTP?",
+        "options": [
+            ":port - defines the port number at the host (the default port number for http is 800)",
+            ":port - defines the port number at the host (the default port number for http is 80)",
+            ":port - defines the port number at the host (the default port number for http is 70)",
+            ":port - defines the port number at the host (the default port number for http is 60)"
+        ],
+        "answer": 1,
+        "hint": "HTTP typically uses port 80, while HTTPS uses port 443."
+    },
+    {
+        "question": "The HTTP scheme is used for common web pages and is not encrypted.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "HTTP transmits data in plain text without encryption."
+    },
+    {
+        "question": "Which statement about HTTPS is correct?",
+        "options": [
+            "The scheme Https is a short of Secure HyperText Transmission Protocol. This scheme is used for Social web pages. Some important information exchanged may be encrypted.",
+            "The scheme Https is a short of Secure HyperText Transfer Protocol. This scheme is used for Secure web pages. Some important information exchanged may be encrypted.",
+            "The scheme Https is a short of Secure HyperText Transfer Protocol. This scheme is used for Secure web pages. All information exchanged are encrypted.",
+            "The scheme Https is a short of Secure HyperText Transmission Protocol. This scheme is used for Social web pages."
+        ],
+        "answer": 2,
+        "hint": "HTTPS encrypts all data exchanged between browser and server."
+    },
+    {
+        "question": "FTP is used for downloading or uploading files to a website.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": 0,
+        "hint": "FTP (File Transfer Protocol) is commonly used for website maintenance and file transfers."
+    }
+]
